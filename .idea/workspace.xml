@@ -2,74 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bec66e-2aa3-4603-8963-dce466f4f44b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RaptorClient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/get/Build.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/get/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/update/Build.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/update/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auditme/BuildInfoParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auditme/FileAttributes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auditme/Plugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auditme/procmon/Procmon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/communicator/slave/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/Argument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/BranchPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/Docopt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/DocoptExitException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/DocoptLanguageError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/Either.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/LeafPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/OneOrMore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/Option.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/Optional.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/OptionsShortcut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/Pattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/Python.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/Required.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/docopt/Tokens.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entryPoint/CommandLineParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entryPoint/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/masterNode/MasterNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/auditd/Auditd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/bepStep/linux/Process.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/bepStep/windows/Process.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/CPUMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/Linux.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/Windows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/SetupJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/FindHost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/Setup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/buildMonitor/Mode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/semmle/Mode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/slave/Setup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/slave/buildMonitor/Linux.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/slave/buildMonitor/Windows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/slave/completeness/Linux.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/slave/completeness/Windows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/slave/initial/Linux.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/slave/initial/Windows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/slave/semmel/Linux.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/raptorClient/slave/semmel/Windows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Exec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/FileOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Hash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Networking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/misc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/TestHash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/miscTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.attach_pid12625" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.attach_pid12709" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" afterDir="false" />
@@ -88,7 +24,6 @@
       <change beforePath="$PROJECT_DIR$/../raptor-client/src/bepStep/ProcessTree.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/src/bepStep/linux/process.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/src/bepStep/windows/Process.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../raptor-client/src/raptorClient/ParseCommandline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/src/raptorClient/SetupJob.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/src/raptorClient/findServer/FindServer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/src/raptorClient/master/MasterController.java" beforeDir="false" />
@@ -133,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state relative-caret-position="270">
+              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -222,7 +157,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -342,6 +277,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
@@ -490,7 +426,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32731137" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32731137" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -597,8 +533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state relative-caret-position="270">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
         </state>
       </provider>
     </entry>
