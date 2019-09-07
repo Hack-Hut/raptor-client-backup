@@ -1,1 +1,1 @@
-Main-Class: java.entryPoint.Main
+Main-Class: entryPoint.Main

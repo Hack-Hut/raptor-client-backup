@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bec66e-2aa3-4603-8963-dce466f4f44b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" afterDir="false" />
@@ -73,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -232,14 +233,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="entryPoint" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
@@ -446,7 +439,7 @@
     <frame x="974" y="0" width="920" height="1054" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.38154897" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.38154897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -455,7 +448,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19637139" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19637139" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -476,7 +469,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom" />
+    <MESSAGE value="manifest" />
+    <option name="LAST_COMMIT_MESSAGE" value="manifest" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/api/update/Build.java">
@@ -561,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
