@@ -47,64 +47,64 @@ class ProcessTreeTest {
 
         ArrayList<String> expected = new ArrayList<>();
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o main.o main.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o main.o main.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o cpp.o cpp.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o cpp.o cpp.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o debug.o debug.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o debug.o debug.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o dict.o dict.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o dict.o dict.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o gen.o gen.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o gen.o gen.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o lex.o lex.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o lex.o lex.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o vector.o vector.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o vector.o vector.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o parse.o parse.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o parse.o parse.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o buffer.o buffer.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o buffer.o buffer.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR='\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\'" +
-                " -c -o map.o map.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR='\"" + cwd + "/src/test/resources/testCompilationProject/8cc\'" +
+                " -c -o map.o map.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o error.o error.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o error.o error.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                "   -c -o path.o path.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                "   -c -o path.o path.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o file.o file.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o file.o file.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o set.o set.c ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o set.o set.c ");
 
         expected.add("cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 " +
-                "-DBUILD_DIR=\"/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc\"" +
-                " -c -o encoding.o encoding.c. ".replace("/home/luke/documents/java/RaptorClient/", cwd));
+                "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
+                " -c -o encoding.o encoding.c. ");
 
         ArrayList<String> actual = bepStep.getCommands();
         System.out.println(Arrays.toString(actual.toArray()));
