@@ -6,6 +6,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/communicator/slave/Server.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" afterDir="false" />
@@ -66,15 +69,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/FileOperations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="142" column="66" selection-start-line="142" selection-start-column="66" selection-end-line="142" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/Linux.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="690">
@@ -83,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="206" selection-start-line="206" selection-end-line="206" />
+            <state relative-caret-position="207">
+              <caret line="165" column="23" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -105,11 +99,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="660">
               <caret line="62" selection-start-line="62" selection-end-line="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -135,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="470">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
             </state>
           </provider>
         </entry>
@@ -168,6 +171,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>findSlaves</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -182,15 +190,16 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/FileOperations.java" />
         <option value="$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/Linux.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Log.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/CPUMonitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Exec.java" />
-        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/communicator/slave/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/docopt/BranchPattern.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Log.java" />
       </list>
     </option>
   </component>
@@ -268,16 +277,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="monitors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="monitors" type="462c0819:PsiDirectoryNode" />
-              <item name="resourceMonitor" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
@@ -637,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="206" selection-start-line="206" selection-end-line="206" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -672,13 +665,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/communicator/slave/Server.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/docopt/DocoptExitException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -704,6 +690,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="165" column="23" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
         </state>
       </provider>
     </entry>

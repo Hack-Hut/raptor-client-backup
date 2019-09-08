@@ -6,6 +6,9 @@ import monitors.nullCatcher.NullCatcher;
 import utils.Exec;
 import utils.Log;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Mode extends raptorClient.master.MasterController{
 
     private NullCatcher nullCatcher = new NullCatcher();
@@ -37,8 +40,8 @@ public class Mode extends raptorClient.master.MasterController{
         nullCatcher.stop();
         return true;
     }
-    public boolean findSlaves(){
-        return true;
+    public List<String> findSlaves(){
+        return new ArrayList<>();
     }
     public boolean pingSlave(){
         return true;

@@ -10,9 +10,6 @@ public class Mode extends raptorClient.master.MasterController{
     public boolean stopMonitor(){
         return true;
     }
-    public boolean findSlaves(){
-        return true;
-    }
     public boolean pingSlave(){
         return true;
     }

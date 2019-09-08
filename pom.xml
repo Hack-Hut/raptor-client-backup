@@ -28,8 +28,8 @@
                             <mainClass>entryPoint.Main</mainClass>
                         </manifest>
                     </archive>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>9</source>
+                    <target>9</target>
                 </configuration>
             </plugin>
             <plugin>
