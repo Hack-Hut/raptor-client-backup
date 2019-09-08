@@ -5,6 +5,8 @@ import utils.Log;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,10 +16,22 @@ public class ProcessTree implements Runnable{
     private Integer pid;
     private FileWriter fw;
     private Integer buildScriptCount = 0;
+    private boolean test = false;
+    private ArrayList<String> commands = new ArrayList<>();
 
     public ProcessTree(long pid){
         this.pid = (int) pid;
         this.fw = getFwAndClearFile();
+    }
+
+    public void setTestMode(){
+        // Changes a few things to make testing abit easier.
+        test = true;
+        try {
+            fw = new FileWriter("/dev/null");
+        } catch (IOException e) {
+            Log.error(e.toString());
+        }
     }
 
     private FileWriter getFwAndClearFile(){
@@ -40,7 +54,6 @@ public class ProcessTree implements Runnable{
         allRunningBuildProcesses.add(pid);
         Log.info("Attaching to PID: " + pid);
         monitors.bepStep.linux.Process rootProcess = new monitors.bepStep.linux.Process(pid);
-
         while(rootProcess.isRunning()){
             Set<Integer> potentialNewProcs = new HashSet<>();
             for (Integer proc: allRunningBuildProcesses){
@@ -62,7 +75,7 @@ public class ProcessTree implements Runnable{
         Log.info("Build Script ran " + buildScriptCount + " different Shell/Python scripts.");
         try {
             fw.close();
-        } catch (IOException e) {
+        } catch (IOException | NullPointerException e) {
             Log.error("Error closing bep-step log file.");
         }
         Log.debug("Stopping the bep-step thread.");
@@ -86,12 +99,19 @@ public class ProcessTree implements Runnable{
                     fw.write("\nFile Descriptor: " + fd);
                     //fw.write("\nEnvironment " + environ);
                     fw.write("\n\n");
+                    if(test){
+                       commands.add(cmd);
+                    }
                 } catch (IOException e) {
                     Log.error("Error writing to bep-step.");
                     Log.error(e.toString());
                 }
             }
         }
+    }
+
+    public ArrayList<String> getCommands(){
+        return this.commands;
     }
 
     private Set<Integer> purgeDeadChildren(Set<Integer> allProcesses){

@@ -13,9 +13,11 @@ class AuditdTest {
     private static String resources = cwd + "/src/test/resources/auditme/auditd/";
     private static String realAuditd = resources + "audit.log";
     private static String fakeAuditd = resources + "fake";
+    private String os = utils.SystemOps.getOsType().toLowerCase();
 
     @Test
     void parseReal() {
+        if (os.equals("windows")) return;
         Auditd tester = new auditme.auditd.Auditd(realAuditd);
         List<String> expected = new ArrayList<>();
         List<String> results = tester.parse();

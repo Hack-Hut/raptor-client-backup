@@ -65,6 +65,8 @@ public class FileAttributes {
         fileInfo.put("md5", this.md5);
         fileInfo.put("sha256", this.sha256);
         fileInfo.put("plugin", this.plugin);
+        if (this.shouldBeProxied)fileInfo.put("shouldBeProxied", "true");
+        else fileInfo.put("shouldBeProxied", "false");
         return fileInfo;
     }
 

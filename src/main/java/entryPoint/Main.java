@@ -9,7 +9,7 @@ public class Main {
     private String stage;
     private String downloadFile;
 
-    private Main(String args[]){
+    public Main(String args[]){
         CommandLineParser parser = new CommandLineParser(args);
         buildID = parser.getId();
         mode = parser.getMode();
