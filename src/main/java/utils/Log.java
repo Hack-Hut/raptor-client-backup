@@ -162,7 +162,8 @@ public class Log {
         try {
             new PrintWriter(logLocation).close();
             FileOutputStream writer = new FileOutputStream(logLocation);
-        } catch (FileNotFoundException e) {
+            writer.close();
+        } catch (IOException e) {
             System.out.println("utils.Log file not found: " + "raptor-client.txt");
         }
     }

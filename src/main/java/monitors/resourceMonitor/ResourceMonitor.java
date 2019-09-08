@@ -59,6 +59,7 @@ public class ResourceMonitor implements Runnable{
             }
         } catch (InterruptedException e) {
             Log.error("System monitor thread " + e.toString());
+            Thread.currentThread().interrupt();
         }
     }
 

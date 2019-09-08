@@ -55,7 +55,8 @@ public class ProcessTree implements Runnable{
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                Log.error(e.toString());
+                Thread.currentThread().interrupt();
             }
         }
         Log.info("Build Script ran " + buildScriptCount + " different Shell/Python scripts.");

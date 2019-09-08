@@ -67,7 +67,7 @@ public abstract class MasterController {
         return onlineServers.get(0);
     }
 
-    private List<String> findSlaves(){
+    protected List<String> findSlaves(){
         return new ArrayList<>();
     }
 

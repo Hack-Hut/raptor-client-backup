@@ -35,6 +35,7 @@ public class ScanNetwork {
         } catch (InterruptedException e) {
             Log.error("Failed wait for all threads in the findMachine thread pool to terminate");
             Log.error(e.toString());
+            Thread.currentThread().interrupt();
         }
         Log.debug("All 255 threads have exited.");
         for(FindHost thread: threadPool) {
