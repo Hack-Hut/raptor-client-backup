@@ -35,7 +35,11 @@ public class Exec implements Runnable {
         return output;
     }
 
-    private void execute() {
+    public void disableShowOutput(){
+        showOutput = false;
+    }
+
+    public void execute() {
         ProcessBuilder pb = new ProcessBuilder(this.command);
         Log.debug("Executing " + Arrays.toString(this.command));
         try {
@@ -44,6 +48,16 @@ public class Exec implements Runnable {
         } catch (IOException e){
             Log.error("The command " + Arrays.toString(command) + " was interrupted.");
             Log.error(e.toString());
+        }
+    }
+
+    public void waitForProcessToDie(){
+        while (process.isAlive()){
+            try {
+                Thread.sleep(20);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
         }
     }
 
@@ -97,6 +111,14 @@ public class Exec implements Runnable {
         } catch (IOException e) {
             Log.error(e.toString());
         }
+    }
+
+    public String getStdout(){
+        return stdout;
+    }
+
+    public String getStderr(){
+        return stderr;
     }
 
     public long getPid(){
