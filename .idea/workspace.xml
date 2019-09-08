@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bec66e-2aa3-4603-8963-dce466f4f44b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Hash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/ExecTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ExecTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/FileOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/FileOperationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/HashTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/HashTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/get/Build.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/BranchPattern.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/DocoptLanguageError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Either$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Either.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/LeafPattern$SingleMatchResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/LeafPattern.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Pattern$MatchResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Pattern.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Python$Re.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Python.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/CPUMonitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Linux.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Windows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Hash.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Hash.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/SystemOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/SystemOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/TestHash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/miscTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" afterDir="false" />
@@ -89,11 +62,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="345">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -137,17 +110,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/utils/ExecTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="420">
+              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -226,11 +199,11 @@
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/semmle/Mode.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/FileOperationsTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/ExecTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/HashTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Hash.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/ExecTest.java" />
       </list>
     </option>
   </component>
@@ -307,6 +280,14 @@
               <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -329,6 +310,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -753,20 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/ExecTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/FileOperationsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -820,8 +795,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="345">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/ExecTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
         </state>
       </provider>
     </entry>
