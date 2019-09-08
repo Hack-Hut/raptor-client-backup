@@ -108,6 +108,8 @@ class ProcessTreeTest {
 
         ArrayList<String> actual = bepStep.getCommands();
         System.out.println(Arrays.toString(actual.toArray()));
+        System.out.println("");
+        System.out.println(Arrays.toString(expected.toArray()));
         assertTrue(actual.contains(expected.get(3)));
         assertTrue(actual.contains(expected.get(4)));
 
