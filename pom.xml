@@ -23,6 +23,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.7.0</version>
                 <configuration>
+                        <source>11</source>
+                        <target>11</target>
                     <archive>
                         <manifest>
                             <mainClass>entryPoint.Main</mainClass>
@@ -70,10 +72,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
     <reporting>
         <plugins>
             <plugin>
