@@ -4,14 +4,18 @@ import org.junit.jupiter.api.Test;
 import utils.Exec;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProcessTreeTest {
     private static String cwd = utils.SystemOps.getCWD();
     private String eightcc = cwd + "/src/test/resources/testCompilationProject/8cc";
+    private String os = utils.SystemOps.getOsType().toLowerCase();
+
     @Test
     void compile8cc(){
+        if (!os.equals("linux")) return;
         String[] testCleanCommand = {"make", "-C", eightcc, "clean"};
         String[] testCompileCommand = {"make", "-C", eightcc};
 
@@ -103,7 +107,7 @@ class ProcessTreeTest {
                 " -c -o encoding.o encoding.c. ".replace("/home/luke/documents/java/RaptorClient/", cwd));
 
         ArrayList<String> actual = bepStep.getCommands();
-        assertTrue(actual.contains(expected.get(2)));
+        System.out.println(Arrays.toString(actual.toArray()));
         assertTrue(actual.contains(expected.get(3)));
         assertTrue(actual.contains(expected.get(4)));
 
