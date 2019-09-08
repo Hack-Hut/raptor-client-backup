@@ -38,10 +38,7 @@ public enum Hash{
             }
             return toHex(digest.digest());
         }
-        catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-        catch(IOException e) {
+        catch (NoSuchAlgorithmException | IOException e) {
             e.printStackTrace();
         }
         return null;

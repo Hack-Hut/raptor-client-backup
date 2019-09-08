@@ -1,5 +1,7 @@
 package utils;
 
+import java.io.File;
+
 public class SystemOps {
 
     /** Finds the number of CPU cores for the given target.
@@ -10,7 +12,11 @@ public class SystemOps {
     }
 
     public static String getOsType(){
-        return System.getProperty("os.name").toString();
+        return System.getProperty("os.name");
+    }
+
+    public static String getCWD(){
+       return new File("").getAbsolutePath();
     }
 
 }

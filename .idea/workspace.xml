@@ -3,12 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="e5bec66e-2aa3-4603-8963-dce466f4f44b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/communicator/slave/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Hash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ExecTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ExecTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/FileOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/FileOperationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/HashTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/HashTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/get/Build.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/docopt/BranchPattern.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/docopt/DocoptLanguageError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Either$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Either.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/docopt/LeafPattern$SingleMatchResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/docopt/LeafPattern.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Pattern$MatchResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Pattern.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Python$Re.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Python.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/CPUMonitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Linux.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Windows.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Hash.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Hash.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/SystemOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/SystemOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/TestHash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/miscTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" afterDir="false" />
@@ -68,60 +89,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/Linux.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Log.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="165" column="23" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
+            <state relative-caret-position="450">
+              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/misc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
-              <folding>
-                <element signature="e#2634#2635#0" expanded="true" />
-                <element signature="e#2689#2690#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Networking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="90">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/FileOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+            <state relative-caret-position="60">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/CPUMonitor.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/FileOperationsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="105">
+              <caret line="11" selection-start-line="11" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -129,35 +137,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+            <state relative-caret-position="75">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/ExecTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="270">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/docopt/BranchPattern.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Hash.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="495">
+              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/SystemOps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="58" selection-start-line="58" selection-end-line="59" />
+            <state relative-caret-position="210">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Log.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -182,10 +205,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/utils/HashTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/miscTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entryPoint/CommandLineParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/FileOperations.java" />
         <option value="$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java" />
@@ -200,6 +221,16 @@
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Log.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/buildMonitor/Mode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/semmle/Mode.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/FileOperationsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/ExecTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/HashTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Hash.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -225,14 +256,6 @@
       </expand>
       <select />
     </treeState>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1920" />
@@ -277,7 +300,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="raptorClient" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
@@ -307,14 +330,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -337,11 +352,11 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="utils" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="utils" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -359,95 +374,92 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in RaptorClient">
-    <configuration name="All in RaptorClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.utils in RaptorClient">
+    <configuration name="ExecTest.executeCommandGetOutput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RaptorClient" />
-      <option name="PACKAGE_NAME" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="utils" />
+      <option name="MAIN_CLASS_NAME" value="utils.ExecTest" />
+      <option name="METHOD_NAME" value="executeCommandGetOutput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExecTest.executeCommandGetOutputFakeCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RaptorClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="utils" />
+      <option name="MAIN_CLASS_NAME" value="utils.ExecTest" />
+      <option name="METHOD_NAME" value="executeCommandGetOutputFakeCommand" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTest.md5FakeFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RaptorClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="utils" />
+      <option name="MAIN_CLASS_NAME" value="utils.HashTest" />
+      <option name="METHOD_NAME" value="md5FakeFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTest.md5File" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RaptorClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="utils" />
+      <option name="MAIN_CLASS_NAME" value="utils.HashTest" />
+      <option name="METHOD_NAME" value="md5File" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="utils in RaptorClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RaptorClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="utils" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHash.checksum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RaptorClient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="utils" />
-      <option name="MAIN_CLASS_NAME" value="utils.TestHash" />
-      <option name="METHOD_NAME" value="checksum" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestHash.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RaptorClient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="utils" />
-      <option name="MAIN_CLASS_NAME" value="utils.TestHash" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="miscTest.convertSetToList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RaptorClient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="utils" />
-      <option name="MAIN_CLASS_NAME" value="utils.miscTest" />
-      <option name="METHOD_NAME" value="convertSetToList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Raptor-Client [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="test" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in RaptorClient" />
-        <item itemvalue="Maven.Raptor-Client [test]" />
-        <item itemvalue="JUnit.miscTest.convertSetToList" />
-        <item itemvalue="JUnit.TestHash.checksum" />
-        <item itemvalue="JUnit.TestHash.main" />
+        <item itemvalue="JUnit.utils in RaptorClient" />
+        <item itemvalue="JUnit.HashTest.md5FakeFile" />
+        <item itemvalue="JUnit.HashTest.md5File" />
+        <item itemvalue="JUnit.ExecTest.executeCommandGetOutputFakeCommand" />
+        <item itemvalue="JUnit.ExecTest.executeCommandGetOutput" />
       </list>
     </recent_temporary>
   </component>
@@ -473,11 +485,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="miscTest_convertSetToList - 2019.09.07 at 10h 17m 37s.xml">
-      <configuration name="miscTest.convertSetToList" configurationId="JUnit" />
+    <history-entry file="FileOperationsTest - 2019.09.08 at 13h 31m 49s.xml">
+      <configuration name="FileOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_RaptorClient - 2019.09.07 at 10h 53m 54s.xml">
-      <configuration name="All in RaptorClient" configurationId="JUnit" />
+    <history-entry file="ExecTest_executeCommandGetOutput - 2019.09.08 at 13h 35m 19s.xml">
+      <configuration name="ExecTest.executeCommandGetOutput" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExecTest_executeCommandGetOutput - 2019.09.08 at 13h 35m 32s.xml">
+      <configuration name="ExecTest.executeCommandGetOutput" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExecTest_executeCommandGetOutputFakeCommand - 2019.09.08 at 13h 36m 25s.xml">
+      <configuration name="ExecTest.executeCommandGetOutputFakeCommand" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExecTest_executeCommandGetOutputFakeCommand - 2019.09.08 at 13h 36m 40s.xml">
+      <configuration name="ExecTest.executeCommandGetOutputFakeCommand" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExecTest_executeCommandGetOutputFakeCommand - 2019.09.08 at 13h 37m 34s.xml">
+      <configuration name="ExecTest.executeCommandGetOutputFakeCommand" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HashTest_md5File - 2019.09.08 at 13h 40m 38s.xml">
+      <configuration name="HashTest.md5File" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HashTest_md5FakeFile - 2019.09.08 at 13h 41m 05s.xml">
+      <configuration name="HashTest.md5FakeFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HashTest_md5FakeFile - 2019.09.08 at 13h 42m 22s.xml">
+      <configuration name="HashTest.md5FakeFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="utils_in_RaptorClient - 2019.09.08 at 13h 43m 33s.xml">
+      <configuration name="utils in RaptorClient" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -493,20 +529,20 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18604651" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18604651" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32962587" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32962587" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32943678" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32861477" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.13365282" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.13365282" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -527,22 +563,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/api/get/Project.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/HashTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Hash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/TestHash.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/misc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/miscTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -602,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entryPoint/CommandLineParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1215">
@@ -620,13 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-378">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/FileOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="142" column="66" selection-start-line="142" selection-start-column="66" selection-end-line="142" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -655,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/communicator/slave/Server.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -681,14 +681,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
+        <state relative-caret-position="587">
           <caret line="58" selection-start-line="58" selection-end-line="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
+        <state relative-caret-position="587">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
@@ -700,17 +700,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/buildMonitor/Mode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="1065">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/semmle/Mode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/FileOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="165" column="23" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/ExecTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/FileOperationsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/HashTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Hash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/misc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Networking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SystemOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
         </state>
       </provider>
     </entry>
