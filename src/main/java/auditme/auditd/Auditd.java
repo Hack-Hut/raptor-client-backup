@@ -1,6 +1,7 @@
 package auditme.auditd;
 
 import auditme.BuildInfoParser;
+import utils.Log;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -18,7 +19,7 @@ import java.util.Set;
  */
 public class Auditd implements BuildInfoParser {
 
-    private static String AUDITD_EXECVE_SEARCH_VALUE = "type=EXECVE";
+    private static String auditdExecveSearchValue = "type=EXECVE";
     private String auditdLocation;
     private List<String> uniqueExes;
     public List<HashMap> buildExecutableInformation;
@@ -31,17 +32,11 @@ public class Auditd implements BuildInfoParser {
      * Parses the Auditd log and then returns a unique list of executables that were found,
      * Note that this list contains the absolute paths of symbolic links.
      * @return Unique list of executables
-     * @throws FileNotFoundException: If the monitors.auditd log location is not found.
      */
-    public List<String> parse() throws FileNotFoundException  {
-        try {
-            Set<String> unqiueExes = this.findUniqueExecutables();
-            this.uniqueExes = utils.misc.convertSetToList(unqiueExes);
-            return this.uniqueExes;
-        }
-        catch(FileNotFoundException e) {
-            throw new FileNotFoundException("The path " + this.auditdLocation + " does not have read permissions.");
-        }
+    public List<String> parse()  {
+        Set<String> unqiueExes = this.findUniqueExecutables();
+        this.uniqueExes = utils.misc.convertSetToList(unqiueExes);
+        return this.uniqueExes;
     }
 
     /**
@@ -53,7 +48,7 @@ public class Auditd implements BuildInfoParser {
      * @return A list containing HashMaps for each file.
      * @throws NullPointerException
      */
-    private List<HashMap> populateFileInformation() throws NullPointerException {
+    private List<HashMap> populateFileInformation() {
         for(String currentFile : this.uniqueExes){
             auditme.FileAttributes fileInfo = new auditme.FileAttributes(currentFile);
             fileInfo.populateFileInfo();
@@ -63,25 +58,23 @@ public class Auditd implements BuildInfoParser {
         return buildExecutableInformation;
     }
 
-    private Set<String> findUniqueExecutables() throws FileNotFoundException{
-        File auditLog = new File(this.auditdLocation);
-        BufferedReader buffer = new BufferedReader(new FileReader(auditLog));
-        String currentLine;
-        System.out.println("Reading " + this.auditdLocation);
+    private Set<String> findUniqueExecutables(){
         Set<String> uniqueExecutables = new HashSet<>();
-        try {
+        String currentLine;
+        File auditLog = new File(this.auditdLocation);
+        try (BufferedReader buffer = new BufferedReader(new FileReader(auditLog))){
             if(!auditLog.canRead()) {
                 buffer.close();
                 throw new FileNotFoundException("The path " + this.auditdLocation + " does not have read permissions.");
             }
             while ((currentLine = buffer.readLine()) != null) {
-                if(currentLine.contains(AUDITD_EXECVE_SEARCH_VALUE)) {
+                if(currentLine.contains(auditdExecveSearchValue)) {
                     uniqueExecutables.add(parseExecutableLine(currentLine));
                 }
             }
         }
         catch (IOException e) {
-            e.printStackTrace();
+            Log.error(e.toString());
         }
         return uniqueExecutables;
     }
@@ -119,18 +112,6 @@ public class Auditd implements BuildInfoParser {
         }
         catch (IOException e) {
             throw new IOException();
-        }
-    }
-
-    public static void main(String args[]) {
-        String path = "/home/audit.log";
-        Auditd auditd = new Auditd(path);
-        try{
-            auditd.parse();
-            auditd.populateFileInformation();
-        }
-        catch(FileNotFoundException e){
-            System.out.println("The file " + path + " does not exist, or cannot be read.");
         }
     }
 }

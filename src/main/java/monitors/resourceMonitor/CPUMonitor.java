@@ -31,7 +31,9 @@ public class CPUMonitor implements Runnable{
     private void sleep(){
         try {
             TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException ignore) {}
+        } catch (InterruptedException ignore) {
+            Thread.currentThread().interrupt();
+        }
     }
 
 

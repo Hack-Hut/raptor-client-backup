@@ -14,7 +14,6 @@ public class Exec implements Runnable {
     private Process process;
     private boolean showOutput = true;
     private long pid;
-    private int exitCode;
 
     public Exec(String[] command){
         this.command = command;
@@ -36,7 +35,7 @@ public class Exec implements Runnable {
         return output;
     }
 
-    public void execute() {
+    private void execute() {
         ProcessBuilder pb = new ProcessBuilder(this.command);
         Log.debug("Executing " + Arrays.toString(this.command));
         try {
@@ -52,24 +51,24 @@ public class Exec implements Runnable {
         return process;
     }
 
-    public boolean isRunning(){
-        return process.isAlive();
-    }
-
     public void getOutput() {
-        try { Thread.sleep(20); } catch (InterruptedException ignored){}
+        try { Thread.sleep(20); } catch (InterruptedException ignored){
+            Thread.currentThread().interrupt();
+        }
         BufferedReader inReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
         BufferedReader errReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
 
         StringBuilder inBuilder = new StringBuilder();
         StringBuilder errBuilder = new StringBuilder();
 
-        String inputStream = null, errorStream = null;
+        String inputStream = null;
+        String errorStream = null;
+
         while (true) {
             try {
                 if ((inputStream = inReader.readLine()) == null) break;
             } catch (IOException e) {
-                e.printStackTrace();
+                Log.error(e.toString());
             }
             inBuilder.append(inputStream);
             inBuilder.append(System.getProperty("line.separator"));
@@ -81,7 +80,7 @@ public class Exec implements Runnable {
             try {
                 if ((errorStream = errReader.readLine()) == null) break;
             } catch (IOException e) {
-                e.printStackTrace();
+                Log.error(e.toString());
             }
             errBuilder.append(errorStream);
             errBuilder.append(System.getProperty("line.separator"));
@@ -96,24 +95,12 @@ public class Exec implements Runnable {
             inReader.close();
             errReader.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.error(e.toString());
         }
-    }
-
-    public String getStderr(){
-        return stderr;
-    }
-
-    public String getStdout(){
-        return stdout;
     }
 
     public long getPid(){
         return pid;
-    }
-
-    public int getReturnCode(){
-        return exitCode;
     }
 
     public void run(){

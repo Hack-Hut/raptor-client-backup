@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Linux implements ResourceInterface {
-    private final static String memLoc = "/proc/meminfo";
+    private final static String MEM_LOC = "/proc/meminfo";
 
     public Integer getFreeMemKB(){
         ArrayList<String> memInfo = readFile();
@@ -35,17 +35,16 @@ public class Linux implements ResourceInterface {
 
 
     private ArrayList<String> readFile(){
-        File f = new File(Linux.memLoc);
+        File f = new File(Linux.MEM_LOC);
         ArrayList<String> lines = new ArrayList<>();
 
-        try {
-            BufferedReader b = new BufferedReader(new FileReader(f));
+        try (BufferedReader b = new BufferedReader(new FileReader(f))){
             String currentLine;
             while ((currentLine = b.readLine()) != null){
                 lines.add(currentLine);
             }
         } catch (IOException e) {
-            Log.error("File at location " + memLoc + " does not exist");
+            Log.error("File at location " + MEM_LOC + " does not exist");
             Log.error(e.toString());
         }
         return lines;
@@ -56,8 +55,8 @@ public class Linux implements ResourceInterface {
         boolean intFound = false;
         StringBuilder mem = new StringBuilder();
         for (char current : line.toCharArray()){
-            if ((intFound) & (current == ' ')) break;
-            if ((colonFound) & (current != ' ')){
+            if ((intFound) && (current == ' ')) break;
+            if ((colonFound) && (current != ' ')){
                 intFound = true;
                 mem.append(current);
             }

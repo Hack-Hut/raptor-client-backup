@@ -11,7 +11,7 @@ public class ResourceMonitor implements Runnable{
     private static final String LOG_LOCATION = CWD + "/logs/resource-info.csv";
     private int buildID;
     private int machineID;
-    private int elaspedTimeSeconds = 0;
+    private int elapsedTimeSeconds = 0;
     private volatile boolean exit = false;
     private String os;
     private ResourceInterface monitor;
@@ -25,6 +25,8 @@ public class ResourceMonitor implements Runnable{
 
     public void finish(){
         Log.info("Stopping the system resource thread.");
+        Log.debug(Integer.toString(this.machineID));
+        Log.debug(Integer.toString(this.buildID));
         exit = true;
     }
 
@@ -34,12 +36,11 @@ public class ResourceMonitor implements Runnable{
             //noinspection ResultOfMethodCallIgnored
             f.delete();
         }
-        try {
-            FileWriter fw = new FileWriter(LOG_LOCATION);
+        try (FileWriter fw = new FileWriter(LOG_LOCATION)){
             fw.write("time_sec, memory_total_mb, memory_free_mb, cpu_usage\n");
-            fw.close();
         } catch (IOException e) {
             Log.error("Failed to create the resource log file " + e.toString());
+            Thread.currentThread().interrupt();
         }
     }
 
@@ -62,10 +63,8 @@ public class ResourceMonitor implements Runnable{
     }
 
     private void appendToLog(Double cpu, Integer freeMemMB, Integer totMemMB){
-        try {
-            FileWriter fw = new FileWriter(LOG_LOCATION, true);
-            fw.write(elaspedTimeSeconds + ", " + totMemMB + ", " + freeMemMB + ", " + cpu + "\n");
-            fw.close();
+        try (FileWriter fw = new FileWriter(LOG_LOCATION, true)){
+            fw.write(elapsedTimeSeconds + ", " + totMemMB + ", " + freeMemMB + ", " + cpu + "\n");
         } catch (IOException e) {
             Log.error("Failed to write to " + LOG_LOCATION + " received the following error.");
             Log.error(e.toString());
@@ -91,7 +90,7 @@ public class ResourceMonitor implements Runnable{
             Integer totalMemKB = monitor.getTotalMemKB();
             appendToLog(cpuUsage, freeMemKB/1024, totalMemKB/1024);
             sendInfo();
-            elaspedTimeSeconds += 10;
+            elapsedTimeSeconds += 10;
             sleep();
         }
         Log.info("Stopping the system resource monitor thread.");

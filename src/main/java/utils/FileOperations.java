@@ -22,7 +22,7 @@ public class FileOperations {
             return "";
         }
         catch (IOException e) {
-            e.printStackTrace();
+            Log.error(e.toString());
             return "";
         }
         return realPath.toString();
@@ -60,7 +60,7 @@ public class FileOperations {
      */
     public static String getBasePath(String path) {
         char pathSplit = File.separatorChar;
-        String currentChunk = "";
+        StringBuilder currentChunk = new StringBuilder();
         for(int i = 0; i < path.length(); i++) {
             char currentChar = path.charAt(i);
             // ignore last char if its a slash
@@ -68,12 +68,12 @@ public class FileOperations {
                 break;
             }
             else if (currentChar == pathSplit){
-                currentChunk = "";
+                currentChunk = new StringBuilder();
                 continue;
             }
-            currentChunk += currentChar;
+            currentChunk.append(currentChar);
         }
-        return currentChunk;
+        return currentChunk.toString();
     }
 
     /**
@@ -84,20 +84,17 @@ public class FileOperations {
      * @throws FileNotFoundException
      */
     public static List<String> readFileInToList(String path) throws FileNotFoundException{
-        BufferedReader reader;
         List<String> fileLines = new ArrayList<>();
-        reader = new BufferedReader(new FileReader(path));
         String line;
-        try {
+        try(BufferedReader reader = new BufferedReader(new FileReader(path))) {
             line = reader.readLine();
             while (line != null) {
                 fileLines.add(line);
                 line = reader.readLine();
             }
-            reader.close();
         }
         catch (IOException e) {
-            e.printStackTrace();
+            Log.error(e.toString());
         }
         return fileLines;
     }
@@ -140,15 +137,10 @@ public class FileOperations {
         return false;
     }
 
-    public static void writeToFile(String path, ArrayList<String> lines) throws IOException {
+    public static void writeToFile(String path, List lines) throws IOException {
         FileWriter fileWriter = new FileWriter(path);
         PrintWriter printWriter = new PrintWriter(fileWriter);
-        for (String line: lines) printWriter.print(line);
+        for (Object line: lines) printWriter.print(line.toString());
         printWriter.close();
-    }
-
-    public static void main(String args[]) {
-        boolean test = FileOperations.exists("/etc/passwd");
-        System.out.println(test);
     }
 }

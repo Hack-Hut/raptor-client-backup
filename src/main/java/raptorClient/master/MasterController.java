@@ -60,7 +60,7 @@ public abstract class MasterController {
     private String getServerIP(){
         ScanNetwork raptor = new ScanNetwork();
         ArrayList<String> onlineServers = raptor.getHosts();
-        if (onlineServers.size() == 0) return null;
+        if (onlineServers.isEmpty()) return null;
         if (onlineServers.size() == 1) return onlineServers.get(0);
         Log.warn("Found multiple raptor servers running at the same time");
         Log.warn(onlineServers.toString());
@@ -72,7 +72,7 @@ public abstract class MasterController {
     }
 
     private Map<String, String> getEnvironmentVariables(){
-        Map<String, String> env = System.getenv();
+        env = System.getenv();
         for (String envName : env.keySet()) {
             Log.debug(envName, env.get(envName));
         }
@@ -108,6 +108,7 @@ public abstract class MasterController {
             Thread.sleep(time);
         } catch(InterruptedException e) {
             Log.error("main.java.entryPoint.Main thread sleep got interrupted.");
+            Thread.currentThread().interrupt();
         }
     }
 

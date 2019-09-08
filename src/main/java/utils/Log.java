@@ -227,11 +227,9 @@ public class Log {
             if (level > 2) {
                 System.out.println(message);
             }
-            try {
-                BufferedWriter writer = new BufferedWriter(new FileWriter(logLocation, true));
+            try(BufferedWriter writer = new BufferedWriter(new FileWriter(logLocation, true))) {
                 writer.write(message);
                 writer.newLine();
-                writer.close();
             } catch (IOException e) {
                 System.out.println("Failed to write to logger at " + logLocation);
             }
