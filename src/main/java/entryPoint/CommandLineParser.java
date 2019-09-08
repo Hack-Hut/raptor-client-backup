@@ -79,7 +79,7 @@ public final class CommandLineParser {
             return Integer.parseInt(id);
         } catch(NumberFormatException e) {
             System.out.println("--id must be an integer.");
-            System.exit(1);
+            System.exit(0);
             return 0;
         }
     }
@@ -87,7 +87,7 @@ public final class CommandLineParser {
     String[] getCmd(){
         if (cmd == null){
             System.out.println("Command cannot be null");
-            System.exit(1);
+            System.exit(0);
         }
         return cmd;
     }
