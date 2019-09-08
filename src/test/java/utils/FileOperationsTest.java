@@ -10,9 +10,12 @@ class FileOperationsTest {
 
     private static String cwd = utils.SystemOps.getCWD();
     private static String resources = cwd + "/src/test/resources/fileOperations";
+    private String os = utils.SystemOps.getOsType().toLowerCase();
+
 
     @Test
     void getSymLocation() {
+        if (!os.equals("linux")) return;
         String location = utils.FileOperations.getSymLocation(resources + "/test-sym");
         assertEquals("/etc/passwd", location, "failed to get the correct symbolic location");
 

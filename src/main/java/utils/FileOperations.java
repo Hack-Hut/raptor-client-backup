@@ -59,15 +59,22 @@ public class FileOperations {
      * @return base path
      */
     public static String getBasePath(String path) {
-        char pathSplit = File.separatorChar;
+        String os = utils.SystemOps.getOsType().toLowerCase();
+        char split;
+        if(os.equals("windows")){
+            split = '\\';
+        }
+        else{
+            split = '/';
+        }
         StringBuilder currentChunk = new StringBuilder();
         for(int i = 0; i < path.length(); i++) {
             char currentChar = path.charAt(i);
             // ignore last char if its a slash
-            if ((i == path.length() -1) && (currentChar == pathSplit)) {
+            if ((i == path.length() -1) && (currentChar == split)) {
                 break;
             }
-            else if (currentChar == pathSplit){
+            else if (currentChar == split){
                 currentChunk = new StringBuilder();
                 continue;
             }
