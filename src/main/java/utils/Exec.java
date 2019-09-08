@@ -51,7 +51,7 @@ public class Exec implements Runnable {
         }
     }
 
-    public void waitForProcessToDie(){
+    public int waitForProcessToDie(){
         while (process.isAlive()){
             try {
                 Thread.sleep(20);
@@ -59,6 +59,7 @@ public class Exec implements Runnable {
                 Thread.currentThread().interrupt();
             }
         }
+        return process.exitValue();
     }
 
     public Process getProcess(){

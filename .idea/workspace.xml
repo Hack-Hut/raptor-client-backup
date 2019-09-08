@@ -2,225 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bec66e-2aa3-4603-8963-dce466f4f44b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/audisp/au-remote.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/audisp/audisp-remote.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/audisp/auditd.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.attach_pid12625" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.attach_pid12709" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/FileAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auditme/FileAttributes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/communicator/slave/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entryPoint/CommandLineParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entryPoint/CommandLineParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entryPoint/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entryPoint/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/CPUMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/CPUMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/Linux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/Linux.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/buildMonitor/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/buildMonitor/Mode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/bep-step.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/bep-step.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/raptor-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/raptor-log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/resource-info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/logs/resource-info.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/audisp/Audisp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/audisp/Audisp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/semmle/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/semmle/Mode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/Exec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Exec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/FileOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FileOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Hash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/monitors/bepStep/ProcessTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/monitors/bepStep/ProcessTreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/TestHash.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/miscTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Raptor-Client-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Raptor-Client-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Raptor-Client-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/get/Build.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/get/Build.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/get/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/get/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/update/Build.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/update/Build.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/update/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/update/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/BuildInfoParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auditme/BuildInfoParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/FileAttributes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auditme/FileAttributes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/Plugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auditme/Plugin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/auditd/Auditd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auditme/auditd/Auditd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/procmon/Procmon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auditme/procmon/Procmon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/communicator/slave/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Argument.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Argument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/BranchPattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/BranchPattern.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Docopt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Docopt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/DocoptExitException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/DocoptExitException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/DocoptLanguageError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/DocoptLanguageError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Either$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Either$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Either.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Either.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/LeafPattern$SingleMatchResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/LeafPattern$SingleMatchResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/LeafPattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/LeafPattern.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/OneOrMore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/OneOrMore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Option.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Option.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Optional.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Optional.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/OptionsShortcut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/OptionsShortcut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Pattern$MatchResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Pattern$MatchResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Pattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Pattern.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Python$Re.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Python$Re.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Python.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Python.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Required.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Required.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Tokens.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Tokens.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entryPoint/CommandLineParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entryPoint/CommandLineParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entryPoint/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entryPoint/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/masterNode/MasterNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/masterNode/MasterNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/masterNode/MasterNodeInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/masterNode/MasterNodeInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/auditd/Auditd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/auditd/Auditd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/linux/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/bepStep/linux/Process.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/windows/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/bepStep/windows/Process.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/nullCatcher/NullCatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/nullCatcher/NullCatcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/CPUMonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/CPUMonitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Linux.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Linux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceMonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceMonitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/SetupJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/SetupJob.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/findServer/FindHost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/findServer/FindHost.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/findServer/ScanNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/findServer/ScanNetwork.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/MasterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/MasterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/Setup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/Setup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/buildMonitor/Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/buildMonitor/Mode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/completeness/Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/completeness/Mode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/initial/Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/initial/Mode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/semmle/Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/semmle/Mode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/Setup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/Setup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/buildMonitor/Linux.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/buildMonitor/Linux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/buildMonitor/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/buildMonitor/Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/completeness/Linux.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/completeness/Linux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/completeness/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/completeness/Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/initial/Linux.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/initial/Linux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/initial/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/initial/Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/semmel/Linux.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/semmel/Linux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/semmel/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/semmel/Windows.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utils/Exec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Exec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/FileOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/FileOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Hash.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Hash.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Log$Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Log$Logger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Log.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Networking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Networking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/SystemOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/SystemOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/misc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/misc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-utils.ExecTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-utils.FileOperationsTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-utils.HashTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/utils.ExecTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/utils.FileOperationsTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/utils.HashTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Hash/hashme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/RaptorClient.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/auditme/FileAttributes/gcc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/auditme/FileAttributesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/auditme/auditd/AuditdTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/auditme/auditd/audit.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fileOperations/readable" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fileOperations/test-sym" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/monitors/bepStep/ProcessTreeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/8cc.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/HACKING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/buffer.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/cpp.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/debug.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/dict.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/encoding.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/error.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/file.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/gen.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/include/8cc.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/include/float.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/include/iso646.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/include/stdalign.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/include/stdarg.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/include/stdbool.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/include/stddef.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/include/stdnoreturn.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/keyword.inc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/lex.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/main.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/map.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/parse.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/path.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/set.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/align.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/arith.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/array.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/assign.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/ast.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/bitop.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/builtin.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/cast.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/comp.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/constexpr.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/control.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/conversion.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/decl.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/enum.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/extern.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/float.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/funcargs.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/function.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/generic.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/global.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/import.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/import.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/includeguard.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/includeguard1.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/includeguard2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/includeguard3.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/includeguard4.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/includeguard5.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/includeguard6.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/includeguard7.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/initializer.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/int.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/iso646.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/lex.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/line.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/literal.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/macro.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/macro1.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/macro2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/negative.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/noreturn.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/number.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/oldstyle.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/once.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/pointer.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/scope.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/sizeof.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/staticassert.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/stmtexpr.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/struct.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/test.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/testmain.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/type.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/typeof.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/union.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/usualconv.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/test/varargs.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/utiltest.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testCompilationProject/8cc/vector.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/ExecTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/FileOperationsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/HashTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/TestHash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/miscTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" afterDir="false" />
@@ -281,15 +75,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Networking.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/entryPoint/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -301,19 +86,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/monitors/auditd/Auditd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
+            <state relative-caret-position="1050">
               <caret line="79" column="31" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/monitors/audisp/Audisp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" column="75" selection-start-line="65" selection-start-column="75" selection-end-line="65" selection-end-column="75" />
+            <state relative-caret-position="1599">
+              <caret line="129" column="28" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+              <folding>
+                <element signature="e#2707#2708#0" expanded="true" />
+                <element signature="e#2728#2729#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -331,25 +129,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+            <state relative-caret-position="465">
+              <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
               <folding>
                 <element signature="e#1177#1178#0" expanded="true" />
                 <element signature="e#1212#1213#0" expanded="true" />
-                <element signature="e#3620#3621#0" expanded="true" />
-                <element signature="e#3650#3651#0" expanded="true" />
-                <element signature="e#3675#3676#0" expanded="true" />
-                <element signature="e#3704#3705#0" expanded="true" />
+                <element signature="e#1923#1924#0" expanded="true" />
+                <element signature="e#1953#1954#0" expanded="true" />
+                <element signature="e#3622#3623#0" expanded="true" />
+                <element signature="e#3651#3652#0" expanded="true" />
+                <element signature="e#3683#3684#0" expanded="true" />
+                <element signature="e#3712#3713#0" expanded="true" />
+                <element signature="e#3739#3740#0" expanded="true" />
+                <element signature="e#3765#3766#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/auditd.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="26" />
+            <state>
+              <caret column="17" lean-forward="true" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -357,8 +159,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/au-remote.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -366,8 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/audisp-remote.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="45">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -402,7 +204,9 @@
       <find>.replace(&quot;&quot; + cwd + &quot;/&quot;, cwd)</find>
       <find>Here</find>
       <find>showOutput</find>
+      <find>stop[</find>
       <find>get</find>
+      <find>Failed to fet</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot; + cwd + &quot;</replace>
@@ -433,7 +237,6 @@
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Log.java" />
-        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/buildMonitor/Mode.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/semmle/Mode.java" />
@@ -457,6 +260,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/audisp/auditd.conf" />
         <option value="$PROJECT_DIR$/src/main/resources/audisp/audisp-remote.conf" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Exec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/audisp/Audisp.java" />
       </list>
     </option>
@@ -544,6 +348,61 @@
               <item name="monitors" type="462c0819:PsiDirectoryNode" />
               <item name="audisp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="raptorClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="raptorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="raptorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+              <item name="initial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="audisp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -592,7 +451,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProcessTreeTest.compileFake">
+  <component name="RunManager" selected="Application.Audisp">
+    <configuration name="Audisp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="monitors.audisp.Audisp" />
+      <module name="RaptorClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="monitors.audisp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileAttributesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RaptorClient" />
       <extension name="coverage">
@@ -619,22 +491,6 @@
       <option name="PACKAGE_NAME" value="auditme" />
       <option name="MAIN_CLASS_NAME" value="auditme.FileAttributesTest" />
       <option name="METHOD_NAME" value="getInfo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileAttributesTest.populateFileInfoFakeFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RaptorClient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="auditme.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="auditme" />
-      <option name="MAIN_CLASS_NAME" value="auditme.FileAttributesTest" />
-      <option name="METHOD_NAME" value="populateFileInfoFakeFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -674,11 +530,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Audisp" />
         <item itemvalue="JUnit.ProcessTreeTest.compileFake" />
         <item itemvalue="JUnit.ProcessTreeTest.compile8cc" />
         <item itemvalue="JUnit.FileAttributesTest.getInfo" />
         <item itemvalue="JUnit.FileAttributesTest" />
-        <item itemvalue="JUnit.FileAttributesTest.populateFileInfoFakeFile" />
       </list>
     </recent_temporary>
   </component>
@@ -769,7 +625,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.03188098" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.15834218" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -777,7 +633,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32962587" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005325" side_tool="true" weight="0.3710819" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32861477" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32837406" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -995,13 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="70" selection-start-line="70" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/auditme/auditd/AuditdTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1090,13 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/auditd/Auditd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="79" column="31" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/FileOperations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-480">
@@ -1104,49 +946,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/audisp-remote.conf">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="465">
+          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+          <folding>
+            <element signature="e#1177#1178#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1923#1924#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#3622#3623#0" expanded="true" />
+            <element signature="e#3651#3652#0" expanded="true" />
+            <element signature="e#3683#3684#0" expanded="true" />
+            <element signature="e#3712#3713#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+            <element signature="e#3765#3766#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding>
+            <element signature="e#2707#2708#0" expanded="true" />
+            <element signature="e#2728#2729#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/au-remote.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/auditd.conf">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/audisp-remote.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="45">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/auditd/Auditd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
-          <folding>
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1212#1213#0" expanded="true" />
-            <element signature="e#3620#3621#0" expanded="true" />
-            <element signature="e#3650#3651#0" expanded="true" />
-            <element signature="e#3675#3676#0" expanded="true" />
-            <element signature="e#3704#3705#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1050">
+          <caret line="79" column="31" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/monitors/audisp/Audisp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="75" selection-start-line="65" selection-start-column="75" selection-end-line="65" selection-end-column="75" />
+        <state relative-caret-position="1599">
+          <caret line="129" column="28" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/auditd.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-end-line="1" />
         </state>
       </provider>
     </entry>

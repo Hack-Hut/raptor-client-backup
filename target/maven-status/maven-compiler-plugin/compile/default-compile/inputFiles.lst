@@ -48,6 +48,7 @@
 /home/luke/documents/java/RaptorClient/src/main/java/raptorClient/master/completeness/Mode.java
 /home/luke/documents/java/RaptorClient/src/main/java/docopt/Docopt.java
 /home/luke/documents/java/RaptorClient/src/main/java/docopt/OptionsShortcut.java
+/home/luke/documents/java/RaptorClient/src/main/java/monitors/audisp/Audisp.java
 /home/luke/documents/java/RaptorClient/src/main/java/monitors/auditd/Auditd.java
 /home/luke/documents/java/RaptorClient/src/main/java/utils/SystemOps.java
 /home/luke/documents/java/RaptorClient/src/main/java/raptorClient/master/Setup.java

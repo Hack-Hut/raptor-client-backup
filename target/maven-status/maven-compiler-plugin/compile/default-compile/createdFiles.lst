@@ -57,6 +57,7 @@ raptorClient/slave/buildMonitor/Linux.class
 utils/misc.class
 utils/Hash.class
 monitors/resourceMonitor/ResourceMonitor.class
+monitors/audisp/Audisp.class
 auditme/BuildInfoParser.class
 docopt/Required.class
 api/get/Build.class

@@ -1,11 +1,15 @@
 package monitors.audisp;
 
 import utils.Exec;
+import utils.FileOperations;
 import utils.Log;
+import utils.SystemOps;
 
-import java.io.File;
+import javax.swing.text.Utilities;
+import java.io.*;
 import java.net.URL;
 import java.util.Arrays;
+import java.util.Objects;
 
 /**
  *  This class is used to handle the audit dispatcher and start multiplexing the kernel audit messages
@@ -13,9 +17,9 @@ import java.util.Arrays;
  */
 public class Audisp {
 
-    private static final String NEW_AU_REMOTE_CONF_LOCATION = "audisp/au-remote.conf";
-    private static final String NEW_AUDISP_REMOTE_CONF_LOCATION = "audisp/audisp-remote.conf";
-    private static final String NEW_AUDITD_LOCATION = "audisp/auditd.conf";
+    private static final String NEW_AU_REMOTE_CONF_LOCATION = "/audisp/au-remote.conf";
+    private static final String NEW_AUDISP_REMOTE_CONF_LOCATION = "/audisp/audisp-remote.conf";
+    private static final String NEW_AUDITD_LOCATION = "/audisp/auditd.conf";
 
     private static final String AU_REMOTE_CONF = "/etc/audisp/plugins.d/au-remote.conf";
     private static final String AUDISP_CONF = "/etc/audisp/audisp-remote.conf";
@@ -46,12 +50,18 @@ public class Audisp {
             Log.error("Failed to start audisp, could not swap the configuration files.");
             return false;
         }
+        chownConfig();
         if (!startAuditd()){
             Log.error("Failed to start auditd");
             return false;
         }
         addRules();
-        return checkIfRunning();
+        if(checkIfRunning()){
+            Log.info("Audisp multiplexer running at 127.0.0.1:4987");
+            return true;
+        }
+
+        return false;
     }
 
     public boolean stopAuditd(){
@@ -69,7 +79,7 @@ public class Audisp {
         boolean audispRemoteFound = false;
 
         for(String location : audispLocations){
-            if(utils.FileOperations.exists(location)){
+            if(utils.FileOperations.exists(location + "d")){
                 audispFound = true;
             }
             if(utils.FileOperations.exists(location + "-remote")){
@@ -82,11 +92,11 @@ public class Audisp {
     }
 
     private void compileAudit(){
-        Log.info("Failed to find all necessary files for auditd. Recompiling code Auditd.");
+        Log.warn("Failed to find all necessary files for auditd. Recompiling code Auditd.");
         String[] autogenCmd = {AUDIT_SRC_LOC + "autogen.sh"};
         String[] configure = {AUDIT_SRC_LOC + "configure"};
         String[] make = {"make", "-C", AUDIT_SRC_LOC, "-j", String.valueOf(utils.SystemOps.getCPUCores())};
-        String[] makeInstall = {"make", "install" , "-C", AUDIT_SRC_LOC};
+        String[] makeInstall = {"sudo", "make", "install" , "-C", AUDIT_SRC_LOC};
 
         Log.info("Generating audit-userspace config");
         executeAndWait(autogenCmd);
@@ -101,8 +111,8 @@ public class Audisp {
     private boolean stopExistingAuditd(){
         Exec stop = new Exec(STOP_AUDITD);
         stop.execute();
-        stop.waitForProcessToDie();
-        if(stop.getPid() == 0){
+        int returnCode = stop.waitForProcessToDie();
+        if(returnCode == 0){
             Log.debug("Success: " + Arrays.toString(STOP_AUDITD));
             return true;
         }
@@ -117,16 +127,30 @@ public class Audisp {
                 && swapConfigFiles(NEW_AUDITD_LOCATION, AUDITD_CONF));
     }
 
-    private boolean swapConfigFiles(String from, String to){
-        ClassLoader classLoader = getClass().getClassLoader();
+    private void chownConfig(){
+        String[] auRemote = {"sudo", "chown", "root", AU_REMOTE_CONF};
+        String[] auditd = {"sudo", "chown", "root", AUDISP_CONF};
+        String[] audisp = {"sudo", "chown", "root", AUDITD_CONF};
+        executeAndWait(auRemote);
+        executeAndWait(auditd);
+        executeAndWait(audisp);
+    }
 
-        URL resource = classLoader.getResource(from);
-        if (resource == null) {
-            Log.error("Failed to fetch resource " + from);
-            return false;
+    private boolean swapConfigFiles(String from, String to){
+        URL fileUrl = getClass().getResource(from);
+        try(BufferedInputStream in = new BufferedInputStream(fileUrl.openStream())){
+            FileOutputStream out = new FileOutputStream(to);
+            byte[] dataBuffer = new byte[1024];
+            int bytesRead;
+            while ((bytesRead = in.read(dataBuffer, 0, 1024)) != -1) {
+                out.write(dataBuffer, 0, bytesRead);
+            }
+            return true;
+        } catch (IOException e) {
+            Log.error("Failed writing " + from + " to " + to);
+            Log.error(e.toString());
         }
-        File config = new File(resource.getFile());
-        return config.renameTo(new File(to));
+        return false;
     }
 
     private boolean startAuditd(){
@@ -170,5 +194,10 @@ public class Audisp {
         cmd.getOutput();
         Log.debug(cmd.getStdout());
         Log.debug(cmd.getStderr());
+    }
+
+    public static void main(String[] args){
+        Audisp dispatcher = new Audisp();
+        dispatcher.startAudisp();
     }
 }

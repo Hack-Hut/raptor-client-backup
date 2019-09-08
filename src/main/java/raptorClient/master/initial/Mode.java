@@ -1,5 +1,6 @@
 package raptorClient.master.initial;
 
+import monitors.audisp.Audisp;
 import monitors.auditd.Auditd;
 import monitors.bepStep.ProcessTree;
 import monitors.nullCatcher.NullCatcher;
@@ -13,6 +14,7 @@ public class Mode extends raptorClient.master.MasterController{
 
     private NullCatcher nullCatcher = new NullCatcher();
     private Auditd audit = new Auditd();
+    private Audisp audisp = new Audisp();
 
     public Mode(int buildId, String stage, String[] buildCommand){
         super(buildId, stage, buildCommand);
@@ -22,7 +24,7 @@ public class Mode extends raptorClient.master.MasterController{
     public boolean startMonitor(){
         startSysResourceMonitor();
         if (this.os.toLowerCase().equals("linux")){
-            startAuditd();
+            if(!startAudisp()) startAuditd();
             if(nullCatcher.start()){
                 Log.info("Null-Catcher started");
             }
@@ -90,6 +92,9 @@ public class Mode extends raptorClient.master.MasterController{
         audit.setupAuditing();
     }
 
+    private boolean startAudisp(){
+        return audisp.startAudisp();
+    }
 
     private void startBepStep(){
         if (os.equals("Linux")) {

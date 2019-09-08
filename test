@@ -1,2 +1,0 @@
-cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 -DBUILD_DIR="/var/lib/jenkins/workspace/raptor-client-linux/src/test/resources/testCompilationProject/8cc" -c -o debug.o debug.c
-cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 -DBUILD_DIR="/var/lib/jenkins/workspace/raptor-client-linux/src/test/resources/testCompilationProject/8cc" -c -o debug.o debug.c
