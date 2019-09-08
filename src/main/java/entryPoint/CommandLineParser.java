@@ -63,6 +63,9 @@ public final class CommandLineParser {
     }
 
     private String[] parseCmd(String command){
+        if (command == null){
+            return new String[]{};
+        }
         return command.split("\\s+");
     }
 
