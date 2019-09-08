@@ -19,7 +19,7 @@ import java.util.Set;
  */
 public class Auditd implements BuildInfoParser {
 
-    private static String auditdExecveSearchValue = "type=EXECVE";
+    private static String auditdExecveSearchValue = "exe=";
     private String auditdLocation;
     private List<String> uniqueExes;
     public List<HashMap> buildExecutableInformation;
@@ -86,19 +86,13 @@ public class Auditd implements BuildInfoParser {
      * @throws IOException: if the file executable path cannot be converted to canonical path
      */
     private static String parseExecutableLine(String auditdLine) throws IOException {
-        boolean tokenMode = false;
-        StringBuilder executablePath = new StringBuilder();
-        for (int currentChar = 0; currentChar < auditdLine.length(); currentChar++) {
-            if (auditdLine.charAt(currentChar) == '"' && !tokenMode) {
-                tokenMode = true;
-            } else if (auditdLine.charAt(currentChar) == '"' && tokenMode) {
-                break;
-            } else if (currentChar != '"' && tokenMode) {
-                executablePath.append(auditdLine.charAt(currentChar));
-            }
+        String[] split = auditdLine.split("exe=\"");
+        if (split.length > 1){
+            return cleanLine(split[1].split("\"")[0]);
         }
-        return cleanLine(executablePath.toString());
+        return "";
     }
+
 
     private static String cleanLine(String executable) throws IOException{
         File f = new File(executable);
