@@ -17,7 +17,7 @@ class AuditdTest {
 
     @Test
     void parseReal() {
-        if (os.equals("windows")) return;
+        if (!os.equals("linux")) return;
         Auditd tester = new auditme.auditd.Auditd(realAuditd);
         List<String> expected = new ArrayList<>();
         List<String> results = tester.parse();
