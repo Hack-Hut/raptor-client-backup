@@ -3,6 +3,7 @@ package auditme.auditd;
 import auditme.BuildInfoParser;
 import utils.Log;
 
+import javax.inject.Inject;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,7 +19,6 @@ import java.util.Set;
  * This class is used to handle Auditd log files.
  */
 public class Auditd implements BuildInfoParser {
-
     private static String auditdExecveSearchValue = "exe=";
     private String auditdLocation;
     private List<String> uniqueExes;

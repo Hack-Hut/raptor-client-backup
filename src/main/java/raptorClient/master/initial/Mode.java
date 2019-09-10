@@ -7,14 +7,15 @@ import monitors.nullCatcher.NullCatcher;
 import utils.Exec;
 import utils.Log;
 
+import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Mode extends raptorClient.master.MasterController{
 
-    private NullCatcher nullCatcher = new NullCatcher();
-    private Auditd audit = new Auditd();
-    private Audisp audisp = new Audisp();
+    @Inject private NullCatcher nullCatcher = new NullCatcher();
+    @Inject private Auditd audit = new Auditd();
+    @Inject private Audisp audisp = new Audisp();
 
     public Mode(int buildId, String stage, String[] buildCommand){
         super(buildId, stage, buildCommand);
