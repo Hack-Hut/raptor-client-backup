@@ -23,7 +23,6 @@ public abstract class MasterController {
     protected String machineStatus;
     protected String buildName;
     protected Map<String, String> env;
-    protected masterNode.MasterNode masterNode = new masterNode.MasterNode();
     protected String stdout;
     protected String stderr;
     protected long returnCode;

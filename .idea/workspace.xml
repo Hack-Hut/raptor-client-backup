@@ -2,116 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bec66e-2aa3-4603-8963-dce466f4f44b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.attach_pid12625" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.attach_pid12709" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/MonitorInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/FileAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auditme/FileAttributes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/communicator/slave/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entryPoint/CommandLineParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entryPoint/CommandLineParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entryPoint/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entryPoint/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/CPUMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/CPUMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/Linux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/Linux.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/bep-step.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/bep-step.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/raptor-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/raptor-log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/masterNode/MasterNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/auditd/Auditd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/Auditd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/NullCatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/buildMonitor/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/buildMonitor/Mode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/semmle/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/semmle/Mode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Exec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Exec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/FileOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FileOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Hash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/TestHash.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/miscTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Raptor-Client-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Raptor-Client-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Raptor-Client-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/get/Build.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/get/Build.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/get/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/get/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/update/Build.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/update/Build.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/update/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/update/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/BuildInfoParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auditme/BuildInfoParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/FileAttributes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auditme/FileAttributes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/Plugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auditme/Plugin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/auditd/Auditd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auditme/auditd/Auditd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/procmon/Procmon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auditme/procmon/Procmon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/communicator/slave/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Argument.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Argument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/BranchPattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/BranchPattern.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Docopt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Docopt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/DocoptExitException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/DocoptExitException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/DocoptLanguageError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/DocoptLanguageError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Either$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Either$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Either.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Either.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/LeafPattern$SingleMatchResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/LeafPattern$SingleMatchResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/LeafPattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/LeafPattern.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/OneOrMore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/OneOrMore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Option.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Option.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Optional.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Optional.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/OptionsShortcut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/OptionsShortcut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Pattern$MatchResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Pattern$MatchResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Pattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Pattern.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Python$Re.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Python$Re.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Python.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Python.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Required.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Required.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/docopt/Tokens.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/docopt/Tokens.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/Setup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/Setup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/buildMonitor/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/BuildMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/Completeness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/Initial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/semmle/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/Semmle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entryPoint/CommandLineParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entryPoint/CommandLineParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entryPoint/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entryPoint/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/masterNode/MasterNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/masterNode/MasterNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/masterNode/MasterNodeInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/masterNode/MasterNodeInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/auditd/Auditd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/auditd/Auditd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/linux/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/bepStep/linux/Process.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/windows/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/bepStep/windows/Process.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/nullCatcher/NullCatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/nullCatcher/NullCatcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/CPUMonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/CPUMonitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Linux.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Linux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceMonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceMonitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/SetupJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/SetupJob.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/findServer/FindHost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/findServer/FindHost.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/findServer/ScanNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/findServer/ScanNetwork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/masterNode/MasterNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/masterNode/MasterNodeInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/auditd/Auditd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/nullCatcher/NullCatcher.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/MasterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/MasterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/Setup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/Setup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/buildMonitor/Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/buildMonitor/Mode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/completeness/Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/completeness/Mode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/initial/Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/initial/Mode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/semmle/Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/semmle/Mode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/Setup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/Setup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/buildMonitor/Linux.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/buildMonitor/Linux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/buildMonitor/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/buildMonitor/Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/completeness/Linux.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/completeness/Linux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/completeness/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/completeness/Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/initial/Linux.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/initial/Linux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/initial/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/initial/Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/semmel/Linux.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/semmel/Linux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/slave/semmel/Windows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/slave/semmel/Windows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Exec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Exec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/FileOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/FileOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Hash.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Hash.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Log$Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Log$Logger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Log.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/Networking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Networking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/SystemOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/SystemOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/misc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/misc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/buildMonitor/Mode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/completeness/Mode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/initial/Mode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/semmle/Mode.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/RaptorClient.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/TestHash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/miscTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../raptor-client/raptor-client.iml" afterDir="false" />
@@ -171,42 +87,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Initial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/auditd/Auditd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="79" column="31" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/audisp/Audisp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+            <state relative-caret-position="1140">
+              <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-              <folding>
                 <element signature="e#466#467#0" expanded="true" />
                 <element signature="e#517#518#0" expanded="true" />
                 <element signature="e#2707#2708#0" expanded="true" />
@@ -217,40 +104,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/Auditd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            <state relative-caret-position="525">
+              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/BuildMonitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+            <state relative-caret-position="240">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="97" column="31" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Semmle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/audisp/Audisp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
               <folding>
-                <element signature="e#1177#1178#0" expanded="true" />
-                <element signature="e#1212#1213#0" expanded="true" />
-                <element signature="e#1923#1924#0" expanded="true" />
-                <element signature="e#1953#1954#0" expanded="true" />
-                <element signature="e#3622#3623#0" expanded="true" />
-                <element signature="e#3651#3652#0" expanded="true" />
-                <element signature="e#3683#3684#0" expanded="true" />
-                <element signature="e#3712#3713#0" expanded="true" />
-                <element signature="e#3739#3740#0" expanded="true" />
-                <element signature="e#3765#3766#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/auditd.conf">
+        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/MonitorInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-end-line="1" />
+            <state relative-caret-position="30">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -265,19 +170,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/audisp-remote.conf">
+        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/NullCatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="31" />
+            <state relative-caret-position="60">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entryPoint/CommandLineParser.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/auditme/FileAttributes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="934">
-              <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+            <state relative-caret-position="930">
+              <caret line="64" column="25" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -289,6 +194,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -303,6 +209,7 @@
       <find>get</find>
       <find>Failed to fet</find>
       <find>ENABLE_AUDITD</find>
+      <find>new</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot; + cwd + &quot;</replace>
@@ -324,13 +231,11 @@
         <option value="$PROJECT_DIR$/src/test/java/utils/miscTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/Linux.java" />
-        <option value="$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/CPUMonitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/communicator/slave/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/docopt/BranchPattern.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" />
-        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Log.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/buildMonitor/Mode.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java" />
@@ -358,6 +263,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/MonitorInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/NullCatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/auditd/Auditd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/Auditd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/Initial.java" />
       </list>
     </option>
   </component>
@@ -433,23 +345,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="auditme" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="auditme" type="462c0819:PsiDirectoryNode" />
-              <item name="auditd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="raptorClient" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -466,22 +361,6 @@
               <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="raptorClient" type="462c0819:PsiDirectoryNode" />
-              <item name="master" type="462c0819:PsiDirectoryNode" />
-              <item name="initial" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RaptorClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -510,11 +389,14 @@
       <recent name="auditme.auditd" />
       <recent name="utils" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="utils" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="monitors" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -705,8 +587,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.15834218" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.15834218" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -736,9 +618,6 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/update/Project.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -757,17 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/nullCatcher/NullCatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
-          <folding>
-            <element signature="e#2634#2635#0" expanded="true" />
-            <element signature="e#2689#2690#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -804,27 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/buildMonitor/Mode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/completeness/Mode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/semmle/Mode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
@@ -882,13 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/auditme/FileAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="64" column="25" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/auditme/Plugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -897,24 +737,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/entryPoint/MainTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/masterNode/MasterNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="97" selection-start-line="97" selection-end-line="100" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1003,24 +829,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/auditd/Auditd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="79" column="31" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/auditd.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="17" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/au-remote.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1038,27 +850,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/audisp/Audisp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1081,11 +883,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/initial/Mode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Completeness.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/MonitorInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/Auditd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/masterNode/MasterNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/BuildMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/au-remote.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/audisp/Audisp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
           <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/NullCatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/auditme/FileAttributes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="64" column="25" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="97" column="31" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Semmle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Initial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#466#467#0" expanded="true" />
             <element signature="e#517#518#0" expanded="true" />
             <element signature="e#2707#2708#0" expanded="true" />

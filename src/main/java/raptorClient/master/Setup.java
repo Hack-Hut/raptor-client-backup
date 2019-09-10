@@ -77,13 +77,13 @@ public class Setup implements SetupJob {
     private MasterController getController(){
         switch (stage){
             case "initial":
-                return new raptorClient.master.initial.Mode(buildID, stage, command);
+                return new Initial(buildID, stage, command);
             case "completeness":
-                return new raptorClient.master.completeness.Mode(buildID, stage, command);
+                return new Completeness(buildID, stage, command);
             case "bm":
-                return new raptorClient.master.buildMonitor.Mode(buildID, stage, command);
+                return new BuildMonitor(buildID, stage, command);
             case "semmle":
-                return new raptorClient.master.semmle.Mode(buildID, stage, command);
+                return new Semmle(buildID, stage, command);
             default:
                 Log.error("Failed to find the correct mode");
                 Log.error("Expected: initial, completeness, bm, semmle");

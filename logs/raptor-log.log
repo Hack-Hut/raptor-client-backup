@@ -138,3 +138,23 @@
 00:00 DEBUG: Stopping the bep-step thread.
 00:01  INFO: Stopping the system resource monitor thread.
 00:01 DEBUG: Stopping the CPU System monitor thread.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: -1
+00:00  INFO: Build Script ran 0 different Shell/Python scripts.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 12006
+00:00  INFO: Build Script ran 18 different Shell/Python scripts.
+00:00 ERROR: java.io.FileNotFoundException: /home/luke/documents/java/RaptorClient/src/test/resources/auditme/auditd/fake (No such file or directory)
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00 ERROR: Failed: [sudo, systemctl, stop, auditd]
+00:00 ERROR: returned with exit code: 15422
+00:00 ERROR: Failed writing /audisp/au-remote.conf to /etc/audisp/plugins.d/au-remote.conf
+00:00 ERROR: java.io.FileNotFoundException: /etc/audisp/plugins.d/au-remote.conf (Permission denied)
+00:00 ERROR: Failed to start audisp, could not swap the configuration files.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: -1
+00:00  INFO: Build Script ran 0 different Shell/Python scripts.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 15568
+00:00  INFO: Build Script ran 17 different Shell/Python scripts.
+00:00 ERROR: java.io.FileNotFoundException: /home/luke/documents/java/RaptorClient/src/test/resources/auditme/auditd/fake (No such file or directory)
