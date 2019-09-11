@@ -1,6 +1,5 @@
 package monitors;
 
-import org.junit.Before;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
@@ -17,13 +16,9 @@ class NullCatcherTest {
     private static final String LOG_LOCATION = CWD + "/logs/null-catcher.log";
     private NullCatcher tester;
 
-    @Before
+    @BeforeEach
     void beforeMethod() {
         org.junit.Assume.assumeTrue(utils.SystemOps.getOsType().toLowerCase().contains("linux"));
-    }
-
-    @BeforeEach
-    private void init() {
         tester = new NullCatcher();
     }
 
