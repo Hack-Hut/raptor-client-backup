@@ -14,8 +14,9 @@ public class Initial extends raptorClient.master.MasterController{
     private NullCatcher nullCatcher;
     private Auditd audit;
     private Audisp audisp;
-    private ResourceMonitor resourceMonitor;
     private AuditInterface auditor;
+    private ResourceMonitor resourceMonitor;
+    private BepStep bepStep;
 
     public Initial(int buildId, String stage, String[] buildCommand){
         super(buildId, stage, buildCommand);
@@ -68,7 +69,6 @@ public class Initial extends raptorClient.master.MasterController{
             startBepStep();
             process.getOutput();
             sleepMainThread(10);
-            stopSysResourceMonitor();
             returnCode = process.getProcess().exitValue();
             return true;
         }
@@ -80,24 +80,28 @@ public class Initial extends raptorClient.master.MasterController{
 
     public boolean stopMonitor(){
         nullCatcher.stop();
-        return true;
-    }
-    public List<String> findSlaves(){
-        return new ArrayList<>();
-    }
-    public boolean pingSlave(){
-        return true;
-    }
-    public boolean cleanMachine(){
-        return true;
-    }
-    public boolean uploadResults(){
-        return true;
-    }
-    public boolean killSlaves(){
+        auditor.stop();
+        resourceMonitor.stop();
+        bepStep.stop();
         return true;
     }
 
+    public List<String> findSlaves(){
+        return new ArrayList<>();
+    }
+
+    public boolean cleanMachine(){
+        return true;
+    }
+
+    public boolean uploadResults(){
+        return true;
+    }
+
+    public boolean killSlaves(){
+        return true;
+    }
+    
     private void getResourceMonitorInstance(){
         resourceMonitor = new ResourceMonitor(buildId, 0, os);
     }

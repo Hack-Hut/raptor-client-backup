@@ -115,10 +115,6 @@ public abstract class MasterController {
         monitorThread.start();
     }
 
-    protected void stopSysResourceMonitor(){
-        resourceMonitor.finish();
-    }
-
     public abstract boolean startMonitors();    //Start the Monitoring tools
     public abstract boolean executeBuild();    //Execute the build
     public abstract boolean stopMonitor();     //Stop the monitoring tools
