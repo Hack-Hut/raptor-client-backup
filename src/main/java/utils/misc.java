@@ -13,4 +13,9 @@ public class misc {
         return aList;
     }
 
+    public static void setThreadName(Thread thread, Class currentClass){
+        String name = currentClass.getSimpleName();
+        Log.debug("Starting the " + name + " thread.");
+        thread.setName(name);
+    }
 }

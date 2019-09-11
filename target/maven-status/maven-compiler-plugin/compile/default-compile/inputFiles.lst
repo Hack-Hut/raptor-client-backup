@@ -59,6 +59,7 @@
 /home/luke/documents/java/RaptorClient/src/main/java/monitors/NullCatcher.java
 /home/luke/documents/java/RaptorClient/src/main/java/raptorClient/slave/buildMonitor/Linux.java
 /home/luke/documents/java/RaptorClient/src/main/java/entryPoint/Main.java
+/home/luke/documents/java/RaptorClient/src/main/java/monitors/AuditInterface.java
 /home/luke/documents/java/RaptorClient/src/main/java/monitors/resourceMonitor/ResourceMonitor.java
 /home/luke/documents/java/RaptorClient/src/main/java/docopt/Pattern.java
 /home/luke/documents/java/RaptorClient/src/main/java/utils/FileOperations.java

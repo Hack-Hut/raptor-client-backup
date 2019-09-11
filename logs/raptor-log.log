@@ -12,26 +12,40 @@
 00:00 DEBUG: All 255 threads have exited.
 00:00  WARN: Found multiple raptor servers running at the same time
 00:00  WARN: [192.168.1.100, 192.168.1.254]
-00:00 DEBUG: [PATH] /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/env:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/luke/.rvm/bin:/opt:/opt:/home/luke/.rvm/bin
+00:00 DEBUG: [PATH] /home/luke/.rvm/gems/ruby-1.9.3-p551/bin:/home/luke/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/luke/.rvm/rubies/ruby-1.9.3-p551/bin:/home/luke/.cargo/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/env:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/luke/.rvm/bin
+00:00 DEBUG: [IRBRC] /home/luke/.rvm/rubies/ruby-1.9.3-p551/.irbrc
 00:00 DEBUG: [XAUTHORITY] /home/luke/.lyxauth
-00:00 DEBUG: [SHELL] /usr/bin/zsh
-00:00 DEBUG: [TERM] xterm-256color
-00:00 DEBUG: [USER] root
+00:00 DEBUG: [rvm_bin_path] /home/luke/.rvm/bin
+00:00 DEBUG: [TERM] linux
+00:00 DEBUG: [rvm_prefix] /home/luke
 00:00 DEBUG: [LANG] en_GB.UTF-8
-00:00 DEBUG: [SUDO_USER] luke
-00:00 DEBUG: [SUDO_COMMAND] ./build.sh
+00:00 DEBUG: [DBUS_SESSION_BUS_ADDRESS] unix:path=/run/user/1000/bus
+00:00 DEBUG: [XDG_SESSION_TYPE] tty
+00:00 DEBUG: [XDG_SESSION_ID] 1
 00:00 DEBUG: [DISPLAY] :0
-00:00 DEBUG: [SUDO_GID] 985
-00:00 DEBUG: [MAIL] /var/mail/root
-00:00 DEBUG: [COLORTERM] truecolor
-00:00 DEBUG: [LOGNAME] root
-00:00 DEBUG: [LC_CTYPE] en_GB.UTF-8
-00:00 DEBUG: [SUDO_UID] 1000
-00:00 DEBUG: [LS_COLORS] rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+00:00 DEBUG: [MAIL] /var/spool/mail/luke
+00:00 DEBUG: [IDEA_JDK] /usr/lib/jvm/java-8-openjdk/
+00:00 DEBUG: [MOZ_PLUGIN_PATH] /usr/lib/mozilla/plugins
+00:00 DEBUG: [LOGNAME] luke
+00:00 DEBUG: [rvm_version] 1.29.8 (latest)
 00:00 DEBUG: [PWD] /home/luke/documents/java/RaptorClient
+00:00 DEBUG: [XDG_SESSION_CLASS] user
+00:00 DEBUG: [_] /usr/lib/jvm/java-8-openjdk//bin/java
+00:00 DEBUG: [SHELL] /bin/zsh
+00:00 DEBUG: [MY_RUBY_HOME] /home/luke/.rvm/rubies/ruby-1.9.3-p551
+00:00 DEBUG: [OLDPWD] /usr/share/idea/bin
+00:00 DEBUG: [GEM_HOME] /home/luke/.rvm/gems/ruby-1.9.3-p551
+00:00 DEBUG: [USER] luke
+00:00 DEBUG: [DESKTOP_STARTUP_ID] rofi/idea/1105-0-archie_TIME26759
+00:00 DEBUG: [WINDOWPATH] 2
+00:00 DEBUG: [rvm_path] /home/luke/.rvm
+00:00 DEBUG: [XDG_SEAT] seat0
+00:00 DEBUG: [RUBY_VERSION] ruby-1.9.3-p551
+00:00 DEBUG: [GEM_PATH] /home/luke/.rvm/gems/ruby-1.9.3-p551:/home/luke/.rvm/gems/ruby-1.9.3-p551@global
+00:00 DEBUG: [XDG_VTNR] 2
+00:00 DEBUG: [XDG_RUNTIME_DIR] /run/user/1000
+00:00 DEBUG: [HOME] /home/luke
 00:00 DEBUG: [SHLVL] 1
-00:00 DEBUG: [HOME] /root
-00:00 DEBUG: [_] /sbin/java
 00:00 DEBUG: 
 00:00  INFO: Setup Information
 00:00  INFO: --------------------------------------------------
@@ -53,122 +67,36 @@
 00:00 DEBUG: 
 00:00  INFO: Starting Monitors
 00:00  INFO: --------------------------------------------------
-00:00  INFO: Starting configurations for the auditd remote multiplexing.
-00:00  INFO: Starting the system resource monitor thread.
+00:00 DEBUG: Attempting to start /dev/null
+00:00 DEBUG: Starting the ResourceMonitorWorker thread.
 00:00 DEBUG: Starting the CPU System monitor thread.
+00:00 DEBUG: Replacing the original /dev/null file.
+00:00 DEBUG: Creating new /dev/null file
+00:00 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:00 ERROR: Could not backup original /dev/null
+00:00 ERROR: Failed to create dev/null file.
+00:00  INFO: monitors.NullCatcher@e45f292 started.
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
 00:00 DEBUG: Audisp-Remote: true
 00:00 DEBUG: Audisp: true
 00:00 DEBUG: Executing [sudo, systemctl, stop, auditd]
-00:00 DEBUG: Success: [sudo, systemctl, stop, auditd]
-00:00 DEBUG: Executing [sudo, chown, root, /etc/audisp/plugins.d/au-remote.conf]
-00:00 DEBUG: Executing [sudo, chown, root, /etc/audisp/plugins.d/au-remote.conf]
-00:00 DEBUG: 
-00:00 DEBUG: 
-00:00 DEBUG: Executing [sudo, chown, root, /etc/audisp/audisp-remote.conf]
-00:00 DEBUG: Executing [sudo, chown, root, /etc/audisp/audisp-remote.conf]
-00:00 DEBUG: 
-00:00 DEBUG: 
-00:00 DEBUG: Executing [sudo, chown, root, /etc/audit/auditd.conf]
-00:00 DEBUG: Executing [sudo, chown, root, /etc/audit/auditd.conf]
-00:00 DEBUG: 
-00:00 DEBUG: 
-00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
-00:00 DEBUG: Executing [sudo, auditd, -s, enable]
-00:00 DEBUG: Executing [sudo, systemctl, status, auditd]
-00:00 DEBUG: Executing [ps, -A]
-00:00 ERROR: Failed to start auditd
-00:00 DEBUG: Starting monitors.auditd
-00:00 DEBUG: Deleting previous auditctl rules
-00:00 DEBUG: Adding the following monitors.auditd rules
-00:00 DEBUG: [sudo, auditctl, -a, always,exit, -F, arch=b32, -S, execve]
-00:00 DEBUG: [sudo, auditctl, -a, always,exit, -F, arch=b64, -S, execve]
-00:00 DEBUG: Auditd about to start with the following rules
-00:00 DEBUG: [-a always,exit -F arch=b32 -S execve, -a always,exit -F arch=b64 -S execve]
-00:00 DEBUG: Enabling monitors.auditd
-00:00 DEBUG: sudo service auditd status returned: 
-00:00  INFO: ● auditd.service - Security Auditing Service
-00:00  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
-00:00  INFO:    Active: failed (Result: exit-code) since Sun 2019-09-08 23:10:41 BST; 49ms ago
-00:00  INFO:      Docs: man:auditd(8)
-00:00  INFO:            https://github.com/linux-audit/audit-documentation
-00:00  INFO:   Process: 6630 ExecStart=/usr/bin/auditd (code=exited, status=1/FAILURE)
-00:00  INFO: 
-00:00  INFO: Sep 08 23:10:41 archie audispd[6633]: Skipping line 8 in /etc/audisp/plugins.d/au-remote.conf: too long
-00:00  INFO: Sep 08 23:10:41 archie audispd[6633]: af_unix plugin initialized
-00:00  INFO: Sep 08 23:10:41 archie audispd[6633]: audispd initialized with q_depth=80 and 2 active plugins
-00:00  INFO: Sep 08 23:10:41 archie audisp-remote[6636]: Audisp-remote started with queue_size: 0
-00:00  INFO: Sep 08 23:10:41 archie auditd[6630]: Cannot daemonize (Interrupted system call)
-00:00  INFO: Sep 08 23:10:41 archie auditd[6630]: The audit daemon is exiting.
-00:00  INFO: Sep 08 23:10:41 archie systemd[1]: auditd.service: Control process exited, code=exited, status=1/FAILURE
-00:00  INFO: Sep 08 23:10:41 archie audisp-remote[6636]: audisp-remote is exiting on stop request, queue_size: 2
-00:00  INFO: Sep 08 23:10:41 archie systemd[1]: auditd.service: Failed with result 'exit-code'.
-00:00  INFO: Sep 08 23:10:41 archie systemd[1]: Failed to start Security Auditing Service.
-00:00 DEBUG: Attempting to start /dev/null
-00:00 DEBUG: Replacing the original /dev/null file.
-00:00 DEBUG: Creating new /dev/null file
-00:00  INFO: Null-Catcher started
-00:00 DEBUG: 
-00:00  INFO: Execute Build
-00:00  INFO: --------------------------------------------------
-00:00 DEBUG: Starting the execution thread.
-00:00 DEBUG: Executing [make, -C, src/test/resources/testCompilationProject/8cc, -j, 12]
-00:00 DEBUG: Sleeping main thread for 100 milliseconds.
-00:00  INFO: Starting the bep-step thread.
-00:00  INFO: Attaching to PID: 6676
-00:00 DEBUG: Sleeping main thread for 10 milliseconds.
-00:00  INFO: Stopping the system resource thread.
-00:00 DEBUG: 0
-00:00 DEBUG: 0
-00:00 DEBUG: 
-00:00  INFO: Stopping Monitors
-00:00  INFO: --------------------------------------------------
-00:00  INFO: Replacing /dev/null with the original
-00:00 ERROR: Failed trying to move file from /dev/null to /home/luke/documents/java/RaptorClient/logs/null-catcher.log for an unknown reason.
-00:00  WARN: Overwriting file at /dev/null
-00:00 DEBUG: 
-00:00  INFO: Processing Results
-00:00  INFO: --------------------------------------------------
-00:00 DEBUG: 
-00:00  INFO: Uploading Results
-00:00  INFO: --------------------------------------------------
-00:00 DEBUG: 
-00:00  INFO: Killing Slaves
-00:00  INFO: --------------------------------------------------
-00:00  INFO: Build Script ran 5 different Shell/Python scripts.
-00:00 DEBUG: Stopping the bep-step thread.
-00:01  INFO: Stopping the system resource monitor thread.
-00:01 DEBUG: Stopping the CPU System monitor thread.
-00:00  INFO: Starting the bep-step thread.
-00:00  INFO: Attaching to PID: -1
-00:00  INFO: Build Script ran 0 different Shell/Python scripts.
-00:00  INFO: Starting the bep-step thread.
-00:00  INFO: Attaching to PID: 12006
-00:00  INFO: Build Script ran 18 different Shell/Python scripts.
-00:00 ERROR: java.io.FileNotFoundException: /home/luke/documents/java/RaptorClient/src/test/resources/auditme/auditd/fake (No such file or directory)
-00:00  INFO: Starting configurations for the auditd remote multiplexing.
 00:00 ERROR: Failed: [sudo, systemctl, stop, auditd]
-00:00 ERROR: returned with exit code: 15422
+00:00 ERROR: returned with exit code: 6931
 00:00 ERROR: Failed writing /audisp/au-remote.conf to /etc/audisp/plugins.d/au-remote.conf
 00:00 ERROR: java.io.FileNotFoundException: /etc/audisp/plugins.d/au-remote.conf (Permission denied)
 00:00 ERROR: Failed to start audisp, could not swap the configuration files.
+00:00 ERROR: Audisp failed to setup
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00 DEBUG: Starting monitors.auditd
+00:00 DEBUG: Deleting previous auditctl rules
+00:00 ERROR: Failed to delete the monitors.auditd rules with command: [sudo, auditctl, -D]
+00:00 ERROR: Auditd failed to setup
+00:00 ERROR: Raptor failed to interact successfully with Auditd.
+00:00 ERROR: Auditd is required for initial Linux build.
 00:00  INFO: Starting the bep-step thread.
 00:00  INFO: Attaching to PID: -1
 00:00  INFO: Build Script ran 0 different Shell/Python scripts.
 00:00  INFO: Starting the bep-step thread.
-00:00  INFO: Attaching to PID: 15568
-00:00  INFO: Build Script ran 17 different Shell/Python scripts.
-00:00 ERROR: java.io.FileNotFoundException: /home/luke/documents/java/RaptorClient/src/test/resources/auditme/auditd/fake (No such file or directory)
-00:00  INFO: Starting the bep-step thread.
-00:00  INFO: Attaching to PID: -1
-00:00  INFO: Build Script ran 0 different Shell/Python scripts.
-00:00  INFO: Starting the bep-step thread.
-00:00  INFO: Attaching to PID: 17323
+00:00  INFO: Attaching to PID: 7270
 00:00  INFO: Build Script ran 20 different Shell/Python scripts.
-00:00 ERROR: java.io.FileNotFoundException: /home/luke/documents/java/RaptorClient/src/test/resources/auditme/auditd/fake (No such file or directory)
-00:00  INFO: Starting the bep-step thread.
-00:00  INFO: Attaching to PID: -1
-00:00  INFO: Build Script ran 0 different Shell/Python scripts.
-00:00  INFO: Starting the bep-step thread.
-00:00  INFO: Attaching to PID: 27828
-00:00  INFO: Build Script ran 17 different Shell/Python scripts.
 00:00 ERROR: java.io.FileNotFoundException: /home/luke/documents/java/RaptorClient/src/test/resources/auditme/auditd/fake (No such file or directory)

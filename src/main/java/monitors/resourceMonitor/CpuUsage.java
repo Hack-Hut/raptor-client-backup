@@ -6,8 +6,7 @@ import utils.Log;
 import java.lang.management.ManagementFactory;
 import java.util.concurrent.TimeUnit;
 
-public class CPUMonitor implements Runnable{
-
+public class CpuUsage implements Runnable{
     private volatile boolean exit = false;
     private double currentCPUUsage = 0;
 

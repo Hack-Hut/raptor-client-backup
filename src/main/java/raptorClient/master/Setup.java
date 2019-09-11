@@ -53,7 +53,7 @@ public class Setup implements SetupJob {
         Log.debug("");
         Log.info("Stopping Monitors");
         Log.info("--------------------------------------------------");
-        controller.stopMonitor();
+        controller.stopMonitors();
 
         System.out.println();
         Log.debug("");

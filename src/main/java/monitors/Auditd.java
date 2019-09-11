@@ -17,38 +17,13 @@ public class Auditd implements MonitorInterface, AuditInterface {
     private static final String[] SHOW_RULES = {"sudo", "auditctl", "-l"};
     private static final String[] PS= {"ps", "-A"};
 
-    //TODO change me for Suse service
     private static final String[] START_AUDITD = {"sudo", "systemctl", "start", "auditd"};
     private static final String[] DISABLE_AUDITD = {"sudo", "auditd", "-s", "disable"};
     private static final String[] ENABLE_AUDITD = {"sudo", "auditd", "-s", "enable"};
     private static final String[] STATUS_AUDITD = {"sudo", "systemctl", "status", "auditd"};
 
+
     public boolean setup(){
-        return true;
-    }
-
-    public boolean start(){
-        if (isAuditdRunning()){
-            executeCommandGetOutput(START_AUDITD);
-            if(!isAuditdRunning()){
-                Log.error("Failed to start monitors.auditd with " + Arrays.toString(START_AUDITD));
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public boolean stop(){
-        executeCommandGetOutput(DISABLE_AUDITD);
-        return true;
-    }
-
-    public Set<String> getExecutables(){
-        //TODO getExecutables auditd
-        return new HashSet<>();
-    }
-
-    private boolean setupAuditing(){
         Log.debug("Starting monitors.auditd");
         if (!start()){
             return false;
@@ -77,6 +52,27 @@ public class Auditd implements MonitorInterface, AuditInterface {
         return true;
     }
 
+    public boolean start(){
+        if (isAuditdRunning()){
+            executeCommandGetOutput(START_AUDITD);
+            if(!isAuditdRunning()){
+                Log.error("Failed to start monitors.auditd with " + Arrays.toString(START_AUDITD));
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean stop(){
+        executeCommandGetOutput(DISABLE_AUDITD);
+        return true;
+    }
+
+    public Set<String> getExecutables(){
+        //TODO getExecutables auditd
+        return new HashSet<>();
+    }
+
     private boolean isAuditdRunning(){
         for (String line : executeCommandGetOutput(PS)) {
             if (line.contains("monitors/auditd")) return true;
@@ -95,14 +91,5 @@ public class Auditd implements MonitorInterface, AuditInterface {
         if(rules.size() == 1) first = rules.get(0);
         else return false;
         return first.contains("No rules");
-    }
-
-
-
-    public static void main(String args[]){
-        Log.clearLogs();
-        Log.set(0);
-        Auditd test = new Auditd();
-        System.out.println(test.setupAuditing());
     }
 }

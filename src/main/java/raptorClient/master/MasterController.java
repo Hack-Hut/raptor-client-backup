@@ -1,7 +1,7 @@
 package raptorClient.master;
 
+import monitors.ResourceMonitor;
 import raptorClient.findServer.ScanNetwork;
-import monitors.resourceMonitor.ResourceMonitor;
 import utils.Exec;
 import utils.Log;
 import utils.Networking;
@@ -110,14 +110,18 @@ public abstract class MasterController {
         }
     }
 
-    protected void startSysResourceMonitor(){
-        Thread monitorThread = new Thread(resourceMonitor);
-        monitorThread.start();
+    protected void startResourceMonitor(){
+        resourceMonitor = new ResourceMonitor();
+        resourceMonitor.start();
+    }
+
+    protected void stopResourceMonitor(){
+        resourceMonitor.stop();
     }
 
     public abstract boolean startMonitors();    //Start the Monitoring tools
     public abstract boolean executeBuild();    //Execute the build
-    public abstract boolean stopMonitor();     //Stop the monitoring tools
+    public abstract boolean stopMonitors();     //Stop the monitoring tools
     public abstract boolean processResults();  //Process the results
     public abstract boolean uploadResults();   //Upload the results to the server
 }

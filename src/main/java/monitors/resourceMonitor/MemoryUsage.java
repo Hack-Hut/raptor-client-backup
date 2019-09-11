@@ -8,34 +8,50 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Linux implements ResourceInterface {
-    private final static String MEM_LOC = "/proc/meminfo";
+interface MemoryUsageInterface {
+    int getUsedMemory();
+    int getFreeMemory();
+    int getTotalMemory();
+}
 
-    public Integer getFreeMemKB(){
+class MemoryUsageLinux implements MemoryUsageInterface {
+    private final static String MEM_LOC = "/proc/meminfo";
+    private int totalMemoryMB = 0;
+    private int freeMemoryMB = 0;
+
+    @Override
+    public int getUsedMemory() {
+        return totalMemoryMB - freeMemoryMB;
+    }
+
+    @Override
+    public int getFreeMemory() {
         ArrayList<String> memInfo = readFile();
-        Integer memKB = 0;
+        int memKB = 0;
         for (String line : memInfo){
             if (line.contains("MemFree:")){
                 memKB = parseMemLine(line);
             }
         }
-        return memKB;
+        freeMemoryMB = memKB * 1024;
+        return freeMemoryMB;
     }
 
-    public Integer getTotalMemKB(){
+    @Override
+    public int getTotalMemory() {
         ArrayList<String> memInfo = readFile();
-        Integer memKB = 0;
+        int memKB = 0;
         for (String line : memInfo){
             if (line.contains("MemTotal:")){
                 memKB = parseMemLine(line);
             }
         }
-        return memKB;
+        totalMemoryMB = memKB * 1024;
+        return totalMemoryMB;
     }
 
-
     private ArrayList<String> readFile(){
-        File f = new File(Linux.MEM_LOC);
+        File f = new File(MEM_LOC);
         ArrayList<String> lines = new ArrayList<>();
 
         try (BufferedReader b = new BufferedReader(new FileReader(f))){
@@ -61,7 +77,6 @@ public class Linux implements ResourceInterface {
                 mem.append(current);
             }
             if (current == ':') colonFound = true;
-
         }
         try {
             return Integer.parseInt(mem.toString());
@@ -73,6 +88,21 @@ public class Linux implements ResourceInterface {
             return 0;
         }
     }
+}
 
+class MemoryUsageWindows implements MemoryUsageInterface{
+    @Override
+    public int getUsedMemory() {
+        return 0;
+    }
 
+    @Override
+    public int getFreeMemory() {
+        return 0;
+    }
+
+    @Override
+    public int getTotalMemory() {
+        return 0;
+    }
 }

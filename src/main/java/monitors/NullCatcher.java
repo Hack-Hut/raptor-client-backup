@@ -13,14 +13,22 @@ public class NullCatcher implements MonitorInterface {
     private final String BACKUP_LOCATION = ORIG_LOCATION + ".bk";
     private static final String CWD = new File("").getAbsolutePath();
     private static final String LOG_LOCATION = CWD + "/logs/null-catcher.log";
+    private static String SEARCH_TERM = "RAPTOR TEST";
+
 
     public boolean setup(){
         return true;
     }
 
+    /**
+     * If the file /dev/null is a special file, then swap it with a text file
+     * Then write a some test text to see if we can read it.
+     * @return if the reading of /dev/null worked.
+     */
     public boolean start(){
         // Check to see if /dev/null is the real one or the text one.
         Log.debug("Attempting to start " + ORIG_LOCATION);
+
         if (isDevNullSpecialChar("/dev/null")){
             Log.debug("Replacing the original " + ORIG_LOCATION + " file.");
             if (!createNewDevNull()){
@@ -28,7 +36,11 @@ public class NullCatcher implements MonitorInterface {
                 return false;
             }
         }
-        clearDevNull();
+
+        if (!clearDevNull()){
+            return false;
+        }
+
         if (!testDevNullCatcher()) {
             Log.error("Read from " + ORIG_LOCATION + " but did not find the test text.");
             return false;
@@ -52,7 +64,6 @@ public class NullCatcher implements MonitorInterface {
     }
 
     private boolean createNewDevNull(){
-        // assumes that dev/null is normal
         Log.debug("Creating new " + ORIG_LOCATION +" file");
         if (utils.FileOperations.exists(BACKUP_LOCATION)){
             if (isDevNullSpecialChar(BACKUP_LOCATION)) {
@@ -78,21 +89,32 @@ public class NullCatcher implements MonitorInterface {
         return utils.FileOperations.clearFile(ORIG_LOCATION);
     }
 
-    private boolean testDevNullCatcher(){
-        ArrayList<String> lines = new ArrayList<>();
-        String searchTerm = "RAPTOR TEST";
-        lines.add(searchTerm);
+    private boolean testDevNullCatcher() {
+        try {
+            if (tryTestWriteToDevNull()) {
+                return testReadFromDevNull();
+            }
+        }catch(IOException e){
+            Log.error("Testing proxied /dev/null file failed.");
+        }
+        return false;
+    }
 
-        // write to dev null
+    private boolean tryTestWriteToDevNull() throws IOException{
+        ArrayList<String> lines = new ArrayList<>();
+        lines.add(SEARCH_TERM);
         try {
             utils.FileOperations.writeToFile(ORIG_LOCATION, lines);
+            return true;
         } catch (IOException e) {
             Log.error("Test /dev/null failed");
             Log.error("Failed to write to /dev/null");
             Log.error(e.toString());
+            throw new IOException();
         }
+    }
 
-        // read from dev null
+    private boolean testReadFromDevNull() throws IOException{
         File file = new File(ORIG_LOCATION);
         try (FileInputStream fis = new FileInputStream(file)) {
             InputStreamReader isr = new InputStreamReader(fis);
@@ -100,17 +122,18 @@ public class NullCatcher implements MonitorInterface {
 
             String line;
             while((line = br.readLine()) != null){
-                if (line.contains(searchTerm)) {
+                if (line.contains(SEARCH_TERM)) {
                     br.close();
                     return true;
                 }
             }
-        br.close();
+            br.close();
+            return false;
         } catch (IOException e) {
             Log.error("Failed to read from " + ORIG_LOCATION);
             Log.error(e.toString());
+            throw new IOException();
         }
-        return false;
     }
 
 }

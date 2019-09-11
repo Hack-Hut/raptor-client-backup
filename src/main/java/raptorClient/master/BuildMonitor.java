@@ -4,10 +4,10 @@ public class BuildMonitor extends raptorClient.master.MasterController{
     public BuildMonitor(int buildId, String stage, String[] buildCommand){
         super(buildId, stage, buildCommand);
     }
-    public boolean startMonitor(){
+    public boolean startMonitors(){
         return true;
     }
-    public boolean stopMonitor(){
+    public boolean stopMonitors(){
         return true;
     }
     public boolean pingSlave(){
