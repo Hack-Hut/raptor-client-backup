@@ -179,6 +179,7 @@ public class Audisp implements MonitorInterface, AuditInterface {
             while ((bytesRead = in.read(dataBuffer, 0, 1024)) != -1) {
                 out.write(dataBuffer, 0, bytesRead);
             }
+            out.close();
             Log.debug("Inserting JAR configuration file " + from + " to " + to);
             return true;
         } catch (IOException e) {
@@ -199,7 +200,9 @@ public class Audisp implements MonitorInterface, AuditInterface {
         try {
             Thread.sleep(10);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            Log.error("Audisp interruption");
+            Log.error(e.toString());
+            Thread.currentThread().interrupt();
         }
 
         Exec ps = new Exec(PS);

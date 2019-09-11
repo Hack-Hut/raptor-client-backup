@@ -21,9 +21,15 @@ public class Worker implements Runnable{
     }
 
     private void start() throws IOException{
-        ServerSocket ss = new ServerSocket(4789);
-        Socket client = ss.accept();
-        worker(client);
+        try {
+            ServerSocket ss = new ServerSocket(4789);
+            Socket client = ss.accept();
+            worker(client);
+            ss.close();
+        }catch (IOException e){
+            Log.error("Failed to spawn Audisp local multiplexer server.");
+            throw new IOException();
+        }
     }
 
     private void worker(Socket client) throws IOException {

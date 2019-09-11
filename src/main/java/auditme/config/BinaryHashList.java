@@ -26,8 +26,7 @@ public class BinaryHashList implements ConfigGenInterface {
     }
 
     private boolean writeFile(String info) throws IOException{
-        try {
-            FileWriter fw = new FileWriter(logLocation);
+        try (FileWriter fw = new FileWriter(logLocation)){
             fw.write(info);
             fw.close();
             return true;

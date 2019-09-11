@@ -69,9 +69,9 @@ public class ResourceMonitorWorker implements Runnable{
                 elapsedTime, memoryUsageMb, memoryFreeMb, memoryTotalMb, cpuUsagePercentage);
 
         File logFile = new File(logLocation);
-        FileWriter fr = new FileWriter(logFile, true);
-        fr.write(lineToWrite);
-        fr.close();
+        try(FileWriter fr = new FileWriter(logFile, true)){
+            fr.write(lineToWrite);
+        }
     }
 
     private void sendUsageToWebServer(){
@@ -91,6 +91,7 @@ public class ResourceMonitorWorker implements Runnable{
                 Thread.sleep( 1000);
             } catch (InterruptedException e) {
                 Log.error(e.toString());
+                Thread.currentThread().interrupt();
             }
         }
         elapsedTime ++;

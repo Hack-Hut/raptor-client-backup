@@ -5,7 +5,6 @@ import utils.Exec;
 import utils.Log;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Initial extends raptorClient.master.MasterController{
@@ -137,10 +136,10 @@ public class Initial extends raptorClient.master.MasterController{
     private boolean startAMonitor(MonitorInterface monitor, String monitorName){
         Log.info("Attempting to start " + monitorName);
         if(monitor.setup()){
-            monitor.start();
+            boolean started = monitor.start();
             Log.info(monitorName + " started.");
             Log.info("");
-            return true;
+            return started;
         }
         Log.error(monitorName + " setup failed!");
         Log.info("");
