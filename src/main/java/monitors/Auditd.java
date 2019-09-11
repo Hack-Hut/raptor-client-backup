@@ -5,7 +5,6 @@ import utils.Log;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Set;
 
 import static utils.Exec.executeCommandGetOutput;
 
@@ -68,9 +67,9 @@ public class Auditd implements MonitorInterface, AuditInterface {
         return true;
     }
 
-    public Set<String> getExecutables(){
+    public Object[] getExecutables(){
         //TODO getExecutables auditd
-        return new HashSet<>();
+        return new HashSet<Object>().toArray();
     }
 
     private boolean isAuditdRunning(){

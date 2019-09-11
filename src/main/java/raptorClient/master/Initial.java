@@ -5,6 +5,7 @@ import utils.Exec;
 import utils.Log;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Initial extends raptorClient.master.MasterController{
@@ -60,6 +61,7 @@ public class Initial extends raptorClient.master.MasterController{
             System.out.println("\n");
             sleepMainThread(10);
             returnCode = process.getProcess().exitValue();
+            System.out.println(Arrays.toString(audisp.getExecutables()));
             return true;
         }
         Log.error("Execute Build command returned a process ID of 0");

@@ -87,9 +87,7 @@ public class Auditd implements BuildInfoParser {
      */
     private static String parseExecutableLine(String auditdLine) throws IOException {
         String[] split = auditdLine.split("exe=\"");
-        if (split.length > 1){
-            return cleanLine(split[1].split("\"")[0]);
-        }
+        if (split.length > 1) return cleanLine(split[1].split("\"")[0]);
         return "";
     }
 

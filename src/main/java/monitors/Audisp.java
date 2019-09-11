@@ -7,14 +7,12 @@ import utils.Log;
 import java.io.*;
 import java.net.URL;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  *  This class is used to handle the audit dispatcher and start multiplexing the kernel audit messages
  *  through a local port, so that raptor-client can then connect to it
  */
-public class Audisp implements Runnable, MonitorInterface, AuditInterface {
+public class Audisp implements MonitorInterface, AuditInterface {
 
     private static final String NEW_AU_REMOTE_CONF_LOCATION = "/audisp/au-remote.conf";
     private static final String NEW_AUDISP_REMOTE_CONF_LOCATION = "/audisp/audisp-remote.conf";
@@ -38,6 +36,8 @@ public class Audisp implements Runnable, MonitorInterface, AuditInterface {
     private static final String[] STATUS_AUDITD = {"sudo", "systemctl", "status", "auditd"};
 
     private static final String AUDIT_SRC_LOC = utils.SystemOps.getCWD() + "/resources/audit-userspace/";
+
+    private Worker worker;
 
     public boolean setup(){
         Log.info("Starting configurations for the auditd remote multiplexing.");
@@ -64,19 +64,33 @@ public class Audisp implements Runnable, MonitorInterface, AuditInterface {
     }
 
     public boolean start(){
-        //TODO start audisp
+        getAudsipWorker();
+        Thread workerThread = new Thread(worker);
+        workerThread.start();
         return true;
     }
 
     public boolean stop(){
         //TODO stop audisp
         execute(STOP_AUDITD);
+        String[] killAudit= {"sudo", "killall", "auditd"};
+        String[] killAudisp = {"sudo", "killall", "audisp"};
+        String[] killAudispd = {"sudo", "killall", "audispd"};
+        String[] killAudispRemote  = {"sudo", "killall", "audisp-remote"};
+        utils.Exec.executeCommandGetOutput(killAudit);
+        utils.Exec.executeCommandGetOutput(killAudisp);
+        utils.Exec.executeCommandGetOutput(killAudispd);
+        utils.Exec.executeCommandGetOutput(killAudispRemote);
+        worker.stop();
         return checkIfRunning();
     }
 
-    public Set<String> getExecutables(){
-        //TODO getExecutables audisp
-        return new HashSet<>();
+    public Object[] getExecutables(){
+        return worker.getExecutables();
+    }
+
+    private void getAudsipWorker(){
+        worker = new Worker();
     }
 
     /**
@@ -207,15 +221,6 @@ public class Audisp implements Runnable, MonitorInterface, AuditInterface {
         cmd.getOutput();
         Log.debug(cmd.getStdout());
         Log.debug(cmd.getStderr());
-    }
-
-    public void run(){
-        Worker worker = new Worker();
-        try {
-            worker.loop();
-        } catch (IOException e) {
-            Log.debug(e.toString());
-        }
     }
 
     public static void main(String[] args){

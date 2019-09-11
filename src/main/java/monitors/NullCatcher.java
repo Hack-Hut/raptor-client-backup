@@ -17,6 +17,14 @@ public class NullCatcher implements MonitorInterface {
 
 
     public boolean setup(){
+        try {
+            File file = new File(LOG_LOCATION);
+            file.createNewFile();
+        } catch(Exception e) {
+            Log.error("Failed to create log file at " + LOG_LOCATION);
+            Log.error(e.toString());
+            return false;
+        }
         return true;
     }
 
@@ -50,7 +58,8 @@ public class NullCatcher implements MonitorInterface {
 
     public boolean stop(){
         Log.info("Replacing " + ORIG_LOCATION + " with the original");
-        utils.FileOperations.mv(ORIG_LOCATION, LOG_LOCATION);
+        String[] cmd = {"mv", ORIG_LOCATION, LOG_LOCATION};
+        utils.Exec.executeCommandGetOutput(cmd);
         utils.FileOperations.mv(BACKUP_LOCATION, ORIG_LOCATION);
         return true;
     }

@@ -1,24 +1,24 @@
-PID: 13250
-PPID: 13237
-Command: cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 -DBUILD_DIR="/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc" -c -o gen.o gen.c 
+PID: 15077
+PPID: 15070
+Command: make -C /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc -j 12 
 Current Working Dir: /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc
-File Descriptor: [/proc/13250/fd/0, /proc/13250/fd/1, /proc/13250/fd/2]
+File Descriptor: [/proc/15077/fd/0, /proc/15077/fd/1, /proc/15077/fd/2, /proc/15077/fd/3, /proc/15077/fd/4, /proc/15077/fd/5]
 
-PID: 13260
-PPID: 13237
+PID: 15112
+PPID: 15077
 Command: cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 -DBUILD_DIR="/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc" -c -o parse.o parse.c 
 Current Working Dir: /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc
-File Descriptor: [/proc/13260/fd/0, /proc/13260/fd/1, /proc/13260/fd/2]
+File Descriptor: [/proc/15112/fd/0, /proc/15112/fd/1, /proc/15112/fd/2]
 
-PID: 13262
-PPID: 13260
-Command: /usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/cc1 -quiet -I . -D BUILD_DIR="/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc" parse.c -quiet -dumpbase parse.c -mtune=generic -march=x86-64 -auxbase-strip parse.o -g -O0 -Wall -Wno-strict-aliasing -std=gnu11 -o /tmp/cc51mW4G.s 
+PID: 15099
+PPID: 15077
+Command: cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 -DBUILD_DIR="/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc" -c -o gen.o gen.c 
 Current Working Dir: /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc
-File Descriptor: [/proc/13262/fd/0, /proc/13262/fd/1, /proc/13262/fd/2, /tmp/cc51mW4G.s, /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc/parse.c]
+File Descriptor: [/proc/15099/fd/0, /proc/15099/fd/1, /proc/15099/fd/2]
 
-PID: 13309
-PPID: 0
-Command: 
-Current Working Dir: java.nio.file.NoSuchFileException: /proc/13309/cwd
-File Descriptor: []
+PID: 15114
+PPID: 15112
+Command: /usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/cc1 -quiet -I . -D BUILD_DIR="/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc" parse.c -quiet -dumpbase parse.c -mtune=generic -march=x86-64 -auxbase-strip parse.o -g -O0 -Wall -Wno-strict-aliasing -std=gnu11 -o /tmp/ccjvUsvU.s 
+Current Working Dir: /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc
+File Descriptor: [/proc/15114/fd/0, /proc/15114/fd/1, /proc/15114/fd/2, /tmp/ccjvUsvU.s, /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc/parse.c]
 
