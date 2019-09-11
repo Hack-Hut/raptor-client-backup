@@ -42,7 +42,7 @@ class FileAttributesTest {
         HashMap<String, String> results = tester.getInfo();
 
         assertEquals("true", results.get("shouldBeProxied"), "should be proxied");
-        assertEquals("d41d8cd98f00b204e9800998ecf8427e", results.get("md5"), "md5");
-        assertEquals("e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", results.get("sha256"), "sha256");
+        assertEquals("d41d8cd98f00b204e9800998ecf8427e", results.get("MD5"), "md5");
+        assertEquals("e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", results.get("SHA256"), "sha256");
     }
 }

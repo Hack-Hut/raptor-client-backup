@@ -146,3 +146,9 @@
 00:00 DEBUG: 
 00:00  INFO: Killing Slaves
 00:00  INFO: --------------------------------------------------
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: -1
+00:00  INFO: Build Script ran 0 different Shell/Python scripts.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 21445
+00:00  INFO: Build Script ran 18 different Shell/Python scripts.
