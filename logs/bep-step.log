@@ -1,0 +1,18 @@
+PID: 19694
+PPID: 19688
+Command: make -C /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc -j 12 
+Current Working Dir: /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc
+File Descriptor: [/proc/19694/fd/0, /proc/19694/fd/1, /proc/19694/fd/2, /proc/19694/fd/3, /proc/19694/fd/4, /proc/19694/fd/5]
+
+PID: 19716
+PPID: 19694
+Command: cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 -DBUILD_DIR="/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc" -c -o parse.o parse.c 
+Current Working Dir: /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc
+File Descriptor: [/proc/19716/fd/0, /proc/19716/fd/1, /proc/19716/fd/2]
+
+PID: 19719
+PPID: 0
+Command: 
+Current Working Dir: java.nio.file.NoSuchFileException: /proc/19719/cwd
+File Descriptor: []
+

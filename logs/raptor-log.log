@@ -7,12 +7,11 @@
 00:00  INFO:  --------------------------------------------------
 00:00 DEBUG: Starting in master mode.
 00:00 DEBUG: Spawning 255 threads with thread pool size 12 to find remote host.
-00:00  INFO: Found host at 192.168.1.68:80
 00:00  INFO: Found host at 192.168.1.100:80
 00:00  INFO: Found host at 192.168.1.254:80
 00:00 DEBUG: All 255 threads have exited.
 00:00  WARN: Found multiple raptor servers running at the same time
-00:00  WARN: [192.168.1.68, 192.168.1.100, 192.168.1.254]
+00:00  WARN: [192.168.1.100, 192.168.1.254]
 00:00 DEBUG: [PATH] /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/env:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/luke/.rvm/bin:/opt:/opt:/home/luke/.rvm/bin
 00:00 DEBUG: [XAUTHORITY] /home/luke/.lyxauth
 00:00 DEBUG: [SHELL] /usr/bin/zsh
@@ -20,7 +19,7 @@
 00:00 DEBUG: [USER] root
 00:00 DEBUG: [LANG] en_GB.UTF-8
 00:00 DEBUG: [SUDO_USER] luke
-00:00 DEBUG: [SUDO_COMMAND] ./build.sh
+00:00 DEBUG: [SUDO_COMMAND] ./build-bitcoin.sh
 00:00 DEBUG: [DISPLAY] :0
 00:00 DEBUG: [SUDO_GID] 985
 00:00 DEBUG: [MAIL] /var/mail/root
@@ -39,9 +38,9 @@
 00:00  INFO: Stage: initial
 00:00  INFO: Controller: Master
 00:00  INFO: Build ID: 0
-00:00  INFO: Build Command: [src/test/resources/testCompilationProject/8cc/make_test.sh]
+00:00  INFO: Build Command: [make, -C, ../bitcoin/, -j, 12]
 00:00  INFO: Local IP address:  192.168.1.100
-00:00  INFO: Raptor IP address: 192.168.1.68
+00:00  INFO: Raptor IP address: 192.168.1.100
 00:00  INFO: Slave IP addresses: []
 00:00  INFO: Machine Status: TODO
 00:00  INFO: Build Name: TODO
@@ -68,27 +67,21 @@
 00:00 DEBUG: Audisp: true
 00:00 DEBUG: Executing [sudo, systemctl, stop, auditd]
 00:00 DEBUG: Success: [sudo, systemctl, stop, auditd]
-00:00 DEBUG: Inserting JAR configuration file /audisp/au-remote.conf to /etc/audisp/plugins.d/au-remote.conf
-00:00 DEBUG: Inserting JAR configuration file /audisp/audisp-remote.conf to /etc/audisp/audisp-remote.conf
-00:00 DEBUG: Inserting JAR configuration file /audisp/auditd.conf to /etc/audit/auditd.conf
 00:00 DEBUG: Executing [sudo, chown, root, /etc/audisp/plugins.d/au-remote.conf]
 00:00 DEBUG: Executing [sudo, chown, root, /etc/audisp/plugins.d/au-remote.conf]
+00:00 DEBUG: 
+00:00 DEBUG: 
 00:00 DEBUG: Executing [sudo, chown, root, /etc/audisp/audisp-remote.conf]
 00:00 DEBUG: Executing [sudo, chown, root, /etc/audisp/audisp-remote.conf]
+00:00 DEBUG: 
+00:00 DEBUG: 
 00:00 DEBUG: Executing [sudo, chown, root, /etc/audit/auditd.conf]
 00:00 DEBUG: Executing [sudo, chown, root, /etc/audit/auditd.conf]
+00:00 DEBUG: 
+00:00 DEBUG: 
 00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
-00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
-00:00 DEBUG: Job for auditd.service failed because the control process exited with error code.
-See "systemctl status auditd.service" and "journalctl -xe" for details.
-
 00:00 DEBUG: Executing [sudo, auditd, -s, enable]
-00:00 DEBUG: Executing [sudo, auditd, -s, enable]
-00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
-00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
-00:00 DEBUG: Job for auditd.service failed because the control process exited with error code.
-See "systemctl status auditd.service" and "journalctl -xe" for details.
-
+00:00 DEBUG: Executing [sudo, systemctl, status, auditd]
 00:00 DEBUG: Executing [ps, -A]
 00:00 DEBUG: Executing [sudo, auditctl, -D]
 00:00 DEBUG: Executing [sudo, auditctl, -a, always,exit, -F, arch=b32, -S, execve]
@@ -97,57 +90,48 @@ See "systemctl status auditd.service" and "journalctl -xe" for details.
 00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
 00:00  INFO: audisp-remote started.
 00:00  INFO: 
-00:00 DEBUG: Starting the Worker thread.
 00:00  INFO: Starting bep-step thread after build execution has started.
 00:00 DEBUG: 
 00:00  INFO: EXECUTE BUILD
 00:00  INFO: --------------------------------------------------
 00:00 DEBUG: Starting the execution thread.
-00:00 DEBUG: Executing [src/test/resources/testCompilationProject/8cc/make_test.sh]
-00:00 DEBUG: Audisp-remote: Connection established
+00:00 DEBUG: Executing [make, -C, ../bitcoin/, -j, 12]
 00:00 DEBUG: Sleeping main thread for 100 milliseconds.
+00:00 DEBUG: Sleeping main thread for 10 milliseconds.
 00:00  INFO: Starting the bep-step thread.
-00:00  INFO: Attaching to PID: 19688
-00:00 DEBUG: Sleeping main thread for 10 milliseconds.
-00:00 DEBUG: Sleeping main thread for 10 milliseconds.
-00:00 DEBUG: 
-00:00  INFO: STOPPING MONITORS
-00:00  INFO: --------------------------------------------------
-00:00  INFO: Stopping the system resource thread.
-00:00 DEBUG: Stopping the CPU System monitor thread.
-00:00  INFO: Replacing /dev/null with the original
-00:00 DEBUG: Executing [sudo, systemctl, stop, auditd]
-00:00  INFO: Build Script ran 3 different Shell/Python scripts.
-00:00 DEBUG: Stopping the bep-step thread.
-00:00 DEBUG: Executing [ps, -A]
-00:00 DEBUG: Sleeping for one second to let resource monitor thread die.
-00:00 DEBUG: Sleeping main thread for 1 milliseconds.
-00:00 DEBUG: Currently, the following threads are running
-00:00 DEBUG: Thread[process reaper,10,system]
-00:00 DEBUG: Thread[Signal Dispatcher,9,system]
-00:00 DEBUG: Thread[ResourceMonitorWorker,5,main]
-00:00 DEBUG: Thread[main,5,main]
-00:00 DEBUG: Thread[process reaper,10,system]
-00:00 DEBUG: Thread[Common-Cleaner,8,InnocuousThreadGroup]
-00:00 DEBUG: Thread[Reference Handler,10,system]
-00:00 DEBUG: Thread[Finalizer,8,system]
-00:00 DEBUG: Thread[Thread-1,5,main]
-00:00 DEBUG: Thread[process reaper,10,system]
-00:00 DEBUG: 
-00:00  INFO: PROCESSING RESULTS
-00:00  INFO: --------------------------------------------------
-00:00  INFO: Successfully generated resource-info.csv.
-00:00  INFO: Successfully generated bep-step.log.
-00:00  INFO: Successfully generated raptor-client.log.
-00:00  INFO: Successfully generated BinaryHashList.dict.
-00:00  INFO: Successfully generated null-catcher.log.
-00:00  INFO: Successfully generated raptor-log.log.
-00:01  INFO: Successfully generated BinaryHashList.dict.
-00:01 ERROR: Failed to generate PluginConfiguration.toml.
-00:01 ERROR: Failed to generate ProxyConfiguration.toml.
-00:01 DEBUG: 
-00:01  INFO: Uploading Results
-00:01  INFO: --------------------------------------------------
-00:01 DEBUG: 
-00:01  INFO: Killing Slaves
-00:01  INFO: --------------------------------------------------
+00:00  INFO: Attaching to PID: 30844
+02:39 DEBUG: Sleeping main thread for 10 milliseconds.
+02:39 DEBUG: 
+02:39  INFO: STOPPING MONITORS
+02:39  INFO: --------------------------------------------------
+02:39  INFO: Stopping the system resource thread.
+02:39 DEBUG: Stopping the CPU System monitor thread.
+02:39  INFO: Replacing /dev/null with the original
+02:39  WARN: Overwriting file at /home/luke/documents/java/RaptorClient/logs/null-catcher.log
+02:39 ERROR: Failed trying to move file from /dev/null to /home/luke/documents/java/RaptorClient/logs/null-catcher.log for an unknown reason.
+02:39  WARN: Overwriting file at /dev/null
+02:39 DEBUG: Executing [sudo, systemctl, stop, auditd]
+02:39 DEBUG: Executing [ps, -A]
+02:39  INFO: Build Script ran 657 different Shell/Python scripts.
+02:39 DEBUG: Stopping the bep-step thread.
+02:39 DEBUG: Sleeping for one second to let resource monitor thread die.
+02:39 DEBUG: Sleeping main thread for 1 milliseconds.
+02:39 DEBUG: Currently, the following threads are running
+02:39 DEBUG: Thread[process reaper,10,system]
+02:39 DEBUG: Thread[Reference Handler,10,system]
+02:39 DEBUG: Thread[Signal Dispatcher,9,system]
+02:39 DEBUG: Thread[Finalizer,8,system]
+02:39 DEBUG: Thread[process reaper,10,system]
+02:39 DEBUG: Thread[Thread-1,5,main]
+02:39 DEBUG: Thread[Common-Cleaner,8,InnocuousThreadGroup]
+02:39 DEBUG: Thread[main,5,main]
+02:39 DEBUG: Thread[ResourceMonitorWorker,5,main]
+02:39 DEBUG: 
+02:39  INFO: PROCESSING RESULTS
+02:39  INFO: --------------------------------------------------
+02:39 DEBUG: 
+02:39  INFO: Uploading Results
+02:39  INFO: --------------------------------------------------
+02:39 DEBUG: 
+02:39  INFO: Killing Slaves
+02:39  INFO: --------------------------------------------------

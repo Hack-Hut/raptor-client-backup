@@ -15,7 +15,6 @@ public class Networking {
         } catch (UnknownHostException e) {
             Log.error("Failed to get the local IP address");
             Log.error(e.toString());
-            e.printStackTrace();
             return "";
         }
     }

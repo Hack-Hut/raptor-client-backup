@@ -13,11 +13,12 @@ public class ResourceMonitor implements MonitorInterface {
     private ResourceMonitorWorker worker;
 
     public boolean setup(){
-        initLogFile();
+        clearLog();
         return true;
     }
 
     public boolean start(){
+        initLogFile();
         worker = new ResourceMonitorWorker(LOG_LOCATION);
         Thread workerThread = new Thread(worker);
         workerThread.start();
@@ -28,6 +29,11 @@ public class ResourceMonitor implements MonitorInterface {
         Log.info("Stopping the system resource thread.");
         worker.stop();
         return true;
+    }
+
+    private void clearLog(){
+        String[] cmd = {"rm", LOG_LOCATION};
+        utils.Exec.executeCommandGetOutput(cmd);
     }
 
     private void initLogFile(){

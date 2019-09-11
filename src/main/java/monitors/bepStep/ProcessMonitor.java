@@ -1,6 +1,6 @@
 package monitors.bepStep;
 
-import monitors.BepStep;
+import monitors.bepStep.linux.Process;
 import utils.Log;
 
 import java.io.File;
@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
-import monitors.bepStep.linux.Process;
 
 public class ProcessMonitor implements Runnable{
     private static String cwd = new File("").getAbsolutePath();
@@ -19,20 +18,16 @@ public class ProcessMonitor implements Runnable{
     private Integer buildScriptCount = 0;
     private boolean test = false;
     private ArrayList<String> commands = new ArrayList<>();
+    private Process rootProcess;
 
     public ProcessMonitor(long pid){
         this.pid = (int) pid;
         this.fw = getFwAndClearFile();
+        rootProcess = new Process(pid);
     }
 
-    public void setTestMode(){
-        // Changes a few things to make testing abit easier.
-        test = true;
-        try {
-            fw = new FileWriter("/dev/null");
-        } catch (IOException e) {
-            Log.error(e.toString());
-        }
+    public boolean rootProcessIsAlive(){
+        return rootProcess.isRunning();
     }
 
     private FileWriter getFwAndClearFile(){
@@ -54,8 +49,7 @@ public class ProcessMonitor implements Runnable{
         Set<Integer> allRunningBuildProcesses = new HashSet<>();
         allRunningBuildProcesses.add(pid);
         Log.info("Attaching to PID: " + pid);
-        Process rootProcess = new Process(pid);
-        while(rootProcess.isRunning()){
+        while(rootProcessIsAlive()){
             Set<Integer> potentialNewProcs = new HashSet<>();
             for (Integer proc: allRunningBuildProcesses){
                 potentialNewProcs.addAll(Process.getChildren(proc));

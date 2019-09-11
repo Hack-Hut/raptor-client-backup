@@ -172,8 +172,10 @@ public class Audisp implements MonitorInterface, AuditInterface {
 
     private boolean swapConfigFiles(String from, String to){
         URL fileUrl = getClass().getResource(from);
-        try(BufferedInputStream in = new BufferedInputStream(fileUrl.openStream())){
+        try(
             FileOutputStream out = new FileOutputStream(to);
+            BufferedInputStream in = new BufferedInputStream(fileUrl.openStream()))
+        {
             byte[] dataBuffer = new byte[1024];
             int bytesRead;
             while ((bytesRead = in.read(dataBuffer, 0, 1024)) != -1) {

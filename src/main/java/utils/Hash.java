@@ -39,7 +39,7 @@ public enum Hash{
             return toHex(digest.digest());
         }
         catch (NoSuchAlgorithmException | IOException e) {
-            e.printStackTrace();
+            Log.error(e.toString());
         }
         return null;
 
@@ -48,8 +48,6 @@ public enum Hash{
     private static String toHex(byte[] hash) {
         StringBuilder hexString = new StringBuilder();
         for (byte currentByte : hash){
-            //for (int i = 0; i < hash.length; i++) {
-
             if ((0xff & currentByte) < 0x10) {
                 hexString.append("0" + Integer.toHexString((0xFF & currentByte)));
             } else {
@@ -61,10 +59,6 @@ public enum Hash{
 
     public static void main(String args[]) {
         String file = "/tmp/monitors.auditd.log";
-        System.out.println("MD5    : " + Hash.MD5.checksum(file));
-        System.out.println("SHA1   : " + Hash.SHA1.checksum(file));
-        System.out.println("SHA256 : " + Hash.SHA256.checksum(file));
-        System.out.println("SHA512 : " + Hash.SHA512.checksum(file));
     }
 
 }

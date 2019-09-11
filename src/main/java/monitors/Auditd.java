@@ -2,6 +2,7 @@ package monitors;
 
 import utils.Log;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -26,6 +27,7 @@ public class Auditd implements MonitorInterface, AuditInterface {
     private auditme.auditd.Auditd auditParser; // TODO: refactor this, the name is stupid!
 
     public boolean setup(){
+        clearOldLog();
         Log.debug("Starting monitors.auditd");
         if (!start()){
             return false;
@@ -78,6 +80,13 @@ public class Auditd implements MonitorInterface, AuditInterface {
     public boolean generateConfigurationFiles() {
         getAuditdParser();
         return auditParser.generateConfigurationFiles();
+    }
+
+    private void clearOldLog(){
+            File auditdLogLocation = new File(AUDITD_LOG_LOCATION);
+            auditdLogLocation.delete();
+            String[] cmd = {"sudo", "rm", AUDITD_LOG_LOCATION};
+            utils.Exec.executeCommandGetOutput(cmd);
     }
 
     private void getAuditdParser(){
