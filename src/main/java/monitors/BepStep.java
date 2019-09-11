@@ -28,7 +28,7 @@ public class BepStep implements MonitorInterface{
             Thread.sleep(100);
         } catch (InterruptedException e) {
             Log.error(e.toString());
-            Thread.interrupted();
+            Thread.currentThread().interrupt();
         }
 
         return processMonitor.rootProcessIsAlive();
