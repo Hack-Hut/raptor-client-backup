@@ -1,6 +1,6 @@
 package auditme.procmon;
 
-import auditme.BuildInfoParser;
+import auditme.auditorParserInterface;
 
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -12,7 +12,7 @@ import java.util.Set;
  * This class is used to Process the Process-ResourceMonitorOld CSV's
  * @author luke
  */
-public class Procmon implements BuildInfoParser {
+public class Procmon implements auditorParserInterface {
 
     private String procmonLoc;
     private Set<String> uniqueExes;
@@ -120,5 +120,11 @@ public class Procmon implements BuildInfoParser {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public boolean generateConfigurationFiles() {
+        // TODO
+        return false;
     }
 }

@@ -1,27 +1,32 @@
 package auditme.auditd;
 
-import auditme.BuildInfoParser;
+import auditme.auditorParserInterface;
+import auditme.config.BinaryHashList;
+import auditme.config.BuildMonitorPluginList;
+import auditme.config.BuildMonitorProxyList;
+import auditme.config.ConfigGenInterface;
 import utils.Log;
 
-import javax.inject.Inject;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author luke.goddard
  * This class is used to handle Auditd log files.
  */
-public class Auditd implements BuildInfoParser {
+public class Auditd implements auditorParserInterface {
     private String auditdLocation;
     private List<String> uniqueExes;
-    public List<HashMap> buildExecutableInformation;
+    private List<HashMap> buildExecutableInformation = new ArrayList<>();
+
+    private BinaryHashList hashListMaker;
+    private BuildMonitorPluginList pluginMaker;
+    private BuildMonitorProxyList proxyMaker;
+    private boolean configurationSuccessful = true;
 
     public Auditd(String auditdLocation) {
         this.auditdLocation = auditdLocation;
@@ -32,7 +37,7 @@ public class Auditd implements BuildInfoParser {
      * Note that this list contains the absolute paths of symbolic links.
      * @return Unique list of executables
      */
-    public List<String> parse()  {
+    private List<String> parseLog()  {
         Set<String> uniqueExes = this.findUniqueExecutables();
         this.uniqueExes = utils.misc.convertSetToList(uniqueExes);
         return this.uniqueExes;
@@ -104,6 +109,47 @@ public class Auditd implements BuildInfoParser {
         }
         catch (IOException e) {
             throw new IOException();
+        }
+    }
+
+    @Override
+    public boolean generateConfigurationFiles() {
+        parseLog();
+        populateFileInformation();
+        getConfigMakers();
+
+        generateConfiguration(hashListMaker, "BinaryHashList.json");
+        generateConfiguration(pluginMaker, "PluginConfiguration.toml");
+        generateConfiguration(proxyMaker, "ProxyConfiguration.toml");
+
+        return configurationSuccessful;
+    }
+
+    private void getConfigMakers(){
+        getProxyConfigMaker();
+        getPlugingConfigMaker();
+        getBinaryListMaker();
+    }
+
+    private void getProxyConfigMaker(){
+        proxyMaker = new BuildMonitorProxyList();
+    }
+
+    private void getPlugingConfigMaker(){
+        pluginMaker = new BuildMonitorPluginList();
+    }
+
+    private void getBinaryListMaker(){
+        hashListMaker = new BinaryHashList();
+    }
+
+    private void generateConfiguration(ConfigGenInterface service, String name){
+        if (!service.generateConfigFiles(buildExecutableInformation)){
+            Log.error("Failed to generate " + name + ".");
+            configurationSuccessful = false;
+        }
+        else {
+            Log.info("Successfully generated " + name + ".");
         }
     }
 }

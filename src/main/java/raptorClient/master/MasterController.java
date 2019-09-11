@@ -112,6 +112,7 @@ public abstract class MasterController {
 
     protected void startResourceMonitor(){
         resourceMonitor = new ResourceMonitor();
+        resourceMonitor.setup();
         resourceMonitor.start();
     }
 

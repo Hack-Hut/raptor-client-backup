@@ -1,6 +1,9 @@
 package utils;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.util.ArrayList;
 
 public class SystemOps {
 
@@ -19,4 +22,16 @@ public class SystemOps {
        return new File("").getAbsolutePath();
     }
 
+    public static ArrayList<String> ls(String path){
+        File dir = new File(path);
+        File[] filesList = dir.listFiles();
+        ArrayList<String> files = new ArrayList<>();
+        if (filesList == null) return files;
+        for (File f : filesList) {
+            if( f.isFile() ){
+                files.add(f.getName());
+            }
+        }
+        return files;
+    }
 }

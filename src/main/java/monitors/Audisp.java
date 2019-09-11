@@ -38,6 +38,7 @@ public class Audisp implements MonitorInterface, AuditInterface {
     private static final String AUDIT_SRC_LOC = utils.SystemOps.getCWD() + "/resources/audit-userspace/";
 
     private Worker worker;
+    private auditme.audisp.audisp auditParser; // TODO: refactor this, the name is stupid!
 
     public boolean setup(){
         Log.info("Starting configurations for the auditd remote multiplexing.");
@@ -83,6 +84,12 @@ public class Audisp implements MonitorInterface, AuditInterface {
         utils.Exec.executeCommandGetOutput(killAudispRemote);
         worker.stop();
         return checkIfRunning();
+    }
+
+    @Override
+    public boolean generateConfigurationFiles() {
+        getAuditParser();
+        return auditParser.generateConfigurationFiles();
     }
 
     public Object[] getExecutables(){
@@ -172,6 +179,7 @@ public class Audisp implements MonitorInterface, AuditInterface {
             while ((bytesRead = in.read(dataBuffer, 0, 1024)) != -1) {
                 out.write(dataBuffer, 0, bytesRead);
             }
+            Log.debug("Inserting JAR configuration file " + from + " to " + to);
             return true;
         } catch (IOException e) {
             Log.error("Failed writing " + from + " to " + to);
@@ -181,14 +189,6 @@ public class Audisp implements MonitorInterface, AuditInterface {
     }
 
     private boolean startAuditd(){
-//        Exec startAudit = new Exec(START_AUDITD);
-//        startAudit.execute();
-//
-//        Exec enableAudit = new Exec(ENABLE_AUDITD);
-//        enableAudit.execute();
-//
-//        Exec statusAudit = new Exec(STATUS_AUDITD);
-//        statusAudit.execute();
         executeAndWait(START_AUDITD);
         executeAndWait(ENABLE_AUDITD);
         executeAndWait(START_AUDITD);
@@ -227,8 +227,13 @@ public class Audisp implements MonitorInterface, AuditInterface {
         Log.debug("Executing " + Arrays.toString(command));
         cmd.execute();
         cmd.getOutput();
-        Log.debug(cmd.getStdout());
-        Log.debug(cmd.getStderr());
+        if(!cmd.getStdout().isEmpty()) Log.debug(cmd.getStdout());
+        if(!cmd.getStderr().isEmpty()) Log.debug(cmd.getStderr());
+    }
+
+    private void getAuditParser(){
+        Object[] executableList = worker.getExecutables();
+        auditParser = new auditme.audisp.audisp(executableList);
     }
 
     public static void main(String[] args){

@@ -60,11 +60,11 @@ public class FileAttributes {
      */
     public HashMap<String, String> getInfo(){
         HashMap<String, String> fileInfo = new HashMap<String, String>();
-        fileInfo.put("path", this.path);
-        fileInfo.put("base path", this.basePath);
-        fileInfo.put("md5", this.md5);
-        fileInfo.put("sha256", this.sha256);
-        fileInfo.put("plugin", this.plugin);
+        fileInfo.put("Path", this.path);
+        fileInfo.put("BasePath", this.basePath);
+        fileInfo.put("MD5", this.md5);
+        fileInfo.put("SHA256", this.sha256);
+        fileInfo.put("Plugin", this.plugin);
         if (this.shouldBeProxied)fileInfo.put("shouldBeProxied", "true");
         else fileInfo.put("shouldBeProxied", "false");
         return fileInfo;

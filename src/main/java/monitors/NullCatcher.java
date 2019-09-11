@@ -11,8 +11,8 @@ import static utils.Exec.executeCommandGetOutput;
 public class NullCatcher implements MonitorInterface {
     private final String ORIG_LOCATION = "/dev/null";
     private final String BACKUP_LOCATION = ORIG_LOCATION + ".bk";
-    private static final String CWD = new File("").getAbsolutePath();
-    private static final String LOG_LOCATION = CWD + "/logs/null-catcher.log";
+        private static final String CWD = new File("").getAbsolutePath();
+        private static final String LOG_LOCATION = CWD + "/logs/null-catcher.log";
     private static String SEARCH_TERM = "RAPTOR TEST";
 
 

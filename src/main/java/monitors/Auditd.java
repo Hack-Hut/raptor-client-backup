@@ -21,6 +21,9 @@ public class Auditd implements MonitorInterface, AuditInterface {
     private static final String[] ENABLE_AUDITD = {"sudo", "auditd", "-s", "enable"};
     private static final String[] STATUS_AUDITD = {"sudo", "systemctl", "status", "auditd"};
 
+    private static final String AUDITD_LOG_LOCATION = "/usr1/auditd.log";
+
+    private auditme.auditd.Auditd auditParser; // TODO: refactor this, the name is stupid!
 
     public boolean setup(){
         Log.debug("Starting monitors.auditd");
@@ -68,8 +71,17 @@ public class Auditd implements MonitorInterface, AuditInterface {
     }
 
     public Object[] getExecutables(){
-        //TODO getExecutables auditd
         return new HashSet<Object>().toArray();
+    }
+
+    @Override
+    public boolean generateConfigurationFiles() {
+        getAuditdParser();
+        return auditParser.generateConfigurationFiles();
+    }
+
+    private void getAuditdParser(){
+        auditParser = new auditme.auditd.Auditd(AUDITD_LOG_LOCATION);
     }
 
     private boolean isAuditdRunning(){

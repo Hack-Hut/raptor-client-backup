@@ -1,5 +1,6 @@
 package utils;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -17,5 +18,13 @@ public class misc {
         String name = currentClass.getSimpleName();
         Log.debug("Starting the " + name + " thread.");
         thread.setName(name);
+    }
+
+    public static void showLogFileList() {
+        String cwd = new File("").getAbsolutePath();
+        String logLocation = cwd + "/logs/";
+        for(String log : utils.SystemOps.ls(logLocation)){
+            Log.info("Successfully generated " + log + ".");
+        }
     }
 }

@@ -6,7 +6,7 @@ import java.io.*;
  * @author Nathan Sweet <misc@n4te.com> */
 public class Log {
     private static String cwd = new File("").getAbsolutePath();
-    static final String logLocation = cwd + "/logs/raptor-log.log";
+    static final String logLocation = cwd + "/logs/raptor-client.log";
 
     /** No logging at all. */
     static public final int LEVEL_NONE = 6;

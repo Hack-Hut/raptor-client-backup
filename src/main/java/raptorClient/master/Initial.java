@@ -61,7 +61,6 @@ public class Initial extends raptorClient.master.MasterController{
             System.out.println("\n");
             sleepMainThread(10);
             returnCode = process.getProcess().exitValue();
-            System.out.println(Arrays.toString(auditor.getExecutables()));
             return true;
         }
         Log.error("Execute Build command returned a process ID of 0");
@@ -82,6 +81,13 @@ public class Initial extends raptorClient.master.MasterController{
 
         monitorRunning = false;
         this.logRunningThreads();
+        return true;
+    }
+
+    @Override
+    public boolean processResults(){
+        utils.misc.showLogFileList();
+        auditor.generateConfigurationFiles();
         return true;
     }
 
@@ -157,10 +163,6 @@ public class Initial extends raptorClient.master.MasterController{
         }
         return true;
     }
-    public boolean processResults() {
-        return  true;
-    }
-
     public boolean connectToSlaves() {
         return  true;
     }
