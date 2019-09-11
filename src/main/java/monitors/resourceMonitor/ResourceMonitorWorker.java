@@ -24,6 +24,7 @@ public class ResourceMonitorWorker implements Runnable{
 
     public void stop(){
         isRunning = false;
+        cpuMonitor.finish();
     }
 
     private void getCpuMonitor(){
@@ -111,5 +112,6 @@ public class ResourceMonitorWorker implements Runnable{
             }
             sleepForAMinute();
         }
+
     }
 }

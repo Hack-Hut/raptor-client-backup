@@ -21,43 +21,43 @@ public class Setup implements SetupJob {
 
         System.out.println();
         Log.debug("");
-        Log.info("Setup Information");
+        Log.info("SETUP INFORMATION");
         Log.info("--------------------------------------------------");
         controller.showSetup();
 
         System.out.println();
         Log.debug("");
-        Log.info("Clean Machine");
+        Log.info("CLEAN MACHINE");
         Log.info("--------------------------------------------------");
         controller.cleanMachine();      // Thread one
 
         System.out.println();
         Log.debug("");
-        Log.info("Connecting to Slaves");
+        Log.info("CONNECTING TO SLAVES");
         Log.info("--------------------------------------------------");
         controller.connectToSlaves();   // Thread two
 
         System.out.println();
         Log.debug("");
-        Log.info("Starting Monitors");
+        Log.info("STARTING MONITORS");
         Log.info("--------------------------------------------------");
         controller.startMonitors();
 
         System.out.println();
         Log.debug("");
-        Log.info("Execute Build");
+        Log.info("EXECUTE BUILD");
         Log.info("--------------------------------------------------");
         controller.executeBuild();
 
         System.out.println();
         Log.debug("");
-        Log.info("Stopping Monitors");
+        Log.info("STOPPING MONITORS");
         Log.info("--------------------------------------------------");
         controller.stopMonitors();
 
         System.out.println();
         Log.debug("");
-        Log.info("Processing Results");
+        Log.info("PROCESSING RESULTS");
         Log.info("--------------------------------------------------");
         controller.processResults();
 

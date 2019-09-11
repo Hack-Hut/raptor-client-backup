@@ -19,7 +19,6 @@ import java.util.Set;
  * This class is used to handle Auditd log files.
  */
 public class Auditd implements BuildInfoParser {
-    private static String auditdExecveSearchValue = "exe=";
     private String auditdLocation;
     private List<String> uniqueExes;
     public List<HashMap> buildExecutableInformation;
@@ -34,8 +33,8 @@ public class Auditd implements BuildInfoParser {
      * @return Unique list of executables
      */
     public List<String> parse()  {
-        Set<String> unqiueExes = this.findUniqueExecutables();
-        this.uniqueExes = utils.misc.convertSetToList(unqiueExes);
+        Set<String> uniqueExes = this.findUniqueExecutables();
+        this.uniqueExes = utils.misc.convertSetToList(uniqueExes);
         return this.uniqueExes;
     }
 
@@ -68,6 +67,7 @@ public class Auditd implements BuildInfoParser {
                 throw new FileNotFoundException("The path " + this.auditdLocation + " does not have read permissions.");
             }
             while ((currentLine = buffer.readLine()) != null) {
+                String auditdExecveSearchValue = "exe=";
                 if(currentLine.contains(auditdExecveSearchValue)) {
                     uniqueExecutables.add(parseExecutableLine(currentLine));
                 }

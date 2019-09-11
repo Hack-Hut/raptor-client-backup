@@ -119,6 +119,17 @@ public abstract class MasterController {
         resourceMonitor.stop();
     }
 
+    protected void logRunningThreads(){
+        if (this.stage.contains("initial")) {
+            Log.debug("Sleeping for one second to let resource monitor thread die.");
+            sleepMainThread(1);
+        }
+        Log.debug("Currently, the following threads are running");
+        for(Thread currentThread: Thread.getAllStackTraces().keySet()){
+            Log.debug(currentThread.toString());
+        }
+    }
+
     public abstract boolean startMonitors();    //Start the Monitoring tools
     public abstract boolean executeBuild();    //Execute the build
     public abstract boolean stopMonitors();     //Stop the monitoring tools
