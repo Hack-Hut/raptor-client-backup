@@ -4,10 +4,12 @@ import utils.Log;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 import static utils.Exec.executeCommandGetOutput;
 
-public class Auditd implements MonitorInterface {
+public class Auditd implements MonitorInterface, AuditInterface {
 
     private static final String[] EXECVE64 = {"sudo", "auditctl", "-a", "always,exit", "-F", "arch=b64", "-S", "execve"};
     private static final String[] EXECVE32 = {"sudo", "auditctl", "-a", "always,exit", "-F", "arch=b32", "-S", "execve"};
@@ -20,6 +22,10 @@ public class Auditd implements MonitorInterface {
     private static final String[] DISABLE_AUDITD = {"sudo", "auditd", "-s", "disable"};
     private static final String[] ENABLE_AUDITD = {"sudo", "auditd", "-s", "enable"};
     private static final String[] STATUS_AUDITD = {"sudo", "systemctl", "status", "auditd"};
+
+    public boolean setup(){
+        return true;
+    }
 
     public boolean start(){
         if (isAuditdRunning()){
@@ -35,6 +41,11 @@ public class Auditd implements MonitorInterface {
     public boolean stop(){
         executeCommandGetOutput(DISABLE_AUDITD);
         return true;
+    }
+
+    public Set<String> getExecutables(){
+        //TODO getExecutables auditd
+        return new HashSet<>();
     }
 
     private boolean setupAuditing(){

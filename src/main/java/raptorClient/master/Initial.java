@@ -1,9 +1,8 @@
 package raptorClient.master;
 
-import monitors.audisp.Audisp;
-import monitors.Auditd;
-import monitors.bepStep.ProcessTree;
-import monitors.NullCatcher;
+import monitors.*;
+import monitors.bepStep.ProcessMonitor;
+import monitors.resourceMonitor.ResourceMonitor;
 import utils.Exec;
 import utils.Log;
 
@@ -12,53 +11,47 @@ import java.util.List;
 
 public class Initial extends raptorClient.master.MasterController{
 
-    private NullCatcher nullCatcher = new NullCatcher();
-    private Auditd audit = new Auditd();
-    private Audisp audisp = new Audisp();
+    private NullCatcher nullCatcher;
+    private Auditd audit;
+    private Audisp audisp;
+    private ResourceMonitor resourceMonitor;
+    private AuditInterface auditor;
 
     public Initial(int buildId, String stage, String[] buildCommand){
         super(buildId, stage, buildCommand);
     }
 
+    public void getMonitors(){
+        getResourceMonitorInstance();
+        getNullCatcherInstance();
+        getAudispInstance();
+        getAuditInstance();
+    }
+
     @Override
-    public boolean startMonitor(){
-        startSysResourceMonitor();
-        if (this.os.toLowerCase().equals("linux")){
-            if(!startAudisp()) startAuditd();
-            if(nullCatcher.start()){
-                Log.info("Null-Catcher started");
+    public boolean startMonitors(){
+        startAMonitor(resourceMonitor);
+        if (os.contains("linux")){
+            startAMonitor(nullCatcher);
+
+            if (!startAMonitor(audisp)){
+                Log.error("Audit dispatcher failed to multiplex, falling back to slower method.");
+
+                if(!startAMonitor(audit)){
+                    Log.error("Raptor failed to interact successfully with Auditd.");
+                    Log.error("Auditd is required for initial Linux build.");
+                    System.exit(-1);
+                }
+                auditor = audit;
             }
             else{
-                Log.error("Null-Catcher failed to start.");
+                auditor = audisp;
             }
         }
         else{
-            Log.error("TODO procmon");
+            // TODO windows start monitors.
         }
         return true;
-    }
-
-    public boolean stopMonitor(){
-        nullCatcher.stop();
-        return true;
-    }
-    public List<String> findSlaves(){
-        return new ArrayList<>();
-    }
-    public boolean pingSlave(){
-        return true;
-    }
-    public boolean cleanMachine(){
-        return true;
-    }
-    public boolean uploadResults(){
-        return true;
-    }
-    public boolean killSlaves(){
-        return true;
-    }
-    public boolean processResults() {
-        return  true;
     }
 
     /**
@@ -84,6 +77,55 @@ public class Initial extends raptorClient.master.MasterController{
         Log.error("This is because the main thread (even after sleeping) got scheduled before the execution thread.");
         return false;
     }
+
+    public boolean stopMonitor(){
+        nullCatcher.stop();
+        return true;
+    }
+    public List<String> findSlaves(){
+        return new ArrayList<>();
+    }
+    public boolean pingSlave(){
+        return true;
+    }
+    public boolean cleanMachine(){
+        return true;
+    }
+    public boolean uploadResults(){
+        return true;
+    }
+    public boolean killSlaves(){
+        return true;
+    }
+
+    private void getResourceMonitorInstance(){
+        resourceMonitor = new ResourceMonitor(buildId, 0, os);
+    }
+
+    private void getNullCatcherInstance(){
+        nullCatcher = new NullCatcher();
+    }
+
+    private void getAudispInstance(){
+        audisp = new Audisp();
+    }
+
+    private void getAuditInstance(){
+        audit = new Auditd();
+    }
+
+    private boolean startAMonitor(MonitorInterface monitor){
+        if(monitor.setup()){
+            monitor.start();
+            return true;
+        }
+        Log.error(monitor.getClass().getSimpleName() + " failed to setup");
+        return false;
+    }
+
+    public boolean processResults() {
+        return  true;
+    }
     public boolean connectToSlaves() {
         return  true;
     }
@@ -93,13 +135,13 @@ public class Initial extends raptorClient.master.MasterController{
     }
 
     private boolean startAudisp(){
-        return audisp.startAudisp();
+        return audisp.start();
     }
 
     private void startBepStep(){
         if (os.equals("Linux")) {
-            ProcessTree bepStep = new ProcessTree(pid);
-            Thread bepStepThread = new Thread(bepStep);
+            ProcessMonitor processMonitor = new ProcessMonitor(pid);
+            Thread bepStepThread = new Thread(processMonitor);
             bepStepThread.start();
         }
     }

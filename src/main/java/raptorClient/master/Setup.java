@@ -41,7 +41,7 @@ public class Setup implements SetupJob {
         Log.debug("");
         Log.info("Starting Monitors");
         Log.info("--------------------------------------------------");
-        controller.startMonitor();
+        controller.startMonitors();
 
         System.out.println();
         Log.debug("");

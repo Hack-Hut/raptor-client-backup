@@ -1,16 +1,17 @@
 package monitors.bepStep;
 
+import monitors.BepStep;
 import utils.Log;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import monitors.bepStep.linux.Process;
 
-public class ProcessTree implements Runnable{
+public class ProcessMonitor implements Runnable{
     private static String cwd = new File("").getAbsolutePath();
     private static final String logLocation = cwd + "/logs/bep-step.log";
     private Integer pid;
@@ -19,7 +20,7 @@ public class ProcessTree implements Runnable{
     private boolean test = false;
     private ArrayList<String> commands = new ArrayList<>();
 
-    public ProcessTree(long pid){
+    public ProcessMonitor(long pid){
         this.pid = (int) pid;
         this.fw = getFwAndClearFile();
     }
@@ -53,11 +54,11 @@ public class ProcessTree implements Runnable{
         Set<Integer> allRunningBuildProcesses = new HashSet<>();
         allRunningBuildProcesses.add(pid);
         Log.info("Attaching to PID: " + pid);
-        monitors.bepStep.linux.Process rootProcess = new monitors.bepStep.linux.Process(pid);
+        Process rootProcess = new Process(pid);
         while(rootProcess.isRunning()){
             Set<Integer> potentialNewProcs = new HashSet<>();
             for (Integer proc: allRunningBuildProcesses){
-                potentialNewProcs.addAll(monitors.bepStep.linux.Process.getChildren(proc));
+                potentialNewProcs.addAll(Process.getChildren(proc));
             }
             // now contains newly spawned processes
             potentialNewProcs.removeAll(allRunningBuildProcesses);
@@ -83,7 +84,7 @@ public class ProcessTree implements Runnable{
 
     private void writeNewProcToLog(Set<Integer> potentialNewProcs){
         for (Integer proc: potentialNewProcs) {
-            monitors.bepStep.linux.Process rootProcess = new monitors.bepStep.linux.Process(proc);
+            Process rootProcess = new Process(proc);
             String cmd = rootProcess.getCmd();
             if (!(cmd.contains("python") | cmd.contains("sh"))) { // TODO Invert ! when out of testing phase
                 buildScriptCount ++;

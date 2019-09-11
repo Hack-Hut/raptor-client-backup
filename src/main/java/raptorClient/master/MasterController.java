@@ -41,7 +41,6 @@ public abstract class MasterController {
         machineStatus = "TODO"; //TODO when api is done
         buildName = "TODO"; //TODO when api is done
         env = getEnvironmentVariables();
-        resourceMonitor = new ResourceMonitor(buildId, 0, os);
     }
 
     public void showSetup(){
@@ -120,7 +119,7 @@ public abstract class MasterController {
         resourceMonitor.finish();
     }
 
-    public abstract boolean startMonitor();    //Start the Monitoring tools
+    public abstract boolean startMonitors();    //Start the Monitoring tools
     public abstract boolean executeBuild();    //Execute the build
     public abstract boolean stopMonitor();     //Stop the monitoring tools
     public abstract boolean processResults();  //Process the results

@@ -1,21 +1,20 @@
-package monitors.audisp;
+package monitors;
 
+import monitors.audisp.Worker;
 import utils.Exec;
-import utils.FileOperations;
 import utils.Log;
-import utils.SystemOps;
 
-import javax.swing.text.Utilities;
 import java.io.*;
 import java.net.URL;
 import java.util.Arrays;
-import java.util.Objects;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  *  This class is used to handle the audit dispatcher and start multiplexing the kernel audit messages
  *  through a local port, so that raptor-client can then connect to it
  */
-public class Audisp {
+public class Audisp implements Runnable, MonitorInterface, AuditInterface {
 
     private static final String NEW_AU_REMOTE_CONF_LOCATION = "/audisp/au-remote.conf";
     private static final String NEW_AUDISP_REMOTE_CONF_LOCATION = "/audisp/audisp-remote.conf";
@@ -40,7 +39,7 @@ public class Audisp {
 
     private static final String AUDIT_SRC_LOC = utils.SystemOps.getCWD() + "/resources/audit-userspace/";
 
-    public boolean startAudisp(){
+    public boolean setup(){
         Log.info("Starting configurations for the auditd remote multiplexing.");
         if (!findRequiredExecutables()){
             compileAudit();
@@ -64,9 +63,20 @@ public class Audisp {
         return false;
     }
 
-    public boolean stopAuditd(){
+    public boolean start(){
+        //TODO start audisp
+        return true;
+    }
+
+    public boolean stop(){
+        //TODO stop audisp
         execute(STOP_AUDITD);
         return checkIfRunning();
+    }
+
+    public Set<String> getExecutables(){
+        //TODO getExecutables audisp
+        return new HashSet<>();
     }
 
     /**
@@ -100,10 +110,13 @@ public class Audisp {
 
         Log.info("Generating audit-userspace config");
         executeAndWait(autogenCmd);
+
         Log.info("Configuring auditd-userspace");
         executeAndWait(configure);
+
         Log.info("Compiling auditd-userspace");
         executeAndWait(make);
+
         Log.info("Install auditd-userspace");
         executeAndWait(makeInstall);
     }
@@ -196,8 +209,17 @@ public class Audisp {
         Log.debug(cmd.getStderr());
     }
 
+    public void run(){
+        Worker worker = new Worker();
+        try {
+            worker.loop();
+        } catch (IOException e) {
+            Log.debug(e.toString());
+        }
+    }
+
     public static void main(String[] args){
         Audisp dispatcher = new Audisp();
-        dispatcher.startAudisp();
+        dispatcher.start();
     }
 }

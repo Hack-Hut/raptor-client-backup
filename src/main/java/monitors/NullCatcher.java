@@ -14,6 +14,10 @@ public class NullCatcher implements MonitorInterface {
     private static final String CWD = new File("").getAbsolutePath();
     private static final String LOG_LOCATION = CWD + "/logs/null-catcher.log";
 
+    public boolean setup(){
+        return true;
+    }
+
     public boolean start(){
         // Check to see if /dev/null is the real one or the text one.
         Log.debug("Attempting to start " + ORIG_LOCATION);

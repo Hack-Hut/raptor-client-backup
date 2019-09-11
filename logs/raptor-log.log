@@ -158,3 +158,17 @@
 00:00  INFO: Attaching to PID: 15568
 00:00  INFO: Build Script ran 17 different Shell/Python scripts.
 00:00 ERROR: java.io.FileNotFoundException: /home/luke/documents/java/RaptorClient/src/test/resources/auditme/auditd/fake (No such file or directory)
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: -1
+00:00  INFO: Build Script ran 0 different Shell/Python scripts.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 17323
+00:00  INFO: Build Script ran 20 different Shell/Python scripts.
+00:00 ERROR: java.io.FileNotFoundException: /home/luke/documents/java/RaptorClient/src/test/resources/auditme/auditd/fake (No such file or directory)
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: -1
+00:00  INFO: Build Script ran 0 different Shell/Python scripts.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 27828
+00:00  INFO: Build Script ran 17 different Shell/Python scripts.
+00:00 ERROR: java.io.FileNotFoundException: /home/luke/documents/java/RaptorClient/src/test/resources/auditme/auditd/fake (No such file or directory)

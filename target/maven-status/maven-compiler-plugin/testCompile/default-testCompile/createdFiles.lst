@@ -1,6 +1,5 @@
 auditme/FileAttributesTest.class
 utils/ExecTest.class
 auditme/auditd/AuditdTest.class
-monitors/bepStep/ProcessTreeTest.class
 utils/FileOperationsTest.class
 utils/HashTest.class

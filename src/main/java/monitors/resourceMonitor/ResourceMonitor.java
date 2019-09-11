@@ -1,12 +1,13 @@
 package monitors.resourceMonitor;
 
+import monitors.MonitorInterface;
 import utils.Log;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class ResourceMonitor implements Runnable{
+public class ResourceMonitor implements Runnable, MonitorInterface {
     private static final String CWD = new File("").getAbsolutePath();
     private static final String LOG_LOCATION = CWD + "/logs/resource-info.csv";
     private int buildID;
@@ -23,11 +24,20 @@ public class ResourceMonitor implements Runnable{
         this.monitor = getMonitor();
     }
 
-    public void finish(){
+    public boolean setup(){
+        return true;
+    }
+
+    public boolean start(){
+        return true;
+    }
+
+    public boolean stop(){
         Log.info("Stopping the system resource thread.");
         Log.debug(Integer.toString(this.machineID));
         Log.debug(Integer.toString(this.buildID));
         exit = true;
+        return true;
     }
 
     private void initLogFile(){

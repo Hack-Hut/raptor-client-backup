@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ProcessTreeTest {
+class ProcessMonitorTest {
     private static String cwd = utils.SystemOps.getCWD();
     private String eightcc = cwd + "/src/test/resources/testCompilationProject/8cc";
     private String os = utils.SystemOps.getOsType().toLowerCase();
@@ -34,9 +34,9 @@ class ProcessTreeTest {
             e.printStackTrace();
         }
         long pid = testProject.getPid();
-        ProcessTree bepStep = new ProcessTree(pid);
-        bepStep.setTestMode();
-        Thread bepStepThread = new Thread(bepStep);
+        ProcessMonitor processMonitor = new ProcessMonitor(pid);
+        processMonitor.setTestMode();
+        Thread bepStepThread = new Thread(processMonitor);
         bepStepThread.start();
         try {
             bepStepThread.join();
@@ -105,22 +105,22 @@ class ProcessTreeTest {
                 "-DBUILD_DIR=\"" + cwd + "/src/test/resources/testCompilationProject/8cc\"" +
                 " -c -o encoding.o encoding.c. ");
 
-        ArrayList<String> actual = bepStep.getCommands();
+        ArrayList<String> actual = processMonitor.getCommands();
         // Test is too un reliable, could be improved in the future
     }
 
     @Test
     void compileFake(){
         long pid = -1;
-        ProcessTree bepStep = new ProcessTree(pid);
-        bepStep.setTestMode();
-        Thread bepStepThread = new Thread(bepStep);
+        ProcessMonitor processMonitor = new ProcessMonitor(pid);
+        processMonitor.setTestMode();
+        Thread bepStepThread = new Thread(processMonitor);
         bepStepThread.start();
         try {
             bepStepThread.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        assertEquals(0, bepStep.getCommands().size());
+        assertEquals(0, processMonitor.getCommands().size());
     }
 }
