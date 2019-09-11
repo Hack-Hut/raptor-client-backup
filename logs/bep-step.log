@@ -1,24 +1,18 @@
-PID: 15077
-PPID: 15070
+PID: 19335
+PPID: 19329
 Command: make -C /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc -j 12 
 Current Working Dir: /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc
-File Descriptor: [/proc/15077/fd/0, /proc/15077/fd/1, /proc/15077/fd/2, /proc/15077/fd/3, /proc/15077/fd/4, /proc/15077/fd/5]
+File Descriptor: [/proc/19335/fd/0, /proc/19335/fd/1, /proc/19335/fd/2, /proc/19335/fd/3, /proc/19335/fd/4, /proc/19335/fd/5]
 
-PID: 15112
-PPID: 15077
+PID: 19358
+PPID: 19335
 Command: cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 -DBUILD_DIR="/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc" -c -o parse.o parse.c 
 Current Working Dir: /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc
-File Descriptor: [/proc/15112/fd/0, /proc/15112/fd/1, /proc/15112/fd/2]
+File Descriptor: [/proc/19358/fd/0, /proc/19358/fd/1, /proc/19358/fd/2]
 
-PID: 15099
-PPID: 15077
-Command: cc -Wall -Wno-strict-aliasing -std=gnu11 -g -I. -O0 -DBUILD_DIR="/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc" -c -o gen.o gen.c 
+PID: 19360
+PPID: 19358
+Command: /usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/cc1 -quiet -I . -D BUILD_DIR="/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc" parse.c -quiet -dumpbase parse.c -mtune=generic -march=x86-64 -auxbase-strip parse.o -g -O0 -Wall -Wno-strict-aliasing -std=gnu11 -o /tmp/cc20oN4s.s 
 Current Working Dir: /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc
-File Descriptor: [/proc/15099/fd/0, /proc/15099/fd/1, /proc/15099/fd/2]
-
-PID: 15114
-PPID: 15112
-Command: /usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/cc1 -quiet -I . -D BUILD_DIR="/home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc" parse.c -quiet -dumpbase parse.c -mtune=generic -march=x86-64 -auxbase-strip parse.o -g -O0 -Wall -Wno-strict-aliasing -std=gnu11 -o /tmp/ccjvUsvU.s 
-Current Working Dir: /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc
-File Descriptor: [/proc/15114/fd/0, /proc/15114/fd/1, /proc/15114/fd/2, /tmp/ccjvUsvU.s, /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc/parse.c]
+File Descriptor: [/proc/19360/fd/0, /proc/19360/fd/1, /proc/19360/fd/2, /tmp/cc20oN4s.s, /home/luke/documents/java/RaptorClient/src/test/resources/testCompilationProject/8cc/parse.c]
 

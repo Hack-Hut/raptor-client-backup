@@ -181,19 +181,27 @@ public class Audisp implements MonitorInterface, AuditInterface {
     }
 
     private boolean startAuditd(){
-        Exec startAudit = new Exec(START_AUDITD);
-        startAudit.execute();
-
-        Exec enableAudit = new Exec(ENABLE_AUDITD);
-        enableAudit.execute();
-
-        Exec statusAudit = new Exec(STATUS_AUDITD);
-        statusAudit.execute();
-
+//        Exec startAudit = new Exec(START_AUDITD);
+//        startAudit.execute();
+//
+//        Exec enableAudit = new Exec(ENABLE_AUDITD);
+//        enableAudit.execute();
+//
+//        Exec statusAudit = new Exec(STATUS_AUDITD);
+//        statusAudit.execute();
+        executeAndWait(START_AUDITD);
+        executeAndWait(ENABLE_AUDITD);
+        executeAndWait(START_AUDITD);
         return checkIfRunning();
     }
 
     private boolean checkIfRunning(){
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         Exec ps = new Exec(PS);
         ps.disableShowOutput();
         ps.execute();

@@ -81,8 +81,17 @@
 00:00 DEBUG: 
 00:00 DEBUG: 
 00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
+00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
+00:00 DEBUG: 
+00:00 DEBUG: 
 00:00 DEBUG: Executing [sudo, auditd, -s, enable]
-00:00 DEBUG: Executing [sudo, systemctl, status, auditd]
+00:00 DEBUG: Executing [sudo, auditd, -s, enable]
+00:00 DEBUG: 
+00:00 DEBUG: 
+00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
+00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
+00:00 DEBUG: 
+00:00 DEBUG: 
 00:00 DEBUG: Executing [ps, -A]
 00:00 DEBUG: Executing [sudo, auditctl, -D]
 00:00 DEBUG: Executing [sudo, auditctl, -a, always,exit, -F, arch=b32, -S, execve]
@@ -90,8 +99,8 @@
 00:00 DEBUG: Executing [ps, -A]
 00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
 00:00  INFO: audisp-remote started.
-00:00 DEBUG: Starting the Worker thread.
 00:00  INFO: 
+00:00 DEBUG: Starting the Worker thread.
 00:00  INFO: Starting bep-step thread after build execution has started.
 00:00 DEBUG: 
 00:00  INFO: EXECUTE BUILD
@@ -102,8 +111,10 @@
 00:00 DEBUG: Sleeping main thread for 100 milliseconds.
 00:00 DEBUG: Sleeping main thread for 10 milliseconds.
 00:00  INFO: Starting the bep-step thread.
-00:00  INFO: Attaching to PID: 15070
+00:00  INFO: Attaching to PID: 19329
 00:00 DEBUG: Sleeping main thread for 10 milliseconds.
+00:00  INFO: Build Script ran 3 different Shell/Python scripts.
+00:00 DEBUG: Stopping the bep-step thread.
 00:00 DEBUG: 
 00:00  INFO: STOPPING MONITORS
 00:00  INFO: --------------------------------------------------
@@ -111,25 +122,21 @@
 00:00 DEBUG: Stopping the CPU System monitor thread.
 00:00  INFO: Replacing /dev/null with the original
 00:00 DEBUG: Executing [sudo, systemctl, stop, auditd]
-00:00  INFO: Build Script ran 4 different Shell/Python scripts.
-00:00 DEBUG: Stopping the bep-step thread.
 00:00 DEBUG: Executing [ps, -A]
 00:00 DEBUG: Sleeping for one second to let resource monitor thread die.
 00:00 DEBUG: Sleeping main thread for 1 milliseconds.
 00:00 DEBUG: Currently, the following threads are running
-00:00 DEBUG: Thread[process reaper,10,system]
-00:00 DEBUG: Thread[Monitor Ctrl-Break,5,main]
-00:00 DEBUG: Thread[process reaper,10,system]
+00:00 DEBUG: Thread[main,5,main]
 00:00 DEBUG: Thread[Finalizer,8,system]
 00:00 DEBUG: Thread[Thread-1,5,main]
+00:00 DEBUG: Thread[Reference Handler,10,system]
+00:00 DEBUG: Thread[Common-Cleaner,8,InnocuousThreadGroup]
+00:00 DEBUG: Thread[process reaper,10,system]
 00:00 DEBUG: Thread[process reaper,10,system]
 00:00 DEBUG: Thread[process reaper,10,system]
 00:00 DEBUG: Thread[Signal Dispatcher,9,system]
-00:00 DEBUG: Thread[Common-Cleaner,8,InnocuousThreadGroup]
-00:00 DEBUG: Thread[main,5,main]
-00:00 DEBUG: Thread[process reaper,10,system]
+00:00 DEBUG: Thread[Monitor Ctrl-Break,5,main]
 00:00 DEBUG: Thread[ResourceMonitorWorker,5,main]
-00:00 DEBUG: Thread[Reference Handler,10,system]
 00:00 DEBUG: 
 00:00  INFO: PROCESSING RESULTS
 00:00  INFO: --------------------------------------------------

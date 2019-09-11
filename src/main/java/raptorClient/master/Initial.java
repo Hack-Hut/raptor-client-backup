@@ -61,7 +61,7 @@ public class Initial extends raptorClient.master.MasterController{
             System.out.println("\n");
             sleepMainThread(10);
             returnCode = process.getProcess().exitValue();
-            System.out.println(Arrays.toString(audisp.getExecutables()));
+            System.out.println(Arrays.toString(auditor.getExecutables()));
             return true;
         }
         Log.error("Execute Build command returned a process ID of 0");
