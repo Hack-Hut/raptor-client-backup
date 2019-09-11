@@ -1,6 +1,5 @@
 package monitors;
 
-import org.junit.Before;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,7 +14,7 @@ class AuditdTest {
     private static final String AUDIT_LOCATION = "/usr1/auditd.log";
     private Auditd tester;
 
-    @Before
+    @BeforeEach
     void beforeMethod() {
         org.junit.Assume.assumeTrue(utils.SystemOps.getOsType().toLowerCase().contains("linux"));
     }
