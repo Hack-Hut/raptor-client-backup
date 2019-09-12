@@ -11,6 +11,9 @@ import java.net.Socket;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Opens socket to listen to audisp-remote
+ */
 public class Worker implements Runnable{
 
     private Set<String> executables = new HashSet<>();
@@ -20,6 +23,14 @@ public class Worker implements Runnable{
         isRunning = false;
     }
 
+    /**
+     * Opens a socket then waits for the audit daemon initiate audisp-remote
+     * audisp-remote, if all things well connects to the socket that was opened
+     * This socket is kept throughout the build, and is handled by the worker method
+     * The worker method parses the auditd logs in real time.
+     *
+     * @throws IOException If it fails to create a new port.
+     */
     private void start() throws IOException{
         try (ServerSocket ss = new ServerSocket(4789)){
             Socket client = ss.accept();

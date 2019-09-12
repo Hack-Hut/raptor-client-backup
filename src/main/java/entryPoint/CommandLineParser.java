@@ -4,6 +4,9 @@ import docopt.Docopt;
 
 import java.util.Map;
 
+/**
+ * Parses the command line options.
+ */
 public final class CommandLineParser {
     private Map<String, Object> opts;
     private String mode;

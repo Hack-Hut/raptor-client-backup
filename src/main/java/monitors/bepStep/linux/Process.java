@@ -38,7 +38,6 @@ public class Process {
     }
 
     public Integer getPpid(){
-        //(4) ppid  %d
         String statFile = readProcFile(statLocation, ' ');
 
         int tokens = 0;
@@ -91,7 +90,7 @@ public class Process {
         }
     }
 
-    public static ArrayList<Integer> getListOfRunningProcesses(){
+    private static ArrayList<Integer> getListOfRunningProcesses(){
         ArrayList<Integer> runningProceses = new ArrayList<>();
         File proc = new File("/proc");
         File[] processes = proc.listFiles();
@@ -127,14 +126,5 @@ public class Process {
             return e.toString();
         }
         return data.toString();
-    }
-
-    public static void main(String args[]){
-        Process test = new Process(22025);
-        System.out.println(test.getEnviron());
-        System.out.println(test.getPpid());
-        System.out.println(test.getCmd());
-        System.out.println(test.getDescriptors());
-
     }
 }

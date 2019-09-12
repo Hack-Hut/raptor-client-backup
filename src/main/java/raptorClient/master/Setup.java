@@ -1,24 +1,21 @@
 package raptorClient.master;
 
 import raptorClient.SetupJob;
-
 import utils.Log;
 
 public class Setup implements SetupJob {
     private int buildID;
     private String[] command;
     private String stage;
-    private String os;
 
-    public Setup(int buildID, String command[], String stage){
+    public Setup(int buildID, String[] command, String stage){
         this.buildID =  buildID;
         this.command = command;
         this.stage = stage;
-        this.os = "linux";
     }
+
     public void start(){
         MasterController controller = getController();
-
         System.out.println();
         Log.debug("");
         Log.info("SETUP INFORMATION");
@@ -75,21 +72,13 @@ public class Setup implements SetupJob {
     }
 
     private MasterController getController(){
-        switch (stage){
-            case "initial":
-                return new Initial(buildID, stage, command);
-            case "completeness":
-                return new Completeness(buildID, stage, command);
-            case "bm":
-                return new BuildMonitor(buildID, stage, command);
-            case "semmle":
-                return new Semmle(buildID, stage, command);
-            default:
-                Log.error("Failed to find the correct mode");
-                Log.error("Expected: initial, completeness, bm, semmle");
-                Log.error("Actual: " + stage);
-                System.exit(-1);
-                return null;
+        ControllerFactory factory = new ControllerFactory(buildID, stage, command);
+        try {
+            return factory.get(this.stage);
+        } catch (ClassNotFoundException e) {
+            System.out.println("Failed to create the controller");
+            System.exit(-1);
         }
+        return null;
     }
 }

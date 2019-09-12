@@ -4,6 +4,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * This class is used to generate the configuration file called BinaryHashList.json
+ * This file is used to populate a database of known "safe" to proxy binaries,
+ * for the proxy kernel module
+ */
 public class BinaryHashList extends ConfigFile {
 
     BinaryHashList(String logLocation) {

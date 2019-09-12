@@ -12,32 +12,48 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * @author luke.goddard
- * This class is used to handle Auditd log files.
+ * This class parses the auditd log files and generates the relevant configuration files for
+ * Build Monitor
  */
 public class Auditd implements auditorParserInterface {
     private String auditdLocation;
     private List<String> uniqueExes;
     private List<HashMap> buildExecutableInformation = new ArrayList<>();
 
-    private BinaryHashList hashListMaker;
-    private BuildMonitorPluginList pluginMaker;
-    private BuildMonitorProxyList proxyMaker;
-    private boolean configurationSuccessful = true;
-
     public Auditd(String auditdLocation) {
         this.auditdLocation = auditdLocation;
     }
 
     /**
-     * Parses the Auditd log and then returns a unique list of executables that were found,
-     * Note that this list contains the absolute paths of symbolic links.
-     * @return Unique list of executables
+     * This method will go through the unique executables and then find their,
+     * md5, sha256, Scar plugin and determine if they need proxying.
      */
-    private List<String> parseLog()  {
+    @Override
+    public void generateExecutableFileList() {
+        for(String currentFile : this.uniqueExes){
+            auditme.FileAttributes fileInfo = new auditme.FileAttributes(currentFile);
+            fileInfo.populateFileInfo();
+            fileInfo.showFileInfo();
+            buildExecutableInformation.add(fileInfo.getInfo());
+        }
+    }
+
+    @Override
+    public boolean generateConfigurationFiles() {
+        parseLog();
+        generateExecutableFileList();
+        generateExecutableFileList();
+        return (generateConfigFile("BinaryHashList") &&
+                generateConfigFile("BuildMonitorPluginList") &&
+                generateConfigFile("BuildMonitorProxyList"));
+    }
+
+    /**
+     * Note that this list contains the absolute paths of symbolic links.
+     */
+    private void parseLog()  {
         Set<String> uniqueExes = this.findUniqueExecutables();
         this.uniqueExes = utils.misc.convertSetToList(uniqueExes);
-        return this.uniqueExes;
     }
 
     private Set<String> findUniqueExecutables(){
@@ -60,24 +76,6 @@ public class Auditd implements auditorParserInterface {
             Log.error(e.toString());
         }
         return uniqueExecutables;
-    }
-
-    /**
-     * This method will go through the unique executables and then find their,
-     * md5, sha256, Scar plugin and determine if they need proxying.
-     *
-     * WARNING, will throw NullPointerException, if parse is not called
-     * first
-     * @throws NullPointerException
-     */
-    @Override
-    public void generateExecutableFileList() {
-        for(String currentFile : this.uniqueExes){
-            auditme.FileAttributes fileInfo = new auditme.FileAttributes(currentFile);
-            fileInfo.populateFileInfo();
-            fileInfo.showFileInfo();
-            buildExecutableInformation.add(fileInfo.getInfo());
-        }
     }
 
     /**
@@ -106,16 +104,6 @@ public class Auditd implements auditorParserInterface {
         catch (IOException e) {
             throw new IOException();
         }
-    }
-
-    @Override
-    public boolean generateConfigurationFiles() {
-        parseLog();
-        generateExecutableFileList();
-        generateExecutableFileList();
-        return (generateConfigFile("BinaryHashList") &&
-                generateConfigFile("BuildMonitorPluginList") &&
-                generateConfigFile("BuildMonitorProxyList"));
     }
 
     private boolean generateConfigFile(String type){

@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * Supper class for the other configuration file classes
+ */
 public abstract class ConfigFile {
 
     private String logLocation;
