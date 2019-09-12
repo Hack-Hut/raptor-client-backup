@@ -10,13 +10,27 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * This class is used to attach to a process
+ * The process is then monitored for newly created child processes
+ * Any child process is then examined through the proc file system
+ * to get environment variables, open file descriptors etc.
+ * This information is then logged into bep-step.log. The sole idea of this
+ * log file is to aid debugging, not to be used in any reports. This is
+ * because of the following reason.
+ *
+ * Note
+ * This method has the draw back of only collecting information about
+ * a process at the exact point that it's monitored. So the information
+ * can be assumed to be accurate at some point of the processes life,
+ * but is not comprehensive.
+ */
 public class ProcessMonitor implements Runnable{
     private static String cwd = new File("").getAbsolutePath();
     private static final String logLocation = cwd + "/logs/bep-step.log";
     private Integer pid;
     private FileWriter fw;
     private Integer buildScriptCount = 0;
-    private boolean test = false;
     private ArrayList<String> commands = new ArrayList<>();
     private Process rootProcess;
 
@@ -28,6 +42,10 @@ public class ProcessMonitor implements Runnable{
 
     public boolean rootProcessIsAlive(){
         return rootProcess.isRunning();
+    }
+
+    public ArrayList<String> getCommands(){
+        return this.commands;
     }
 
     private FileWriter getFwAndClearFile(){
@@ -45,6 +63,11 @@ public class ProcessMonitor implements Runnable{
         return fw;
     }
 
+    /**
+     * While the root process is alive, query the proc file system for child
+     * processes, then log the information about the child process, then
+     * remove all no longer running processes.
+     */
     private void createTree(){
         Set<Integer> allRunningBuildProcesses = new HashSet<>();
         allRunningBuildProcesses.add(pid);
@@ -94,6 +117,7 @@ public class ProcessMonitor implements Runnable{
                     fw.write("\nFile Descriptor: " + fd);
                     //fw.write("\nEnvironment " + environ);
                     fw.write("\n\n");
+                    boolean test = false;
                     if(test){
                        commands.add(cmd);
                     }
@@ -105,10 +129,11 @@ public class ProcessMonitor implements Runnable{
         }
     }
 
-    public ArrayList<String> getCommands(){
-        return this.commands;
-    }
-
+    /**
+     * For a list of processes this method will remove the processes that
+     * are no longer running
+     * @param allProcesses: List of processes.
+     */
     private Set<Integer> purgeDeadChildren(Set<Integer> allProcesses){
         Set<Integer> deadProcesses = new HashSet<>();
         for (Integer proc: allProcesses){

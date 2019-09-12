@@ -14,6 +14,10 @@ interface MemoryUsageInterface {
     int getTotalMemory();
 }
 
+/**
+ * This class reads /proc/meminfo and then parses the file
+ * to find out the systems free, used and total memory usage.
+ */
 class MemoryUsageLinux implements MemoryUsageInterface {
     private final static String MEM_LOC = "/proc/meminfo";
     private int totalMemoryMB = 0;
@@ -93,16 +97,19 @@ class MemoryUsageLinux implements MemoryUsageInterface {
 class MemoryUsageWindows implements MemoryUsageInterface{
     @Override
     public int getUsedMemory() {
+        // TODO windows memory usage
         return 0;
     }
 
     @Override
     public int getFreeMemory() {
+        // TODO windows free memory usage
         return 0;
     }
 
     @Override
     public int getTotalMemory() {
+        // TODO windows total memory usage
         return 0;
     }
 }

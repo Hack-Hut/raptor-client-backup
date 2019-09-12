@@ -4,9 +4,12 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
+/**
+ * This class finds out information about a linux process
+ * This information is used to populate the bep-step.log
+ * file.
+ */
 public class Process {
-    private int pid;
-    private int ppid;
     private String procLocation;
     private String fileDescriptorLocation;
     private String environmentLocation;
@@ -37,6 +40,9 @@ public class Process {
         return readProcFile(commandlineLocation, ' ');
     }
 
+    /**Finds the parent process of a pid.
+     * @return ppid of a process
+     */
     public Integer getPpid(){
         String statFile = readProcFile(statLocation, ' ');
 
@@ -58,6 +64,10 @@ public class Process {
         }
     }
 
+    /**
+     * Finds all the current file descriptors for a given process
+     * @return A list of file descriptors
+     */
     public ArrayList<String> getDescriptors(){
         ArrayList<String> paths = new ArrayList<>();
         File fd = new File(fileDescriptorLocation);

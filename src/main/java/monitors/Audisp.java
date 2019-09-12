@@ -9,8 +9,20 @@ import java.net.URL;
 import java.util.Arrays;
 
 /**
- *  This class is used to handle the audit dispatcher and start multiplexing the kernel audit messages
- *  through a local port, so that raptor-client can then connect to it
+ *  This class is similar to auditd, but is a bit more advanced because it multiplexes the data
+ *  allowing realtime computation.
+ *
+ *  Auditd will do it's magic and produce a large log file, potentially +100Gb.
+ *  Rather than parsing this log file after the build has completed, wasting up to 20 minutes.
+ *  This class will tell auditd to pass the audit logs to audisp(atcher), where audisp will then
+ *  pass the logs to the audisp-remote plugin. Audisp-remote will then get configured to open a local
+ *  port and use TCP to forward the information to a remote port. In this case the remote port will be
+ *  controlled by raptor-client's audisp.Worker thread.
+ *
+ *  Note
+ *  This method is not guaranteed to work, since audisp-remote plugin is not all ways installed on the build
+ *  machine. You should not assume that the build environment is compatible with this class. Therefore if you
+ *  use this class, expect it to fail and set a fall back option of using auditd.
  */
 public class Audisp implements MonitorInterface, AuditInterface {
 
@@ -74,15 +86,13 @@ public class Audisp implements MonitorInterface, AuditInterface {
     public boolean stop(){
         //TODO stop audisp
         execute(STOP_AUDITD);
-        String[] killAudit= {"sudo", "killall", "auditd"};
-        String[] killAudisp = {"sudo", "killall", "audisp"};
-        String[] killAudispd = {"sudo", "killall", "audispd"};
-        String[] killAudispRemote  = {"sudo", "killall", "audisp-remote"};
-        utils.Exec.executeCommandGetOutput(killAudit);
-        utils.Exec.executeCommandGetOutput(killAudisp);
-        utils.Exec.executeCommandGetOutput(killAudispd);
-        utils.Exec.executeCommandGetOutput(killAudispRemote);
         worker.stop();
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            Log.error(e.toString());
+            Thread.currentThread().interrupt();
+        }
         return checkIfRunning();
     }
 

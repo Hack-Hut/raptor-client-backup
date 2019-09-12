@@ -6,6 +6,15 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * This class is used to populate the system utilization of
+ * CPU and RAM, during the build. This information, in realtime,
+ * is sent to the Raptor-Webserver. The web-server will then render
+ * a graph to display to the users so that they users can check to
+ * see if the build is freezing etc.
+ *
+ * The CPU monitor is another unique thread, that is queried by this thread.
+ */
 public class ResourceMonitorWorker implements Runnable{
 
     private boolean isRunning = true;
