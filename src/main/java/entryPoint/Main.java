@@ -28,9 +28,18 @@ public class Main {
         Log.info(" --------------------------------------------------");
     }
 
-    private void controlFlow(String args[]) {
+    private boolean initLogger(){
+        boolean res = Log.test();
         Log.clearLogs();
         Log.set(0);
+        return res;
+    }
+
+    private void controlFlow(String[] args) {
+        if(!initLogger()){
+            System.out.println("Failed to write to logger at: " + Log.getLogLocation());
+            System.exit(-1);
+        }
         banner();
         if (mode.equals("master")){
             Log.debug("Starting in master mode.");
@@ -48,7 +57,7 @@ public class Main {
         }
     }
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         Main main = new Main(args);
         main.controlFlow(args);
     }

@@ -151,3 +151,109 @@ See "systemctl status auditd.service" and "journalctl -xe" for details.
 00:01 DEBUG: 
 00:01  INFO: Killing Slaves
 00:01  INFO: --------------------------------------------------
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Stopping the system resource thread.
+00:01  INFO: Stopping the system resource thread.
+00:01 ERROR: Invalid process ID.
+00:01  INFO: Starting the bep-step thread.
+00:01  INFO: Attaching to PID: 1
+00:01  INFO: Starting the bep-step thread.
+00:01  INFO: Attaching to PID: 1
+00:01  INFO: Starting the bep-step thread.
+00:01  INFO: Attaching to PID: 1
+00:01  INFO: Starting the bep-step thread.
+00:01  INFO: Attaching to PID: 1
+00:02  INFO: Starting the bep-step thread.
+00:02  INFO: Attaching to PID: 1
+00:02  INFO: Starting the bep-step thread.
+00:02  INFO: Attaching to PID: 1
+00:02  INFO: Starting the bep-step thread.
+00:02  INFO: Attaching to PID: 1
+00:02  INFO: Starting the bep-step thread.
+00:02  INFO: Attaching to PID: 1
+00:02  INFO: Starting the bep-step thread.
+00:02  INFO: Attaching to PID: 1
+00:02  INFO: Starting the bep-step thread.
+00:02  INFO: Attaching to PID: 1
+00:02  INFO: ● auditd.service - Security Auditing Service
+00:02  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:02  INFO:    Active: failed (Result: exit-code) since Wed 2019-09-11 19:15:44 BST; 22h ago
+00:02  INFO:      Docs: man:auditd(8)
+00:02  INFO:            https://github.com/linux-audit/audit-documentation
+00:02  INFO:   Process: 19659 ExecStart=/usr/bin/auditd (code=exited, status=1/FAILURE)
+00:02  INFO: 
+00:02  INFO: Sep 11 19:15:44 archie auditd[19660]: Unable to set audit pid, exiting
+00:02  INFO: Sep 11 19:15:44 archie audispd[19662]: af_unix plugin initialized
+00:02  INFO: Sep 11 19:15:44 archie audispd[19662]: audispd initialized with q_depth=80 and 2 active plugins
+00:02  INFO: Sep 11 19:15:44 archie audisp-remote[19665]: Audisp-remote started with queue_size: 0
+00:02  INFO: Sep 11 19:15:44 archie auditd[19659]: Cannot daemonize (Interrupted system call)
+00:02  INFO: Sep 11 19:15:44 archie auditd[19659]: The audit daemon is exiting.
+00:02  INFO: Sep 11 19:15:44 archie systemd[1]: auditd.service: Control process exited, code=exited, status=1/FAILURE
+00:02  INFO: Sep 11 19:15:44 archie audisp-remote[19665]: audisp-remote is exiting on stop request, queue_size: 2
+00:02  INFO: Sep 11 19:15:44 archie systemd[1]: auditd.service: Failed with result 'exit-code'.
+00:02  INFO: Sep 11 19:15:44 archie systemd[1]: Failed to start Security Auditing Service.
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:00  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Stopping the system resource thread.
+00:01  INFO: Stopping the system resource thread.
+00:01 ERROR: Invalid process ID.
+00:01  INFO: Starting the bep-step thread.
+00:01  INFO: Attaching to PID: 1
+00:01  INFO: Starting the bep-step thread.
+00:01  INFO: Attaching to PID: 1
+00:01  INFO: Starting the bep-step thread.
+00:01  INFO: Attaching to PID: 1
+00:01  INFO: Starting the bep-step thread.
+00:01  INFO: Attaching to PID: 1
+00:01  INFO: Starting the bep-step thread.
+00:01  INFO: Attaching to PID: 1
+00:02  INFO: Starting the bep-step thread.
+00:02  INFO: Attaching to PID: 1
+00:02  INFO: Starting the bep-step thread.
+00:02  INFO: Attaching to PID: 1
+00:02  INFO: Starting the bep-step thread.
+00:02  INFO: Attaching to PID: 1
+00:02  INFO: Starting the bep-step thread.
+00:02  INFO: Attaching to PID: 1
+00:02  INFO: Starting the bep-step thread.
+00:02  INFO: Attaching to PID: 1
+00:03  INFO: ● auditd.service - Security Auditing Service
+00:03  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:03  INFO:    Active: failed (Result: exit-code) since Wed 2019-09-11 19:15:44 BST; 22h ago
+00:03  INFO:      Docs: man:auditd(8)
+00:03  INFO:            https://github.com/linux-audit/audit-documentation
+00:03  INFO:   Process: 19659 ExecStart=/usr/bin/auditd (code=exited, status=1/FAILURE)
+00:03  INFO: 
+00:03  INFO: Sep 11 19:15:44 archie auditd[19660]: Unable to set audit pid, exiting
+00:03  INFO: Sep 11 19:15:44 archie audispd[19662]: af_unix plugin initialized
+00:03  INFO: Sep 11 19:15:44 archie audispd[19662]: audispd initialized with q_depth=80 and 2 active plugins
+00:03  INFO: Sep 11 19:15:44 archie audisp-remote[19665]: Audisp-remote started with queue_size: 0
+00:03  INFO: Sep 11 19:15:44 archie auditd[19659]: Cannot daemonize (Interrupted system call)
+00:03  INFO: Sep 11 19:15:44 archie auditd[19659]: The audit daemon is exiting.
+00:03  INFO: Sep 11 19:15:44 archie systemd[1]: auditd.service: Control process exited, code=exited, status=1/FAILURE
+00:03  INFO: Sep 11 19:15:44 archie audisp-remote[19665]: audisp-remote is exiting on stop request, queue_size: 2
+00:03  INFO: Sep 11 19:15:44 archie systemd[1]: auditd.service: Failed with result 'exit-code'.
+00:03  INFO: Sep 11 19:15:44 archie systemd[1]: Failed to start Security Auditing Service.

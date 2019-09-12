@@ -28,5 +28,8 @@ public class Networking {
         }
         return "";
     }
+    public static void main(String[] args){
+        System.out.println(getLocalIP());
+    }
 }
 

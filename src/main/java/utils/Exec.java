@@ -53,12 +53,9 @@ public class Exec implements Runnable {
 
     public int waitForProcessToDie(){
         while (process.isAlive()){
-            try {
-                Thread.sleep(20);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
+            sleep(10);
         }
+        sleep(100);
         return process.exitValue();
     }
 
@@ -124,6 +121,14 @@ public class Exec implements Runnable {
 
     public long getPid(){
         return pid;
+    }
+
+    private void sleep(int time){
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 
     public void run(){

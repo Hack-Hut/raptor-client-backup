@@ -6,7 +6,7 @@ import java.io.*;
  * @author Nathan Sweet <misc@n4te.com> */
 public class Log {
     private static String cwd = new File("").getAbsolutePath();
-    static final String logLocation = cwd + "/logs/raptor-client.log";
+    private static final String logLocation = cwd + "/logs/raptor-client.log";
 
     /** No logging at all. */
     static public final int LEVEL_NONE = 6;
@@ -45,6 +45,15 @@ public class Log {
         INFO = level <= LEVEL_INFO;
         DEBUG = level <= LEVEL_DEBUG;
         TRACE = level <= LEVEL_TRACE;
+    }
+
+    static public String getLogLocation(){
+        return logLocation;
+    }
+
+    public static boolean test(){
+        File f = new File(logLocation);
+        return f.canWrite();
     }
 
     static public void NONE () {

@@ -1,10 +1,7 @@
 package auditme.auditd;
 
 import auditme.auditorParserInterface;
-import auditme.config.BinaryHashList;
-import auditme.config.BuildMonitorPluginList;
-import auditme.config.BuildMonitorProxyList;
-import auditme.config.ConfigGenInterface;
+import auditme.config.*;
 import utils.Log;
 
 import java.io.BufferedReader;
@@ -43,25 +40,6 @@ public class Auditd implements auditorParserInterface {
         return this.uniqueExes;
     }
 
-    /**
-     * This method will go through the unique executables and then find their,
-     * md5, sha256, Scar plugin and determine if they need proxying.
-     *
-     * WARNING, will throw NullPointerException, if parse is not called
-     * first
-     * @return A list containing HashMaps for each file.
-     * @throws NullPointerException
-     */
-    private List<HashMap> populateFileInformation() {
-        for(String currentFile : this.uniqueExes){
-            auditme.FileAttributes fileInfo = new auditme.FileAttributes(currentFile);
-            fileInfo.populateFileInfo();
-            fileInfo.showFileInfo();
-            buildExecutableInformation.add(fileInfo.getInfo());
-        }
-        return buildExecutableInformation;
-    }
-
     private Set<String> findUniqueExecutables(){
         Set<String> uniqueExecutables = new HashSet<>();
         String currentLine;
@@ -82,6 +60,24 @@ public class Auditd implements auditorParserInterface {
             Log.error(e.toString());
         }
         return uniqueExecutables;
+    }
+
+    /**
+     * This method will go through the unique executables and then find their,
+     * md5, sha256, Scar plugin and determine if they need proxying.
+     *
+     * WARNING, will throw NullPointerException, if parse is not called
+     * first
+     * @throws NullPointerException
+     */
+    @Override
+    public void generateExecutableFileList() {
+        for(String currentFile : this.uniqueExes){
+            auditme.FileAttributes fileInfo = new auditme.FileAttributes(currentFile);
+            fileInfo.populateFileInfo();
+            fileInfo.showFileInfo();
+            buildExecutableInformation.add(fileInfo.getInfo());
+        }
     }
 
     /**
@@ -115,41 +111,20 @@ public class Auditd implements auditorParserInterface {
     @Override
     public boolean generateConfigurationFiles() {
         parseLog();
-        populateFileInformation();
-        getConfigMakers();
-
-        generateConfiguration(hashListMaker, "BinaryHashList.json");
-        generateConfiguration(pluginMaker, "PluginConfiguration.toml");
-        generateConfiguration(proxyMaker, "ProxyConfiguration.toml");
-
-        return configurationSuccessful;
+        generateExecutableFileList();
+        generateExecutableFileList();
+        return (generateConfigFile("BinaryHashList") &&
+                generateConfigFile("BuildMonitorPluginList") &&
+                generateConfigFile("BuildMonitorProxyList"));
     }
 
-    private void getConfigMakers(){
-        getProxyConfigMaker();
-        getPlugingConfigMaker();
-        getBinaryListMaker();
-    }
-
-    private void getProxyConfigMaker(){
-        proxyMaker = new BuildMonitorProxyList();
-    }
-
-    private void getPlugingConfigMaker(){
-        pluginMaker = new BuildMonitorPluginList();
-    }
-
-    private void getBinaryListMaker(){
-        hashListMaker = new BinaryHashList();
-    }
-
-    private void generateConfiguration(ConfigGenInterface service, String name){
-        if (!service.generateConfigFiles(buildExecutableInformation)){
-            Log.error("Failed to generate " + name + ".");
-            configurationSuccessful = false;
+    private boolean generateConfigFile(String type){
+        try{
+            ConfigFile config = ConfigFactory.getConfig(type);
+            return config.generateConfigFiles(buildExecutableInformation);
+        } catch (ClassNotFoundException e) {
+            Log.error("Failed to generate " + type);
         }
-        else {
-            Log.info("Successfully generated " + name + ".");
-        }
+        return false;
     }
 }

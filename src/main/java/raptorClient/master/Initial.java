@@ -51,8 +51,8 @@ public class Initial extends raptorClient.master.MasterController{
     public boolean executeBuild() {
         Exec process = this.executeCommand();
         pid = process.getPid();
+        getBepStepInstance();
         if (pid != 0) {
-            getBepStepInstance();
             bepStep.start();
             sleepMainThread(10);
             System.out.println("\n");
