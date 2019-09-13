@@ -11,6 +11,10 @@ public class BepStep implements MonitorInterface{
         this.pid = pid;
     }
 
+    public BepStep() {
+
+    }
+
     public boolean setup(){
         return true;
     }

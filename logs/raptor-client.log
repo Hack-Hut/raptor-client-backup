@@ -257,3 +257,589 @@ See "systemctl status auditd.service" and "journalctl -xe" for details.
 00:03  INFO: Sep 11 19:15:44 archie audisp-remote[19665]: audisp-remote is exiting on stop request, queue_size: 2
 00:03  INFO: Sep 11 19:15:44 archie systemd[1]: auditd.service: Failed with result 'exit-code'.
 00:03  INFO: Sep 11 19:15:44 archie systemd[1]: Failed to start Security Auditing Service.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Starting bep-step thread after build execution has started.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Starting bep-step thread after build execution has started.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Starting bep-step thread after build execution has started.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Starting bep-step thread after build execution has started.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Starting bep-step thread after build execution has started.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00 ERROR: Failed to spawn Audisp local multiplexer server.
+00:00 ERROR: Audisp-remote failed with the following error
+00:00 ERROR: java.io.IOException
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:01  INFO: Found host at 192.168.1.100:80
+00:01  INFO: Found host at 192.168.1.254:80
+00:01  WARN: Found multiple raptor servers running at the same time
+00:01  WARN: [192.168.1.100, 192.168.1.254]
+00:01  INFO: Found host at 192.168.1.100:80
+00:01  INFO: Found host at 192.168.1.254:80
+00:01  WARN: Found multiple raptor servers running at the same time
+00:01  WARN: [192.168.1.100, 192.168.1.254]
+00:01  INFO: Found host at 192.168.1.100:80
+00:01  INFO: Found host at 192.168.1.254:80
+00:01  WARN: Found multiple raptor servers running at the same time
+00:01  WARN: [192.168.1.100, 192.168.1.254]
+00:01  INFO: Found host at 192.168.1.100:80
+00:01  INFO: Found host at 192.168.1.254:80
+00:01  WARN: Found multiple raptor servers running at the same time
+00:01  WARN: [192.168.1.100, 192.168.1.254]
+00:01  INFO: Found host at 192.168.1.100:80
+00:02  INFO: Found host at 192.168.1.254:80
+00:02  WARN: Found multiple raptor servers running at the same time
+00:02  WARN: [192.168.1.100, 192.168.1.254]
+00:02  INFO: Found host at 192.168.1.100:80
+00:02  INFO: Found host at 192.168.1.103:80
+00:02  INFO: Found host at 192.168.1.254:80
+00:02  WARN: Found multiple raptor servers running at the same time
+00:02  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:02  INFO: Found host at 192.168.1.100:80
+00:02  INFO: Found host at 192.168.1.254:80
+00:02  WARN: Found multiple raptor servers running at the same time
+00:02  WARN: [192.168.1.100, 192.168.1.254]
+00:02  INFO: Found host at 192.168.1.100:80
+00:02  INFO: Found host at 192.168.1.254:80
+00:02  WARN: Found multiple raptor servers running at the same time
+00:02  WARN: [192.168.1.100, 192.168.1.254]
+00:02  INFO: Found host at 192.168.1.100:80
+00:02  INFO: Found host at 192.168.1.254:80
+00:02  WARN: Found multiple raptor servers running at the same time
+00:02  WARN: [192.168.1.100, 192.168.1.254]
+00:02  INFO: Found host at 192.168.1.100:80
+00:03  INFO: Found host at 192.168.1.103:80
+00:03  INFO: Found host at 192.168.1.254:80
+00:03  WARN: Found multiple raptor servers running at the same time
+00:03  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:03  INFO: Found host at 192.168.1.100:80
+00:03  INFO: Found host at 192.168.1.254:80
+00:03  WARN: Found multiple raptor servers running at the same time
+00:03  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:08  INFO: Attempting to start dev-null-catcher
+00:08  INFO: dev-null-catcher started.
+00:08  INFO: 
+00:08  INFO: Attempting to start audisp-remote
+00:08 ERROR: audisp-remote setup failed!
+00:08  INFO: 
+00:08 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:08  INFO: Attempting to start auditd
+00:08 ERROR: auditd setup failed!
+00:08  INFO: 
+00:08 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:11  INFO: Attempting to start dev-null-catcher
+00:11  INFO: dev-null-catcher started.
+00:11  INFO: 
+00:11  INFO: Attempting to start audisp-remote
+00:11 ERROR: audisp-remote setup failed!
+00:11  INFO: 
+00:11 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:11  INFO: Attempting to start auditd
+00:11 ERROR: auditd setup failed!
+00:11  INFO: 
+00:11 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:05  INFO: Attempting to start dev-null-catcher
+00:05  INFO: dev-null-catcher started.
+00:05  INFO: 
+00:05  INFO: Attempting to start audisp-remote
+00:05 ERROR: audisp-remote setup failed!
+00:05  INFO: 
+00:05 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:05  INFO: Attempting to start auditd
+00:05 ERROR: auditd setup failed!
+00:05  INFO: 
+00:05 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:03  INFO: Attempting to start dev-null-catcher
+00:03  INFO: dev-null-catcher started.
+00:03  INFO: 
+00:03  INFO: Attempting to start audisp-remote
+00:03  INFO: Starting configurations for the auditd remote multiplexing.
+00:03  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:03  INFO: audisp-remote started.
+00:03  INFO: 
+00:03  INFO: Starting bep-step thread after build execution has started.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Starting bep-step thread after build execution has started.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00  INFO: ● auditd.service - Security Auditing Service
+00:00  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:00  INFO:    Active: failed (Result: exit-code) since Fri 2019-09-13 20:59:50 BST; 44s ago
+00:00  INFO:      Docs: man:auditd(8)
+00:00  INFO:            https://github.com/linux-audit/audit-documentation
+00:00  INFO:   Process: 8970 ExecStart=/usr/bin/auditd (code=exited, status=1/FAILURE)
+00:00  INFO: 
+00:00  INFO: Sep 13 20:59:50 archie auditd[8971]: Unable to set audit pid, exiting
+00:00  INFO: Sep 13 20:59:50 archie audispd[8973]: af_unix plugin initialized
+00:00  INFO: Sep 13 20:59:50 archie audispd[8973]: audispd initialized with q_depth=80 and 2 active plugins
+00:00  INFO: Sep 13 20:59:50 archie audisp-remote[8976]: Audisp-remote started with queue_size: 0
+00:00  INFO: Sep 13 20:59:50 archie auditd[8970]: Cannot daemonize (Interrupted system call)
+00:00  INFO: Sep 13 20:59:50 archie auditd[8970]: The audit daemon is exiting.
+00:00  INFO: Sep 13 20:59:50 archie systemd[1]: auditd.service: Control process exited, code=exited, status=1/FAILURE
+00:00  INFO: Sep 13 20:59:50 archie audisp-remote[8976]: audisp-remote is exiting on stop request, queue_size: 2
+00:00  INFO: Sep 13 20:59:50 archie systemd[1]: auditd.service: Failed with result 'exit-code'.
+00:00  INFO: Sep 13 20:59:50 archie systemd[1]: Failed to start Security Auditing Service.
+00:00  INFO: auditd started.
+00:00  INFO: 
+00:00  INFO: Starting bep-step thread after build execution has started.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Starting bep-step thread after build execution has started.
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00 ERROR: Raptor failed to interact successfully with Auditd or Audisp-remote.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: Attempting to start audisp-remote
+00:00 ERROR: audisp-remote setup failed!
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00  INFO: ● auditd.service - Security Auditing Service
+00:00  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:00  INFO:    Active: failed (Result: exit-code) since Fri 2019-09-13 21:01:03 BST; 30s ago
+00:00  INFO:      Docs: man:auditd(8)
+00:00  INFO:            https://github.com/linux-audit/audit-documentation
+00:00  INFO:   Process: 10610 ExecStart=/usr/bin/auditd (code=exited, status=1/FAILURE)
+00:00  INFO: 
+00:00  INFO: Sep 13 21:01:03 archie auditd[10611]: Unable to set audit pid, exiting
+00:00  INFO: Sep 13 21:01:03 archie audispd[10613]: af_unix plugin initialized
+00:00  INFO: Sep 13 21:01:03 archie audispd[10613]: audispd initialized with q_depth=80 and 2 active plugins
+00:00  INFO: Sep 13 21:01:03 archie audisp-remote[10616]: Audisp-remote started with queue_size: 0
+00:00  INFO: Sep 13 21:01:03 archie auditd[10610]: Cannot daemonize (Interrupted system call)
+00:00  INFO: Sep 13 21:01:03 archie auditd[10610]: The audit daemon is exiting.
+00:00  INFO: Sep 13 21:01:03 archie systemd[1]: auditd.service: Control process exited, code=exited, status=1/FAILURE
+00:00  INFO: Sep 13 21:01:03 archie audisp-remote[10616]: audisp-remote is exiting on stop request, queue_size: 2
+00:00  INFO: Sep 13 21:01:03 archie systemd[1]: auditd.service: Failed with result 'exit-code'.
+00:00  INFO: Sep 13 21:01:03 archie systemd[1]: Failed to start Security Auditing Service.
+00:00  INFO: auditd started.
+00:00  INFO: 
+00:00  INFO: Starting bep-step thread after build execution has started.

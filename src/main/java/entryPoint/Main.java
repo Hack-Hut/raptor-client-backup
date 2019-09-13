@@ -43,12 +43,12 @@ public class Main {
         banner();
         if (mode.equals("master")){
             Log.debug("Starting in master mode.");
-            raptorClient.master.Setup setup = new raptorClient.master.Setup(buildID, command, stage);
+            stage.master.Setup setup = new stage.master.Setup(buildID, command, stage);
             setup.start();
         }
         else if (mode.equals("slave")){
             Log.debug("Starting in slave mode.");
-            raptorClient.slave.Setup setup = new raptorClient.slave.Setup(buildID, command, stage);
+            stage.slave.Setup setup = new stage.slave.Setup(buildID, command, stage);
             setup.start();
         }
         else {
