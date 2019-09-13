@@ -1,4 +1,4 @@
-package auditme.config;
+package buildToolsConfigGenerator.config;
 
 import java.io.FileWriter;
 import java.io.IOException;

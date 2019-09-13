@@ -1,5 +1,6 @@
 package monitors;
 
+import buildToolsConfigGenerator.auditors.audisp;
 import monitors.audisp.Worker;
 import utils.Exec;
 import utils.Log;
@@ -50,7 +51,7 @@ public class Audisp implements MonitorInterface, AuditInterface {
     private static final String AUDIT_SRC_LOC = utils.SystemOps.getCWD() + "/resources/audit-userspace/";
 
     private Worker worker;
-    private auditme.audisp.audisp auditParser; // TODO: refactor this, the name is stupid!
+    private audisp auditParser; // TODO: refactor this, the name is stupid!
 
     public boolean setup(){
         Log.info("Starting configurations for the auditd remote multiplexing.");
@@ -248,7 +249,7 @@ public class Audisp implements MonitorInterface, AuditInterface {
 
     private void getAuditParser(){
         Object[] executableList = worker.getExecutables();
-        auditParser = new auditme.audisp.audisp(executableList);
+        auditParser = new audisp(executableList);
     }
 
     public static void main(String[] args){

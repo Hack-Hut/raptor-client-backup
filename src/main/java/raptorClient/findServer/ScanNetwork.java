@@ -8,8 +8,16 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * This class finds the current hosts network LAN address, the
+ * one starting with "192." Then populates a list of all hosts
+ * in the subnet, every host in that subnet is added to a thread
+ * pool. Each item in the thread pool is then executed with the
+ * FindHost class. All the hosts that responded are returned as a
+ * list.
+ */
 public class ScanNetwork {
-    private static final int MAX_T = 12;
+    private static final int MAX_T = utils.SystemOps.getCPUCores();
 
     private String localIpAdr;
     private String baseIp;

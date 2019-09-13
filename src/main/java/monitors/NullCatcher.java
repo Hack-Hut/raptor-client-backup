@@ -7,6 +7,15 @@ import java.util.ArrayList;
 
 import static utils.Exec.executeCommandGetOutput;
 
+/**
+ * This class gains some use full debugging information to analysts.
+ * By swapping the special character file /dev/null with an ordinary
+ * text file, if the build is designed in a way to send stuff to /dev/null,
+ * making auditing harder, then this class will catch it.
+ *
+ * Note, that if a build is stopped half way /dev/null will still be a text
+ * file, the back up of /dev/null will be located at /dev/null.bk
+ */
 public class NullCatcher implements MonitorInterface {
     private static final String ORIG_LOCATION = "/dev/null";
     private static final String BACKUP_LOCATION = ORIG_LOCATION + ".bk";

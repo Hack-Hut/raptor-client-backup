@@ -1,4 +1,4 @@
-package auditme.config;
+package buildToolsConfigGenerator.config;
 
 import java.util.HashMap;
 import java.util.List;

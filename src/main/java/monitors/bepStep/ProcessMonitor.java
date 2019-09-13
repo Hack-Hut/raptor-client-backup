@@ -117,10 +117,7 @@ public class ProcessMonitor implements Runnable{
                     fw.write("\nFile Descriptor: " + fd);
                     //fw.write("\nEnvironment " + environ);
                     fw.write("\n\n");
-                    boolean test = false;
-                    if(test){
-                       commands.add(cmd);
-                    }
+                   commands.add(cmd);
                 } catch (IOException e) {
                     Log.error("Error writing to bep-step.");
                     Log.error(e.toString());

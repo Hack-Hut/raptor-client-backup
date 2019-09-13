@@ -7,6 +7,9 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * This is public facing abstraction for starting the resource monitor.
+ */
 public class ResourceMonitor implements MonitorInterface {
     private static final String CWD = new File("").getAbsolutePath();
     private static final String LOG_LOCATION = CWD + "/logs/resource-info.csv";

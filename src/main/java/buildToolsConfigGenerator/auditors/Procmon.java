@@ -1,6 +1,6 @@
-package auditme.procmon;
+package buildToolsConfigGenerator.auditors;
 
-import auditme.auditorParserInterface;
+import buildToolsConfigGenerator.auditorParserInterface;
 
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -61,7 +61,7 @@ public class Procmon implements auditorParserInterface {
      */
     private void populateFileInformation() throws NullPointerException {
         for(String currentFile : this.uniqueExes){
-            auditme.FileAttributes fileInfo = new auditme.FileAttributes(currentFile);
+            buildToolsConfigGenerator.FileAttributes fileInfo = new buildToolsConfigGenerator.FileAttributes(currentFile);
             fileInfo.populateFileInfo();
             fileInfo.showFileInfo();
             buildExecutableInformation.add(fileInfo.getInfo());

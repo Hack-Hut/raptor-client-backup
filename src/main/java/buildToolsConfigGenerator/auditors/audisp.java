@@ -1,7 +1,7 @@
-package auditme.audisp;
+package buildToolsConfigGenerator.auditors;
 
-import auditme.auditorParserInterface;
-import auditme.config.*;
+import buildToolsConfigGenerator.auditorParserInterface;
+import buildToolsConfigGenerator.config.*;
 import utils.Log;
 
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ public class audisp implements auditorParserInterface {
     public void generateExecutableFileList(){
         for(Object currentPath : executableList){
             String current = currentPath.toString();
-            auditme.FileAttributes fileInfo = new auditme.FileAttributes(current);
+            buildToolsConfigGenerator.FileAttributes fileInfo = new buildToolsConfigGenerator.FileAttributes(current);
             fileInfo.populateFileInfo();
             buildExecutableInformation.add(fileInfo.getInfo());
         }

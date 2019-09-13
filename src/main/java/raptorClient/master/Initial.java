@@ -7,6 +7,18 @@ import utils.Log;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class handles the initial build stage for BEP. The initial build stage potentially
+ * has the most setup. Rather than just following the build document and then running the build.
+ * The BEP team is also encouraged to collect things sent to /dev/null, generate a binary hash list,
+ * monitor system resources during the build, find undisclosed log files and collect build logs.
+ * Then what seems to be hardest part is to neatly organize these logs, deleting partial logs,
+ * compress them, process them and upload them to a central repository with a good enough name
+ * that describes to others what the logs relate to.
+ *
+ * This is a highly error prone task when done manually especially when the build has multi build
+ * environments and the analyst is doing multiple builds at any given time. 
+ */
 public class Initial extends raptorClient.master.MasterController{
 
     private NullCatcher nullCatcher;
@@ -22,13 +34,13 @@ public class Initial extends raptorClient.master.MasterController{
     }
 
     @Override
-    public boolean startMonitors(){
+    public void startMonitors(){
         getMonitors();
         this.startResourceMonitor();
         if (os.contains("Linux")){
             startAMonitor(nullCatcher, "dev-null-catcher");
             if (!startAuditor()) { // Starts either auditd, or auditd->audisp-remote
-                return false;
+                return;
             }
         }
         else{
@@ -38,17 +50,14 @@ public class Initial extends raptorClient.master.MasterController{
         Log.info("Starting bep-step thread after build execution has started.");
 
         monitorRunning = true;
-        return true;
     }
 
     /**
      * Spawn a thread to execute the build command
      * Then spawn another thread to execute bep-step
-     * Then spawn another thread to monitor system resource utilization
-     * main.java.entryPoint.Main thread then listens to the Process input/output streams
-     * @return Success
+     * main.java.entryPoint.Main thread then listens to the Process std streams
      */
-    public boolean executeBuild() {
+    public void executeBuild() {
         Exec process = this.executeCommand();
         pid = process.getPid();
         getBepStepInstance();
@@ -60,15 +69,14 @@ public class Initial extends raptorClient.master.MasterController{
             System.out.println("\n");
             sleepMainThread(10);
             returnCode = process.getProcess().exitValue();
-            return true;
+            return;
         }
         Log.error("Execute Build command returned a process ID of 0");
         Log.error("This would only occur if CPU usage was at 100% before executing the build command.");
         Log.error("This is because the main thread (even after sleeping) got scheduled before the execution thread.");
-        return false;
     }
 
-    public boolean stopMonitors(){
+    public void stopMonitors(){
         if(!monitorRunning){
             Log.error("Logic error, stopMonitors was called even though startMonitors was never called.");
         }
@@ -80,30 +88,25 @@ public class Initial extends raptorClient.master.MasterController{
 
         monitorRunning = false;
         this.logRunningThreads();
-        return true;
     }
 
     @Override
-    public boolean processResults(){
+    public void processResults(){
         utils.misc.showLogFileList();
         auditor.generateConfigurationFiles();
-        return true;
     }
 
     public List<String> findSlaves(){
         return new ArrayList<>();
     }
 
-    public boolean cleanMachine(){
-        return true;
+    public void cleanMachine(){
     }
 
-    public boolean uploadResults(){
-        return true;
+    public void uploadResults(){
     }
 
-    public boolean killSlaves(){
-        return true;
+    public void killSlaves(){
     }
 
     private void getMonitors(){
@@ -162,8 +165,7 @@ public class Initial extends raptorClient.master.MasterController{
         }
         return true;
     }
-    public boolean connectToSlaves() {
-        return  true;
+    public void connectToSlaves() {
     }
 
 }

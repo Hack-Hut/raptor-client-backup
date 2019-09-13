@@ -6,6 +6,16 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
 
+/**
+ * This class is used to find hosts on the current network. These hosts could be
+ * the raptor-web-server, raptor-master-nodes or raptor-slave-nodes. By trying
+ * to perform a TCP handshake with the remote host on a predefined port, we
+ * can test to see if the host is online.
+ *
+ * Note, additional checks need to be done after finding hosts with x open port.
+ * This is to make sure that the host is actually the write host we're trying to
+ * communicate with.
+ */
 public class FindHost implements Runnable{
 
     private String ip;

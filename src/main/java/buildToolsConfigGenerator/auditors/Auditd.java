@@ -1,7 +1,7 @@
-package auditme.auditd;
+package buildToolsConfigGenerator.auditors;
 
-import auditme.auditorParserInterface;
-import auditme.config.*;
+import buildToolsConfigGenerator.auditorParserInterface;
+import buildToolsConfigGenerator.config.*;
 import utils.Log;
 
 import java.io.BufferedReader;
@@ -31,7 +31,7 @@ public class Auditd implements auditorParserInterface {
     @Override
     public void generateExecutableFileList() {
         for(String currentFile : this.uniqueExes){
-            auditme.FileAttributes fileInfo = new auditme.FileAttributes(currentFile);
+            buildToolsConfigGenerator.FileAttributes fileInfo = new buildToolsConfigGenerator.FileAttributes(currentFile);
             fileInfo.populateFileInfo();
             fileInfo.showFileInfo();
             buildExecutableInformation.add(fileInfo.getInfo());

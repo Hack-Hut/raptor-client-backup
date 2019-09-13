@@ -9,6 +9,12 @@ import java.util.HashSet;
 
 import static utils.Exec.executeCommandGetOutput;
 
+/**
+ * This is the less efficient but more reliable method for getting auditing information from
+ * a Linux build system. Rather than using the audisp-remote plugin this just uses vanilla
+ * auditd to log syscalls and (possible read writes) to the auditd.log file. This class
+ * should be used as a fall back option to audisip
+ */
 public class Auditd implements MonitorInterface, AuditInterface {
 
     private static final String[] EXECVE64 = {"sudo", "auditctl", "-a", "always,exit", "-F", "arch=b64", "-S", "execve"};
@@ -24,7 +30,7 @@ public class Auditd implements MonitorInterface, AuditInterface {
 
     private static final String AUDITD_LOG_LOCATION = "/usr1/auditd.log";
 
-    private auditme.auditd.Auditd auditParser; // TODO: refactor this, the name is stupid!
+    private buildToolsConfigGenerator.auditors.Auditd auditParser; // TODO: refactor this, the name is stupid!
 
     public boolean setup(){
         clearOldLog();
@@ -90,7 +96,7 @@ public class Auditd implements MonitorInterface, AuditInterface {
     }
 
     private void getAuditdParser(){
-        auditParser = new auditme.auditd.Auditd(AUDITD_LOG_LOCATION);
+        auditParser = new buildToolsConfigGenerator.auditors.Auditd(AUDITD_LOG_LOCATION);
     }
 
     private boolean isAuditdRunning(){

@@ -11,26 +11,36 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * This is the abstract class that forms the base functionality
+ * for each of the different stages of the BEP build process.
+ * The different build stages are:
+ *
+ * initial
+ * completeness
+ * Build-Monitor
+ * Semmle
+ */
 public abstract class MasterController {
 
-    protected String localIP;
-    protected String serverIP;
-    protected List<String> slaveIPs;
-    protected int buildId;
+    private String localIP;
+    private String serverIP;
+    private List<String> slaveIPs;
+    private int buildId;
     protected long pid;
     protected String stage;
-    protected String[] buildCommand;
-    protected String machineStatus;
-    protected String buildName;
+    private String[] buildCommand;
+    private String machineStatus;
+    private String buildName;
     protected Map<String, String> env;
     protected String stdout;
     protected String stderr;
-    protected long returnCode;
+    long returnCode;
     protected String os;
-    protected ResourceMonitor resourceMonitor;
+    ResourceMonitor resourceMonitor;
 
 
-    public MasterController(int buildId, String stage, String[] buildCommand){
+    MasterController(int buildId, String stage, String[] buildCommand){
         this.buildId = buildId;
         this.stage = stage;
         this.buildCommand = buildCommand;
@@ -43,7 +53,13 @@ public abstract class MasterController {
         env = getEnvironmentVariables();
     }
 
-    public void showSetup(){
+    public abstract void startMonitors();
+    public abstract void executeBuild();
+    public abstract void stopMonitors();
+    public abstract void processResults();
+    public abstract void uploadResults();
+
+    void showSetup(){
         Log.info("Stage: " + stage);
         Log.info("Controller: Master");
         Log.info("Build ID: " + buildId);
@@ -69,30 +85,19 @@ public abstract class MasterController {
         return new ArrayList<>();
     }
 
-    private Map<String, String> getEnvironmentVariables(){
-        env = System.getenv();
-        for (String envName : env.keySet()) {
-            Log.debug(envName, env.get(envName));
-        }
-        return env;
+    public void cleanMachine(){
     }
 
-    public boolean cleanMachine(){
-        return true;
+    public void connectToSlaves(){
     }
 
-    public boolean connectToSlaves(){
-        return true;
-    }
-
-    public boolean killSlaves(){
-        return true;
+    public void killSlaves(){
     }
 
     /**Spawn a new thread to execute a command in the background
      * @return The class that is executing the thread
      */
-    public Exec executeCommand() {
+    Exec executeCommand() {
         Exec execution = new Exec(buildCommand);
         Thread execThread = new Thread(execution);
         execThread.start();
@@ -100,7 +105,7 @@ public abstract class MasterController {
         return execution;
     }
 
-    protected void sleepMainThread(int time){
+    void sleepMainThread(int time){
         try {
             Log.debug("Sleeping main thread for " + time + " milliseconds.");
             Thread.sleep(time);
@@ -110,17 +115,17 @@ public abstract class MasterController {
         }
     }
 
-    protected void startResourceMonitor(){
+    void startResourceMonitor(){
         resourceMonitor = new ResourceMonitor();
         resourceMonitor.setup();
         resourceMonitor.start();
     }
 
-    protected void stopResourceMonitor(){
+    void stopResourceMonitor(){
         resourceMonitor.stop();
     }
 
-    protected void logRunningThreads(){
+    void logRunningThreads(){
         if (this.stage.contains("initial")) {
             Log.debug("Sleeping for one second to let resource monitor thread die.");
             sleepMainThread(1);
@@ -130,10 +135,11 @@ public abstract class MasterController {
             Log.debug(currentThread.toString());
         }
     }
-
-    public abstract boolean startMonitors();    //Start the Monitoring tools
-    public abstract boolean executeBuild();    //Execute the build
-    public abstract boolean stopMonitors();     //Stop the monitoring tools
-    public abstract boolean processResults();  //Process the results
-    public abstract boolean uploadResults();   //Upload the results to the server
+    private Map<String, String> getEnvironmentVariables(){
+        env = System.getenv();
+        for (String envName : env.keySet()) {
+            Log.debug(envName, env.get(envName));
+        }
+        return env;
+    }
 }

@@ -1,4 +1,4 @@
-package auditme;
+package buildToolsConfigGenerator;
 
 public class Plugin {
     //TODO

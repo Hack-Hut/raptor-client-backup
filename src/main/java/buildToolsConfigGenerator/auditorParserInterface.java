@@ -1,4 +1,4 @@
-package auditme;
+package buildToolsConfigGenerator;
 
 /**
  * Interface used by the different data source options.

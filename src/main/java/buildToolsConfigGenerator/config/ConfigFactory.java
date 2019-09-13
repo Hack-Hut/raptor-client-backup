@@ -1,4 +1,4 @@
-package auditme.config;
+package buildToolsConfigGenerator.config;
 
 import utils.Log;
 
