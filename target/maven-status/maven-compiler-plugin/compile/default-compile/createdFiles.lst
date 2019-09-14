@@ -1,11 +1,13 @@
 raptorClient/findServer/ScanNetwork.class
 raptorClient/slave/semmel/Linux.class
+buildToolsConfigGenerator/config/ConfigFile.class
 raptorClient/findServer/FindHost.class
 utils/SystemOps.class
 buildToolsConfigGenerator/FileAttributes.class
 docopt/DocoptLanguageError.class
 monitors/resourceMonitor/CpuUsage.class
 raptorClient/slave/completeness/Linux.class
+buildToolsConfigGenerator/config/BuildMonitorProxyList.class
 docopt/Tokens.class
 utils/Exec.class
 raptorClient/SetupJob.class
@@ -27,6 +29,7 @@ raptorClient/master/Semmle.class
 monitors/Auditd.class
 raptorClient/slave/semmel/Windows.class
 entryPoint/CommandLineParser.class
+buildToolsConfigGenerator/Plugin.class
 monitors/ResourceMonitor.class
 docopt/Pattern.class
 raptorClient/master/MasterController.class
@@ -72,6 +75,8 @@ api/update/Build.class
 api/update/Project.class
 raptorClient/slave/initial/Linux.class
 docopt/LeafPattern$SingleMatchResult.class
+buildToolsConfigGenerator/auditors/audisp.class
 monitors/bepStep/linux/Process.class
 monitors/audisp/Worker.class
+buildToolsConfigGenerator/auditorParserInterface.class
 monitors/resourceMonitor/MemoryUsageWindows.class
