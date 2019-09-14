@@ -38,6 +38,10 @@ public class BepStep implements MonitorInterface{
         return processMonitor.rootProcessIsAlive();
     }
 
+    public boolean test(){
+        return true;
+    }
+
     public boolean stop(){
         return true;
     }

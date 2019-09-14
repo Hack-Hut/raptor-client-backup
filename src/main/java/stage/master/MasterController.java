@@ -1,5 +1,6 @@
 package stage.master;
 
+import monitors.MonitorFailureException;
 import monitors.ResourceMonitor;
 import findServer.ScanNetwork;
 import utils.Exec;
@@ -53,9 +54,15 @@ public abstract class MasterController {
         env = getEnvironmentVariables();
     }
 
+<<<<<<< HEAD:src/main/java/stage/master/MasterController.java
     public abstract boolean startMonitors();
     public abstract void executeBuild();
     public abstract void stopMonitors();
+=======
+    public abstract boolean startMonitors() throws MonitorFailureException;
+    public abstract boolean executeBuild();
+    public abstract boolean stopMonitors();
+>>>>>>> detachedHead:src/main/java/raptorClient/master/MasterController.java
     public abstract void processResults();
     public abstract void uploadResults();
 

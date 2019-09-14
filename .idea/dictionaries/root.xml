@@ -3,6 +3,9 @@
     <words>
       <w>audisp</w>
       <w>auditd</w>
+      <w>autogen</w>
+      <w>uname</w>
+      <w>whoami</w>
     </words>
   </dictionary>
 </component>

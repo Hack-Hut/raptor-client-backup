@@ -40,6 +40,7 @@ class AuditdTest {
         String[] cmd = {"sudo", "rm", AUDIT_LOCATION};
         System.out.println(utils.Exec.executeCommandGetOutput(cmd));
         System.out.println(log.delete());
+        if(log.exists()) fail("Log file was created.");
 
         BufferedWriter writer = new BufferedWriter(new FileWriter(AUDIT_LOCATION));
         String searchString = "SEARCH STRING UNIT TEST";
@@ -61,7 +62,6 @@ class AuditdTest {
         }catch(FileNotFoundException e){
             return;
         }
-        fail("Log file was created.");
     }
 
     @Test

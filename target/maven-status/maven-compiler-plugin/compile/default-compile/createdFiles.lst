@@ -1,11 +1,31 @@
+<<<<<<< HEAD
 utils/SystemOps.class
 docopt/DocoptLanguageError.class
 monitors/resourceMonitor/CpuUsage.class
 docopt/Tokens.class
 utils/Exec.class
+=======
+raptorClient/findServer/ScanNetwork.class
+raptorClient/slave/semmel/Linux.class
+buildToolsConfigGenerator/config/ConfigFile.class
+raptorClient/findServer/FindHost.class
+utils/SystemOps.class
+buildToolsConfigGenerator/FileAttributes.class
+docopt/DocoptLanguageError.class
+monitors/resourceMonitor/CpuUsage.class
+raptorClient/slave/completeness/Linux.class
+buildToolsConfigGenerator/config/BuildMonitorProxyList.class
+docopt/Tokens.class
+utils/Exec.class
+raptorClient/SetupJob.class
+>>>>>>> detachedHead
 utils/Log$Logger.class
 docopt/Python.class
 monitors/Audisp.class
+<<<<<<< HEAD
+=======
+raptorClient/slave/completeness/Windows.class
+>>>>>>> detachedHead
 monitors/bepStep/ProcessInterface.class
 monitors/AuditInterface.class
 docopt/Optional.class
@@ -16,36 +36,60 @@ docopt/BranchPattern.class
 utils/Log.class
 docopt/Command.class
 monitors/Auditd.class
+<<<<<<< HEAD
+=======
+raptorClient/slave/semmel/Windows.class
+>>>>>>> detachedHead
 entryPoint/CommandLineParser.class
+buildToolsConfigGenerator/Plugin.class
 monitors/ResourceMonitor.class
 docopt/Pattern.class
 docopt/LeafPattern.class
 utils/Networking.class
+raptorClient/master/ControllerFactory.class
 docopt/OptionsShortcut.class
+monitors/MonitorFailureException.class
 docopt/Docopt.class
 docopt/Python$Re.class
 docopt/Option.class
 monitors/BepStep.class
 docopt/OneOrMore.class
+buildToolsConfigGenerator/config/BinaryHashList.class
 docopt/DocoptExitException.class
 monitors/resourceMonitor/MemoryUsageInterface.class
 docopt/Either$1.class
 docopt/Either.class
 docopt/Argument.class
+<<<<<<< HEAD
+=======
+raptorClient/master/Initial.class
+raptorClient/slave/initial/Windows.class
+>>>>>>> detachedHead
 entryPoint/Main.class
 monitors/bepStep/ProcessMonitor.class
 monitors/resourceMonitor/ResourceMonitorWorker.class
 utils/FileOperations.class
 monitors/resourceMonitor/MemoryUsageLinux.class
+<<<<<<< HEAD
+=======
+raptorClient/slave/buildMonitor/Linux.class
+raptorClient/master/Completeness.class
+buildToolsConfigGenerator/auditors/Procmon.class
+buildToolsConfigGenerator/auditors/Auditd.class
+>>>>>>> detachedHead
 utils/misc.class
 utils/Hash.class
 monitors/NullCatcher.class
+buildToolsConfigGenerator/config/BuildMonitorPluginList.class
+buildToolsConfigGenerator/config/ConfigFactory.class
 docopt/Required.class
 api/get/Build.class
 monitors/bepStep/windows/Process.class
 api/update/Build.class
 api/update/Project.class
 docopt/LeafPattern$SingleMatchResult.class
+buildToolsConfigGenerator/auditors/audisp.class
 monitors/bepStep/linux/Process.class
 monitors/audisp/Worker.class
+buildToolsConfigGenerator/auditorParserInterface.class
 monitors/resourceMonitor/MemoryUsageWindows.class

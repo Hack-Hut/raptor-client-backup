@@ -7,7 +7,8 @@ public class Completeness extends stage.master.MasterController{
     public boolean startMonitors(){
         return true;
     }
-    public void stopMonitors(){
+    public boolean stopMonitors(){
+        return true;
     }
     public boolean pingSlave(){
         return true;
@@ -20,7 +21,8 @@ public class Completeness extends stage.master.MasterController{
     }
     public void processResults() {
     }
-    public void executeBuild() {
+    public boolean executeBuild() {
+        return true;
     }
     public void connectToSlaves() {
     }

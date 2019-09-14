@@ -1,6 +1,11 @@
 package stage.master;
 
+<<<<<<< HEAD:src/main/java/stage/master/Setup.java
 import stage.SetupJob;
+=======
+import monitors.MonitorFailureException;
+import raptorClient.SetupJob;
+>>>>>>> detachedHead:src/main/java/raptorClient/master/Setup.java
 import utils.Log;
 
 public class Setup implements SetupJob {
@@ -38,7 +43,11 @@ public class Setup implements SetupJob {
         Log.debug("");
         Log.info("STARTING MONITORS");
         Log.info("--------------------------------------------------");
-        controller.startMonitors();
+        try {
+            controller.startMonitors();
+        } catch (MonitorFailureException e) {
+            return;
+        }
 
         System.out.println();
         Log.debug("");

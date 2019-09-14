@@ -7,7 +7,10 @@ import utils.Log;
 
 import java.io.*;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Arrays;
+
+import static utils.Exec.executeCommandGetOutput;
 
 /**
  *  This class is similar to auditd, but is a bit more advanced because it multiplexes the data
@@ -47,6 +50,9 @@ public class Audisp implements MonitorInterface, AuditInterface {
     private static final String[] DISABLE_AUDITD = {"sudo", "auditd", "-s", "disable"};
     private static final String[] ENABLE_AUDITD = {"sudo", "auditd", "-s", "enable"};
     private static final String[] STATUS_AUDITD = {"sudo", "systemctl", "status", "auditd"};
+    private static final String[] REAP_AUDISP = {"sudo", "killall", "audispd"};
+    private static final String[] REAP_AUDITD = {"sudo", "killall", "auditd"};
+    private static final String[] REAP_AUDISP_REMOTE = {"sudo", "killall", "audsip-remote"};
 
     private static final String AUDIT_SRC_LOC = utils.SystemOps.getCWD() + "/resources/audit-userspace/";
 
@@ -81,6 +87,48 @@ public class Audisp implements MonitorInterface, AuditInterface {
         getAudsipWorker();
         Thread workerThread = new Thread(worker);
         workerThread.start();
+        return workerThread.isAlive();
+    }
+
+    public boolean test(){
+        boolean connectionReceived = false;
+        for(int i =0; i<10; i++){
+            if (worker.connectionEstablished()){
+                connectionReceived = true;
+                break;
+            }
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+            sleepThread();
+        }
+        if (!connectionReceived){
+            Log.error("Audisp-remote never tried connecting to raptor client");
+            Log.error("Audisp-remote test failed, failing back to auditd.");
+            return false;
+        }
+        if(!worker.test()){
+            ArrayList<String> status = executeCommandGetOutput(STATUS_AUDITD);
+            for(String stat : status){
+                Log.error(stat);
+            }
+            return false;
+        }
         return true;
     }
 
@@ -88,12 +136,7 @@ public class Audisp implements MonitorInterface, AuditInterface {
         //TODO stop audisp
         execute(STOP_AUDITD);
         worker.stop();
-        try {
-            Thread.sleep(10);
-        } catch (InterruptedException e) {
-            Log.error(e.toString());
-            Thread.currentThread().interrupt();
-        }
+        sleepThread();
         return checkIfRunning();
     }
 
@@ -156,6 +199,14 @@ public class Audisp implements MonitorInterface, AuditInterface {
     private boolean stopExistingAuditd(){
         Exec stop = new Exec(STOP_AUDITD);
         stop.execute();
+        executeCommandGetOutput(STOP_AUDITD);
+        executeCommandGetOutput(REAP_AUDISP);
+        executeCommandGetOutput(REAP_AUDISP_REMOTE);
+        executeCommandGetOutput(REAP_AUDITD);
+        executeCommandGetOutput(STOP_AUDITD);
+        executeCommandGetOutput(REAP_AUDISP);
+        executeCommandGetOutput(REAP_AUDISP_REMOTE);
+        executeCommandGetOutput(REAP_AUDITD);
         int returnCode = stop.waitForProcessToDie();
         if(returnCode == 0){
             Log.debug("Success: " + Arrays.toString(STOP_AUDITD));
@@ -203,7 +254,21 @@ public class Audisp implements MonitorInterface, AuditInterface {
     }
 
     private boolean startAuditd(){
-        executeAndWait(START_AUDITD);
+        executeCommandGetOutput(STOP_AUDITD);
+        executeCommandGetOutput(REAP_AUDISP);
+        executeCommandGetOutput(REAP_AUDISP_REMOTE);
+        executeCommandGetOutput(REAP_AUDITD);
+        String startError = executeAndWait(START_AUDITD);
+        if (startError.contains("\"journalctl -xe\" for details.")){
+            Log.error("Auditd is in a bad state. You should try and sort this before re running");
+            Log.error("Run the following");
+            Log.error("ps -A | grep audi");
+            Log.error("Make sure to remove an orphaned processes such as audispd, audisp-remote, auditd");
+            Log.error("Then try an run sudo systemctl start auditd");
+            Log.error("If no error's occures stop auditd with.");
+            Log.error("systemctl stop auditd");
+            Log.error("Then when auditd is back to a good state re run raptor-client.");
+        }
         executeAndWait(ENABLE_AUDITD);
         executeAndWait(START_AUDITD);
         return checkIfRunning();
@@ -238,18 +303,28 @@ public class Audisp implements MonitorInterface, AuditInterface {
         cmd.execute();
     }
 
-    private void executeAndWait(String[] command){
+    private String executeAndWait(String[] command){
         Exec cmd = new Exec(command);
         Log.debug("Executing " + Arrays.toString(command));
         cmd.execute();
         cmd.getOutput();
         if(!cmd.getStdout().isEmpty()) Log.debug(cmd.getStdout());
         if(!cmd.getStderr().isEmpty()) Log.debug(cmd.getStderr());
+        return cmd.getStderr();
     }
 
     private void getAuditParser(){
         Object[] executableList = worker.getExecutables();
         auditParser = new audisp(executableList);
+    }
+
+    private void sleepThread(){
+        try {
+            Thread.sleep(20);
+        } catch (InterruptedException e) {
+            Log.error(e.toString());
+            Thread.currentThread().interrupt();
+        }
     }
 
     public static void main(String[] args){

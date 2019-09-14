@@ -7,41 +7,42 @@
 00:00  INFO:  --------------------------------------------------
 00:00 DEBUG: Starting in master mode.
 00:00 DEBUG: Spawning 255 threads with thread pool size 12 to find remote host.
-00:00  INFO: Found host at 192.168.1.68:80
 00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.103:80
 00:00  INFO: Found host at 192.168.1.254:80
 00:00 DEBUG: All 255 threads have exited.
 00:00  WARN: Found multiple raptor servers running at the same time
-00:00  WARN: [192.168.1.68, 192.168.1.100, 192.168.1.254]
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
 00:00 DEBUG: [PATH] /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/env:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/luke/.rvm/bin:/opt:/opt:/home/luke/.rvm/bin
 00:00 DEBUG: [XAUTHORITY] /home/luke/.lyxauth
 00:00 DEBUG: [SHELL] /usr/bin/zsh
 00:00 DEBUG: [TERM] xterm-256color
+00:00 DEBUG: [OLDPWD] /usr/share/idea/bin
 00:00 DEBUG: [USER] root
 00:00 DEBUG: [LANG] en_GB.UTF-8
+00:00 DEBUG: [SUDO_COMMAND] /usr/share/idea/bin/idea.sh
 00:00 DEBUG: [SUDO_USER] luke
-00:00 DEBUG: [SUDO_COMMAND] ./build.sh
-00:00 DEBUG: [DISPLAY] :0
 00:00 DEBUG: [SUDO_GID] 985
+00:00 DEBUG: [DISPLAY] :0
 00:00 DEBUG: [MAIL] /var/mail/root
 00:00 DEBUG: [COLORTERM] truecolor
 00:00 DEBUG: [LOGNAME] root
 00:00 DEBUG: [LC_CTYPE] en_GB.UTF-8
-00:00 DEBUG: [SUDO_UID] 1000
-00:00 DEBUG: [LS_COLORS] rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 00:00 DEBUG: [PWD] /home/luke/documents/java/RaptorClient
-00:00 DEBUG: [SHLVL] 1
+00:00 DEBUG: [LS_COLORS] rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+00:00 DEBUG: [SUDO_UID] 1000
 00:00 DEBUG: [HOME] /root
-00:00 DEBUG: [_] /sbin/java
+00:00 DEBUG: [SHLVL] 2
+00:00 DEBUG: [_] /usr/lib/jvm/java-11-openjdk/bin/java
 00:00 DEBUG: 
 00:00  INFO: SETUP INFORMATION
 00:00  INFO: --------------------------------------------------
 00:00  INFO: Stage: initial
 00:00  INFO: Controller: Master
 00:00  INFO: Build ID: 0
-00:00  INFO: Build Command: [src/test/resources/testCompilationProject/8cc/make_test.sh]
+00:00  INFO: Build Command: [make, -C, /home/luke/documents/java/bitcoin, -j, 12]
 00:00  INFO: Local IP address:  192.168.1.100
-00:00  INFO: Raptor IP address: 192.168.1.68
+00:00  INFO: Raptor IP address: 192.168.1.100
 00:00  INFO: Slave IP addresses: []
 00:00  INFO: Machine Status: TODO
 00:00  INFO: Build Name: TODO
@@ -54,14 +55,18 @@
 00:00 DEBUG: 
 00:00  INFO: STARTING MONITORS
 00:00  INFO: --------------------------------------------------
+00:00 DEBUG: Executing [rm, /home/luke/documents/java/RaptorClient/logs/resource-info.csv]
 00:00  INFO: Attempting to start dev-null-catcher
 00:00 DEBUG: Attempting to start /dev/null
 00:00 DEBUG: Starting the ResourceMonitorWorker thread.
+00:00 DEBUG: Executing [file, /dev/null]
 00:00 DEBUG: Starting the CPU System monitor thread.
 00:00 DEBUG: Replacing the original /dev/null file.
 00:00 DEBUG: Creating new /dev/null file
+00:00 DEBUG: Executing [file, /dev/null]
 00:00  INFO: dev-null-catcher started.
 00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
 00:00  INFO: Attempting to start audisp-remote
 00:00  INFO: Starting configurations for the auditd remote multiplexing.
 00:00 DEBUG: Audisp-Remote: true
@@ -77,18 +82,16 @@
 00:00 DEBUG: Executing [sudo, chown, root, /etc/audisp/audisp-remote.conf]
 00:00 DEBUG: Executing [sudo, chown, root, /etc/audit/auditd.conf]
 00:00 DEBUG: Executing [sudo, chown, root, /etc/audit/auditd.conf]
+00:00 DEBUG: Executing [sudo, systemctl, stop, auditd]
+00:00 DEBUG: Executing [sudo, killall, audispd]
+00:00 DEBUG: Executing [sudo, killall, audsip-remote]
+00:00 DEBUG: Executing [sudo, killall, auditd]
 00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
 00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
-00:00 DEBUG: Job for auditd.service failed because the control process exited with error code.
-See "systemctl status auditd.service" and "journalctl -xe" for details.
-
 00:00 DEBUG: Executing [sudo, auditd, -s, enable]
 00:00 DEBUG: Executing [sudo, auditd, -s, enable]
 00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
 00:00 DEBUG: Executing [sudo, systemctl, start, auditd]
-00:00 DEBUG: Job for auditd.service failed because the control process exited with error code.
-See "systemctl status auditd.service" and "journalctl -xe" for details.
-
 00:00 DEBUG: Executing [ps, -A]
 00:00 DEBUG: Executing [sudo, auditctl, -D]
 00:00 DEBUG: Executing [sudo, auditctl, -a, always,exit, -F, arch=b32, -S, execve]
@@ -98,127 +101,2583 @@ See "systemctl status auditd.service" and "journalctl -xe" for details.
 00:00  INFO: audisp-remote started.
 00:00  INFO: 
 00:00 DEBUG: Starting the Worker thread.
-00:00  INFO: Starting bep-step thread after build execution has started.
-00:00 DEBUG: 
-00:00  INFO: EXECUTE BUILD
-00:00  INFO: --------------------------------------------------
-00:00 DEBUG: Starting the execution thread.
-00:00 DEBUG: Executing [src/test/resources/testCompilationProject/8cc/make_test.sh]
 00:00 DEBUG: Audisp-remote: Connection established
-00:00 DEBUG: Sleeping main thread for 100 milliseconds.
-00:00  INFO: Starting the bep-step thread.
-00:00  INFO: Attaching to PID: 19688
-00:00 DEBUG: Sleeping main thread for 10 milliseconds.
-00:00 DEBUG: Sleeping main thread for 10 milliseconds.
-00:00 DEBUG: 
-00:00  INFO: STOPPING MONITORS
-00:00  INFO: --------------------------------------------------
-00:00  INFO: Stopping the system resource thread.
-00:00 DEBUG: Stopping the CPU System monitor thread.
-00:00  INFO: Replacing /dev/null with the original
-00:00 DEBUG: Executing [sudo, systemctl, stop, auditd]
-00:00  INFO: Build Script ran 3 different Shell/Python scripts.
-00:00 DEBUG: Stopping the bep-step thread.
-00:00 DEBUG: Executing [ps, -A]
-00:00 DEBUG: Sleeping for one second to let resource monitor thread die.
-00:00 DEBUG: Sleeping main thread for 1 milliseconds.
-00:00 DEBUG: Currently, the following threads are running
-00:00 DEBUG: Thread[process reaper,10,system]
-00:00 DEBUG: Thread[Signal Dispatcher,9,system]
-00:00 DEBUG: Thread[ResourceMonitorWorker,5,main]
-00:00 DEBUG: Thread[main,5,main]
-00:00 DEBUG: Thread[process reaper,10,system]
-00:00 DEBUG: Thread[Common-Cleaner,8,InnocuousThreadGroup]
-00:00 DEBUG: Thread[Reference Handler,10,system]
-00:00 DEBUG: Thread[Finalizer,8,system]
-00:00 DEBUG: Thread[Thread-1,5,main]
-00:00 DEBUG: Thread[process reaper,10,system]
-00:00 DEBUG: 
-00:00  INFO: PROCESSING RESULTS
-00:00  INFO: --------------------------------------------------
-00:00  INFO: Successfully generated resource-info.csv.
-00:00  INFO: Successfully generated bep-step.log.
-00:00  INFO: Successfully generated raptor-client.log.
-00:00  INFO: Successfully generated BinaryHashList.dict.
-00:00  INFO: Successfully generated null-catcher.log.
-00:00  INFO: Successfully generated raptor-log.log.
-00:01  INFO: Successfully generated BinaryHashList.dict.
-00:01 ERROR: Failed to generate PluginConfiguration.toml.
-00:01 ERROR: Failed to generate ProxyConfiguration.toml.
-00:01 DEBUG: 
-00:01  INFO: Uploading Results
-00:01  INFO: --------------------------------------------------
-00:01 DEBUG: 
-00:01  INFO: Killing Slaves
-00:01  INFO: --------------------------------------------------
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:01  INFO: Replacing /dev/null with the original
-00:01  INFO: Replacing /dev/null with the original
-00:01  INFO: Replacing /dev/null with the original
-00:01  INFO: Replacing /dev/null with the original
-00:01  INFO: Replacing /dev/null with the original
-00:01  INFO: Stopping the system resource thread.
-00:01  INFO: Stopping the system resource thread.
-00:01 ERROR: Invalid process ID.
-00:01  INFO: Starting the bep-step thread.
-00:01  INFO: Attaching to PID: 1
-00:01  INFO: Starting the bep-step thread.
-00:01  INFO: Attaching to PID: 1
-00:01  INFO: Starting the bep-step thread.
-00:01  INFO: Attaching to PID: 1
-00:01  INFO: Starting the bep-step thread.
-00:01  INFO: Attaching to PID: 1
+00:02  INFO: audisp-remote passed the tests.
+00:02  INFO: Starting bep-step thread after build execution has started.
+00:02 DEBUG: 
+00:02  INFO: EXECUTE BUILD
+00:02  INFO: --------------------------------------------------
+00:02 DEBUG: Starting the execution thread.
+00:02 DEBUG: Executing [make, -C, /home/luke/documents/java/bitcoin, -j, 12]
+00:02 DEBUG: Sleeping main thread for 100 milliseconds.
 00:02  INFO: Starting the bep-step thread.
-00:02  INFO: Attaching to PID: 1
-00:02  INFO: Starting the bep-step thread.
-00:02  INFO: Attaching to PID: 1
-00:02  INFO: Starting the bep-step thread.
-00:02  INFO: Attaching to PID: 1
-00:02  INFO: Starting the bep-step thread.
-00:02  INFO: Attaching to PID: 1
-00:02  INFO: Starting the bep-step thread.
-00:02  INFO: Attaching to PID: 1
-00:02  INFO: Starting the bep-step thread.
-00:02  INFO: Attaching to PID: 1
-00:02  INFO: ● auditd.service - Security Auditing Service
-00:02  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
-00:02  INFO:    Active: failed (Result: exit-code) since Wed 2019-09-11 19:15:44 BST; 22h ago
-00:02  INFO:      Docs: man:auditd(8)
-00:02  INFO:            https://github.com/linux-audit/audit-documentation
-00:02  INFO:   Process: 19659 ExecStart=/usr/bin/auditd (code=exited, status=1/FAILURE)
+00:02  INFO: Attaching to PID: 14014
+00:02 DEBUG: Sleeping main thread for 10 milliseconds.
+02:47 DEBUG: Sleeping main thread for 10 milliseconds.
+02:47 DEBUG: 
+02:47  INFO: STOPPING MONITORS
+02:47  INFO: --------------------------------------------------
+02:47  INFO: Stopping the system resource thread.
+02:47 DEBUG: Stopping the CPU System monitor thread.
+02:47  INFO: Replacing /dev/null with the original
+02:47 DEBUG: Executing [mv, /dev/null, /home/luke/documents/java/RaptorClient/logs/null-catcher.log]
+02:47 DEBUG: Executing [sudo, systemctl, stop, auditd]
+02:47 DEBUG: Executing [ps, -A]
+02:47 DEBUG: Sleeping for one second to let resource monitor thread die.
+02:47 DEBUG: Sleeping main thread for 1 milliseconds.
+02:47 DEBUG: Currently, the following threads are running
+02:47 DEBUG: Thread[Finalizer,8,system]
+02:47 DEBUG: Thread[Bep-Step,5,main]
+02:47 DEBUG: Thread[Reference Handler,10,system]
+02:47 DEBUG: Thread[Thread-1,5,main]
+02:47 DEBUG: Thread[process reaper,10,system]
+02:47 DEBUG: Thread[Attach Listener,9,system]
+02:47 DEBUG: Thread[main,5,main]
+02:47 DEBUG: Thread[process reaper,10,system]
+02:47 DEBUG: Thread[Monitor Ctrl-Break,5,main]
+02:47 DEBUG: Thread[Common-Cleaner,8,InnocuousThreadGroup]
+02:47 DEBUG: Thread[Signal Dispatcher,9,system]
+02:47 DEBUG: Thread[ResourceMonitorWorker,5,main]
+02:47 DEBUG: 
+02:47  INFO: PROCESSING RESULTS
+02:47  INFO: --------------------------------------------------
+02:47  INFO: Successfully generated resource-info.csv.
+02:47  INFO: Successfully generated bep-step.log.
+02:47  INFO: Successfully generated raptor-client.log.
+02:47  INFO: Successfully generated BinaryHashList.dict.
+02:47  INFO: Successfully generated BinaryHashList.json.
+02:47  INFO: Successfully generated null-catcher.log.
+02:47  INFO: Build Script ran 657 different Shell/Python scripts.
+02:47 DEBUG: Stopping the bep-step thread.
+02:48 DEBUG: 
+02:48  INFO: Uploading Results
+02:48  INFO: --------------------------------------------------
+02:48 DEBUG: 
+02:48  INFO: Killing Slaves
+02:48  INFO: --------------------------------------------------
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:01 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:01  INFO: Found host at 192.168.1.100:80
+00:01  INFO: Found host at 192.168.1.254:80
+00:01  WARN: Found multiple raptor servers running at the same time
+00:01  WARN: [192.168.1.100, 192.168.1.254]
+00:01  INFO: Attempting to start dev-null-catcher
+00:01  INFO: dev-null-catcher started.
+00:01  INFO: 
+00:01  INFO: dev-null-catcher passed the tests.
+00:01  INFO: Attempting to start audisp-remote
+00:01  INFO: Starting configurations for the auditd remote multiplexing.
+00:01  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:01  INFO: audisp-remote started.
+00:01  INFO: 
+00:03 ERROR: Expected to see "uname", "whoami" and "ls"
+00:03 ERROR: []
+00:04 ERROR: ● auditd.service - Security Auditing Service
+00:04 ERROR:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:04 ERROR:    Active: active (running) since Sat 2019-09-14 13:17:32 BST; 2s ago
+00:04 ERROR:      Docs: man:auditd(8)
+00:04 ERROR:            https://github.com/linux-audit/audit-documentation
+00:04 ERROR:   Process: 19383 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:04 ERROR:   Process: 19388 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:04 ERROR:  Main PID: 19384 (auditd)
+00:04 ERROR:     Tasks: 5 (limit: 4915)
+00:04 ERROR:    Memory: 3.2M
+00:04 ERROR:    CGroup: /system.slice/auditd.service
+00:04 ERROR:            ├─19384 /usr/bin/auditd
+00:04 ERROR:            ├─19386 /sbin/audispd
+00:04 ERROR:            └─19389 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:04 ERROR: 
+00:04 ERROR: Sep 14 13:17:32 archie systemd[1]: Starting Security Auditing Service...
+00:04 ERROR: Sep 14 13:17:32 archie auditd[19384]: Started dispatcher: /sbin/audispd pid: 19386
+00:04 ERROR: Sep 14 13:17:32 archie auditd[19384]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:04 ERROR: Sep 14 13:17:32 archie audispd[19386]: af_unix plugin initialized
+00:04 ERROR: Sep 14 13:17:32 archie audispd[19386]: audispd initialized with q_depth=80 and 2 active plugins
+00:04 ERROR: Sep 14 13:17:32 archie audisp-remote[19389]: Audisp-remote started with queue_size: 0
+00:04 ERROR: Sep 14 13:17:32 archie augenrules[19388]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:04 ERROR: Sep 14 13:17:32 archie systemd[1]: Started Security Auditing Service.
+00:04 ERROR: audisp-remote started but the running tests failed.
+00:04 ERROR: audisp-remote setup failed!
+00:04  INFO: 
+00:04 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:04  INFO: Attempting to start auditd
+00:04 ERROR: auditd setup failed!
+00:04  INFO: 
+00:04  INFO: Stopping the system resource thread.
+00:04  INFO: Replacing /dev/null with the original
+00:04  INFO: Found host at 192.168.1.100:80
+00:04  INFO: Found host at 192.168.1.254:80
+00:04  WARN: Found multiple raptor servers running at the same time
+00:04  WARN: [192.168.1.100, 192.168.1.254]
+00:04 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:04  INFO: Found host at 192.168.1.100:80
+00:05  INFO: Found host at 192.168.1.254:80
+00:05  WARN: Found multiple raptor servers running at the same time
+00:05  WARN: [192.168.1.100, 192.168.1.254]
+00:05  INFO: Starting the bep-step thread.
+00:05  INFO: Attaching to PID: 19454
+00:05  INFO: Build Script ran 0 different Shell/Python scripts.
+00:05 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:05  INFO: Found host at 192.168.1.100:80
+00:05  INFO: Found host at 192.168.1.254:80
+00:05  WARN: Found multiple raptor servers running at the same time
+00:05  WARN: [192.168.1.100, 192.168.1.254]
+00:05  INFO: Attempting to start dev-null-catcher
+00:05  INFO: dev-null-catcher started.
+00:05  INFO: 
+00:05  INFO: dev-null-catcher passed the tests.
+00:05  INFO: Attempting to start audisp-remote
+00:05  INFO: Starting configurations for the auditd remote multiplexing.
+00:06  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:06  INFO: audisp-remote started.
+00:06  INFO: 
+00:06 ERROR: Failed to spawn Audisp local multiplexer server.
+00:06 ERROR: Audisp-remote failed with the following error
+00:06 ERROR: java.io.IOException
+00:08 ERROR: Expected to see "uname", "whoami" and "ls"
+00:08 ERROR: []
+00:08 ERROR: ● auditd.service - Security Auditing Service
+00:08 ERROR:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:08 ERROR:    Active: active (running) since Sat 2019-09-14 13:17:37 BST; 2s ago
+00:08 ERROR:      Docs: man:auditd(8)
+00:08 ERROR:            https://github.com/linux-audit/audit-documentation
+00:08 ERROR:   Process: 19496 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:08 ERROR:   Process: 19503 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:08 ERROR:  Main PID: 19497 (auditd)
+00:08 ERROR:     Tasks: 5 (limit: 4915)
+00:08 ERROR:    Memory: 2.8M
+00:08 ERROR:    CGroup: /system.slice/auditd.service
+00:08 ERROR:            ├─19497 /usr/bin/auditd
+00:08 ERROR:            ├─19499 /sbin/audispd
+00:08 ERROR:            └─19501 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:08 ERROR: 
+00:08 ERROR: Sep 14 13:17:37 archie systemd[1]: Starting Security Auditing Service...
+00:08 ERROR: Sep 14 13:17:37 archie auditd[19497]: Started dispatcher: /sbin/audispd pid: 19499
+00:08 ERROR: Sep 14 13:17:37 archie audispd[19499]: af_unix plugin initialized
+00:08 ERROR: Sep 14 13:17:37 archie audispd[19499]: audispd initialized with q_depth=80 and 2 active plugins
+00:08 ERROR: Sep 14 13:17:37 archie audisp-remote[19501]: Audisp-remote started with queue_size: 0
+00:08 ERROR: Sep 14 13:17:37 archie audisp-remote[19501]: Connected to 127.0.0.1
+00:08 ERROR: Sep 14 13:17:37 archie auditd[19497]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:08 ERROR: Sep 14 13:17:37 archie augenrules[19503]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:08 ERROR: Sep 14 13:17:37 archie systemd[1]: Started Security Auditing Service.
+00:08 ERROR: audisp-remote started but the running tests failed.
+00:08 ERROR: audisp-remote setup failed!
+00:08  INFO: 
+00:08 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:08  INFO: Attempting to start auditd
+00:08 ERROR: auditd setup failed!
+00:08  INFO: 
+00:08  INFO: Stopping the system resource thread.
+00:08  INFO: Replacing /dev/null with the original
+00:08  INFO: Found host at 192.168.1.100:80
+00:08  INFO: Found host at 192.168.1.254:80
+00:08  WARN: Found multiple raptor servers running at the same time
+00:08  WARN: [192.168.1.100, 192.168.1.254]
+00:08 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:08 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:09  INFO: Found host at 192.168.1.100:80
+00:09  INFO: Found host at 192.168.1.103:80
+00:09  INFO: Found host at 192.168.1.254:80
+00:09  WARN: Found multiple raptor servers running at the same time
+00:09  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:09  INFO: Attempting to start dev-null-catcher
+00:09  INFO: dev-null-catcher started.
+00:09  INFO: 
+00:09  INFO: dev-null-catcher passed the tests.
+00:09  INFO: Attempting to start audisp-remote
+00:09  INFO: Starting configurations for the auditd remote multiplexing.
+00:09  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:09  INFO: audisp-remote started.
+00:09  INFO: 
+00:11 ERROR: Expected to see "uname", "whoami" and "ls"
+00:11 ERROR: []
+00:11 ERROR: ● auditd.service - Security Auditing Service
+00:11 ERROR:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:11 ERROR:    Active: active (running) since Sat 2019-09-14 13:17:40 BST; 2s ago
+00:11 ERROR:      Docs: man:auditd(8)
+00:11 ERROR:            https://github.com/linux-audit/audit-documentation
+00:11 ERROR:   Process: 19591 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:11 ERROR:   Process: 19597 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:11 ERROR:  Main PID: 19592 (auditd)
+00:11 ERROR:     Tasks: 5 (limit: 4915)
+00:11 ERROR:    Memory: 2.9M
+00:11 ERROR:    CGroup: /system.slice/auditd.service
+00:11 ERROR:            ├─19592 /usr/bin/auditd
+00:11 ERROR:            ├─19594 /sbin/audispd
+00:11 ERROR:            └─19596 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:11 ERROR: 
+00:11 ERROR: Sep 14 13:17:40 archie systemd[1]: Starting Security Auditing Service...
+00:11 ERROR: Sep 14 13:17:40 archie auditd[19592]: Started dispatcher: /sbin/audispd pid: 19594
+00:11 ERROR: Sep 14 13:17:40 archie auditd[19592]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:11 ERROR: Sep 14 13:17:40 archie audispd[19594]: af_unix plugin initialized
+00:11 ERROR: Sep 14 13:17:40 archie audispd[19594]: audispd initialized with q_depth=80 and 2 active plugins
+00:11 ERROR: Sep 14 13:17:40 archie audisp-remote[19596]: Audisp-remote started with queue_size: 0
+00:11 ERROR: Sep 14 13:17:40 archie augenrules[19597]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:11 ERROR: Sep 14 13:17:40 archie systemd[1]: Started Security Auditing Service.
+00:11 ERROR: audisp-remote started but the running tests failed.
+00:11 ERROR: audisp-remote setup failed!
+00:11  INFO: 
+00:11 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:11  INFO: Attempting to start auditd
+00:11 ERROR: auditd setup failed!
+00:11  INFO: 
+00:12  INFO: Stopping the system resource thread.
+00:12  INFO: Replacing /dev/null with the original
+00:12  INFO: Found host at 192.168.1.100:80
+00:12  INFO: Found host at 192.168.1.254:80
+00:12  WARN: Found multiple raptor servers running at the same time
+00:12  WARN: [192.168.1.100, 192.168.1.254]
+00:12 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:12  INFO: Found host at 192.168.1.100:80
+00:12  INFO: Found host at 192.168.1.254:80
+00:12  WARN: Found multiple raptor servers running at the same time
+00:12  WARN: [192.168.1.100, 192.168.1.254]
+00:12 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:13  INFO: Found host at 192.168.1.100:80
+00:13  INFO: Found host at 192.168.1.254:80
+00:13  WARN: Found multiple raptor servers running at the same time
+00:13  WARN: [192.168.1.100, 192.168.1.254]
+00:13  INFO: Attempting to start dev-null-catcher
+00:13  INFO: dev-null-catcher started.
+00:13  INFO: 
+00:13  INFO: dev-null-catcher passed the tests.
+00:13  INFO: Attempting to start audisp-remote
+00:13 ERROR: audisp-remote setup failed!
+00:13  INFO: 
+00:13 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:13  INFO: Attempting to start auditd
+00:16 ERROR: 19710 ?        00:00:00 auditd
+00:16  INFO: ● auditd.service - Security Auditing Service
+00:16  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:16  INFO:    Active: active (running) since Sat 2019-09-14 13:17:45 BST; 2s ago
+00:16  INFO:      Docs: man:auditd(8)
+00:16  INFO:            https://github.com/linux-audit/audit-documentation
+00:16  INFO:   Process: 19709 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:16  INFO:   Process: 19716 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:16  INFO:  Main PID: 19710 (auditd)
+00:16  INFO:     Tasks: 5 (limit: 4915)
+00:16  INFO:    Memory: 3.0M
+00:16  INFO:    CGroup: /system.slice/auditd.service
+00:16  INFO:            ├─19710 /usr/bin/auditd
+00:16  INFO:            ├─19712 /sbin/audispd
+00:16  INFO:            └─19714 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:16  INFO: 
+00:16  INFO: Sep 14 13:17:45 archie systemd[1]: Starting Security Auditing Service...
+00:16  INFO: Sep 14 13:17:45 archie auditd[19710]: Started dispatcher: /sbin/audispd pid: 19712
+00:16  INFO: Sep 14 13:17:45 archie auditd[19710]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:16  INFO: Sep 14 13:17:45 archie audispd[19712]: af_unix plugin initialized
+00:16  INFO: Sep 14 13:17:45 archie audispd[19712]: audispd initialized with q_depth=80 and 2 active plugins
+00:16  INFO: Sep 14 13:17:45 archie audisp-remote[19714]: Audisp-remote started with queue_size: 0
+00:16  INFO: Sep 14 13:17:45 archie audisp-remote[19714]: Connected to 127.0.0.1
+00:16  INFO: Sep 14 13:17:45 archie augenrules[19716]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:16  INFO: Sep 14 13:17:45 archie systemd[1]: Started Security Auditing Service.
+00:17 ERROR: 19710 ?        00:00:00 auditd
+00:17 ERROR: Failed to kill the previously running version of auditd.
+00:23 ERROR: 19777 ?        00:00:00 auditd
+00:23  INFO: auditd started.
+00:23  INFO: 
+00:23  INFO: Testing to see if auditd has started correctly.
+00:24  INFO: auditd passed the tests.
+00:24  INFO: Starting bep-step thread after build execution has started.
+00:24  INFO: Starting the bep-step thread.
+00:24  INFO: Attaching to PID: 19797
+00:24  INFO: Build Script ran 0 different Shell/Python scripts.
+00:24  INFO: Stopping the system resource thread.
+00:24  INFO: Replacing /dev/null with the original
+00:24 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:25  INFO: Found host at 192.168.1.100:80
+00:25  INFO: Found host at 192.168.1.103:80
+00:25  INFO: Found host at 192.168.1.254:80
+00:25  WARN: Found multiple raptor servers running at the same time
+00:25  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:25  INFO: Attempting to start dev-null-catcher
+00:25  INFO: dev-null-catcher started.
+00:25  INFO: 
+00:25  INFO: dev-null-catcher passed the tests.
+00:25  INFO: Attempting to start audisp-remote
+00:25 ERROR: audisp-remote setup failed!
+00:25  INFO: 
+00:25 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:25  INFO: Attempting to start auditd
+00:28 ERROR: 19876 ?        00:00:00 auditd
+00:28  INFO: ● auditd.service - Security Auditing Service
+00:28  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:28  INFO:    Active: active (running) since Sat 2019-09-14 13:17:57 BST; 2s ago
+00:28  INFO:      Docs: man:auditd(8)
+00:28  INFO:            https://github.com/linux-audit/audit-documentation
+00:28  INFO:   Process: 19875 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:28  INFO:   Process: 19881 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:28  INFO:  Main PID: 19876 (auditd)
+00:28  INFO:     Tasks: 5 (limit: 4915)
+00:28  INFO:    Memory: 3.6M
+00:28  INFO:    CGroup: /system.slice/auditd.service
+00:28  INFO:            ├─19876 /usr/bin/auditd
+00:28  INFO:            ├─19878 /sbin/audispd
+00:28  INFO:            └─19880 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:28  INFO: 
+00:28  INFO: Sep 14 13:17:57 archie systemd[1]: Starting Security Auditing Service...
+00:28  INFO: Sep 14 13:17:57 archie auditd[19876]: Started dispatcher: /sbin/audispd pid: 19878
+00:28  INFO: Sep 14 13:17:57 archie auditd[19876]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:28  INFO: Sep 14 13:17:57 archie audispd[19878]: af_unix plugin initialized
+00:28  INFO: Sep 14 13:17:57 archie audispd[19878]: audispd initialized with q_depth=80 and 2 active plugins
+00:28  INFO: Sep 14 13:17:57 archie audisp-remote[19880]: Audisp-remote started with queue_size: 0
+00:28  INFO: Sep 14 13:17:57 archie augenrules[19881]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:28  INFO: Sep 14 13:17:57 archie systemd[1]: Started Security Auditing Service.
+00:29 ERROR: 19876 ?        00:00:00 auditd
+00:29 ERROR: Failed to kill the previously running version of auditd.
+00:33 ERROR: 19943 ?        00:00:00 auditd
+00:33  INFO: auditd started.
+00:33  INFO: 
+00:33  INFO: Testing to see if auditd has started correctly.
+00:34  INFO: auditd passed the tests.
+00:34  INFO: Starting bep-step thread after build execution has started.
+00:34  INFO: Stopping the system resource thread.
+00:34  INFO: Replacing /dev/null with the original
+00:34 ERROR: Failed to stop bep-step because it never started
+00:34 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:34  INFO: Found host at 192.168.1.100:80
+00:34  INFO: Found host at 192.168.1.254:80
+00:34  WARN: Found multiple raptor servers running at the same time
+00:34  WARN: [192.168.1.100, 192.168.1.254]
+00:34  INFO: Attempting to start dev-null-catcher
+00:34  INFO: dev-null-catcher started.
+00:34  INFO: 
+00:34  INFO: dev-null-catcher passed the tests.
+00:34  INFO: Attempting to start audisp-remote
+00:34  INFO: Starting configurations for the auditd remote multiplexing.
+00:35  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:35  INFO: audisp-remote started.
+00:35  INFO: 
+00:37  INFO: audisp-remote passed the tests.
+00:37  INFO: Starting bep-step thread after build execution has started.
+00:37  INFO: Stopping the system resource thread.
+00:37  INFO: Replacing /dev/null with the original
+00:37 ERROR: Failed to stop bep-step because it never started
+00:37  INFO: Replacing /dev/null with the original
+00:37  INFO: Replacing /dev/null with the original
+00:38  INFO: Replacing /dev/null with the original
+00:38  INFO: Replacing /dev/null with the original
+00:38  INFO: Replacing /dev/null with the original
+00:38  INFO: Replacing /dev/null with the original
+00:38  INFO: Replacing /dev/null with the original
+00:38  INFO: Replacing /dev/null with the original
+00:39  INFO: Replacing /dev/null with the original
+00:39  INFO: Replacing /dev/null with the original
+00:39  INFO: Replacing /dev/null with the original
+00:39  INFO: Replacing /dev/null with the original
+00:39  INFO: Replacing /dev/null with the original
+00:39  INFO: Stopping the system resource thread.
+00:39  INFO: Stopping the system resource thread.
+00:39 ERROR: Invalid process ID.
+00:39  INFO: Starting the bep-step thread.
+00:39  INFO: Attaching to PID: 1
+00:39  INFO: Starting the bep-step thread.
+00:39  INFO: Attaching to PID: 1
+00:39  INFO: Starting the bep-step thread.
+00:39  INFO: Attaching to PID: 1
+00:39  INFO: Starting the bep-step thread.
+00:39  INFO: Attaching to PID: 1
+00:39  INFO: Starting the bep-step thread.
+00:39  INFO: Attaching to PID: 1
+00:39  INFO: Starting the bep-step thread.
+00:39  INFO: Attaching to PID: 1
+00:40  INFO: Starting the bep-step thread.
+00:40  INFO: Attaching to PID: 1
+00:40  INFO: Starting the bep-step thread.
+00:40  INFO: Attaching to PID: 1
+00:40  INFO: Starting the bep-step thread.
+00:40  INFO: Attaching to PID: 1
+00:40  INFO: Starting the bep-step thread.
+00:40  INFO: Attaching to PID: 1
+00:43 ERROR: 20233 ?        00:00:00 auditd
+00:43  INFO: ● auditd.service - Security Auditing Service
+00:43  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:43  INFO:    Active: active (running) since Sat 2019-09-14 13:18:12 BST; 2s ago
+00:43  INFO:      Docs: man:auditd(8)
+00:43  INFO:            https://github.com/linux-audit/audit-documentation
+00:43  INFO:   Process: 20232 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:43  INFO:   Process: 20240 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:43  INFO:  Main PID: 20233 (auditd)
+00:43  INFO:     Tasks: 5 (limit: 4915)
+00:43  INFO:    Memory: 3.5M
+00:43  INFO:    CGroup: /system.slice/auditd.service
+00:43  INFO:            ├─20233 /usr/bin/auditd
+00:43  INFO:            ├─20235 /sbin/audispd
+00:43  INFO:            └─20237 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:43  INFO: 
+00:43  INFO: Sep 14 13:18:12 archie systemd[1]: Starting Security Auditing Service...
+00:43  INFO: Sep 14 13:18:12 archie auditd[20233]: Started dispatcher: /sbin/audispd pid: 20235
+00:43  INFO: Sep 14 13:18:12 archie audispd[20235]: af_unix plugin initialized
+00:43  INFO: Sep 14 13:18:12 archie auditd[20233]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:43  INFO: Sep 14 13:18:12 archie audispd[20235]: audispd initialized with q_depth=80 and 2 active plugins
+00:43  INFO: Sep 14 13:18:12 archie audisp-remote[20237]: Audisp-remote started with queue_size: 0
+00:43  INFO: Sep 14 13:18:12 archie augenrules[20240]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:43  INFO: Sep 14 13:18:12 archie systemd[1]: Started Security Auditing Service.
+00:47 ERROR: 20358 ?        00:00:00 auditd
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:01 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:01  INFO: Found host at 192.168.1.100:80
+00:01  INFO: Found host at 192.168.1.103:80
+00:01  INFO: Found host at 192.168.1.254:80
+00:01  WARN: Found multiple raptor servers running at the same time
+00:01  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:01  INFO: Attempting to start dev-null-catcher
+00:01  INFO: dev-null-catcher started.
+00:01  INFO: 
+00:01  INFO: dev-null-catcher passed the tests.
+00:01  INFO: Attempting to start audisp-remote
+00:01  INFO: Starting configurations for the auditd remote multiplexing.
+00:02  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:02  INFO: audisp-remote started.
 00:02  INFO: 
-00:02  INFO: Sep 11 19:15:44 archie auditd[19660]: Unable to set audit pid, exiting
-00:02  INFO: Sep 11 19:15:44 archie audispd[19662]: af_unix plugin initialized
-00:02  INFO: Sep 11 19:15:44 archie audispd[19662]: audispd initialized with q_depth=80 and 2 active plugins
-00:02  INFO: Sep 11 19:15:44 archie audisp-remote[19665]: Audisp-remote started with queue_size: 0
-00:02  INFO: Sep 11 19:15:44 archie auditd[19659]: Cannot daemonize (Interrupted system call)
-00:02  INFO: Sep 11 19:15:44 archie auditd[19659]: The audit daemon is exiting.
-00:02  INFO: Sep 11 19:15:44 archie systemd[1]: auditd.service: Control process exited, code=exited, status=1/FAILURE
-00:02  INFO: Sep 11 19:15:44 archie audisp-remote[19665]: audisp-remote is exiting on stop request, queue_size: 2
-00:02  INFO: Sep 11 19:15:44 archie systemd[1]: auditd.service: Failed with result 'exit-code'.
-00:02  INFO: Sep 11 19:15:44 archie systemd[1]: Failed to start Security Auditing Service.
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
-00:00  INFO: Replacing /dev/null with the original
+00:02  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:04 ERROR: Expected to see "uname", "whoami" and "ls"
+00:04 ERROR: []
+00:04 ERROR: ● auditd.service - Security Auditing Service
+00:04 ERROR:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:04 ERROR:    Active: active (running) since Sat 2019-09-14 13:21:20 BST; 2s ago
+00:04 ERROR:      Docs: man:auditd(8)
+00:04 ERROR:            https://github.com/linux-audit/audit-documentation
+00:04 ERROR:   Process: 20839 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:04 ERROR:   Process: 20845 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:04 ERROR:  Main PID: 20840 (auditd)
+00:04 ERROR:     Tasks: 5 (limit: 4915)
+00:04 ERROR:    Memory: 3.2M
+00:04 ERROR:    CGroup: /system.slice/auditd.service
+00:04 ERROR:            ├─20840 /usr/bin/auditd
+00:04 ERROR:            ├─20842 /sbin/audispd
+00:04 ERROR:            └─20844 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:04 ERROR: 
+00:04 ERROR: Sep 14 13:21:20 archie systemd[1]: Starting Security Auditing Service...
+00:04 ERROR: Sep 14 13:21:20 archie auditd[20840]: Started dispatcher: /sbin/audispd pid: 20842
+00:04 ERROR: Sep 14 13:21:20 archie auditd[20840]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:04 ERROR: Sep 14 13:21:20 archie audispd[20842]: af_unix plugin initialized
+00:04 ERROR: Sep 14 13:21:20 archie audispd[20842]: audispd initialized with q_depth=80 and 2 active plugins
+00:04 ERROR: Sep 14 13:21:20 archie audisp-remote[20844]: Audisp-remote started with queue_size: 0
+00:04 ERROR: Sep 14 13:21:20 archie augenrules[20845]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:04 ERROR: Sep 14 13:21:20 archie systemd[1]: Started Security Auditing Service.
+00:04 ERROR: audisp-remote started but the running tests failed.
+00:04 ERROR: audisp-remote setup failed!
+00:04  INFO: 
+00:04 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:04  INFO: Attempting to start auditd
+00:04 ERROR: auditd setup failed!
+00:04  INFO: 
+00:04  INFO: Stopping the system resource thread.
+00:04  INFO: Replacing /dev/null with the original
+00:04  INFO: Found host at 192.168.1.100:80
+00:04  INFO: Found host at 192.168.1.254:80
+00:04  WARN: Found multiple raptor servers running at the same time
+00:04  WARN: [192.168.1.100, 192.168.1.254]
+00:04 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:04  INFO: Found host at 192.168.1.100:80
+00:04  INFO: Found host at 192.168.1.103:80
+00:05  INFO: Found host at 192.168.1.254:80
+00:05  WARN: Found multiple raptor servers running at the same time
+00:05  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:05  INFO: Starting the bep-step thread.
+00:05  INFO: Attaching to PID: 20909
+00:05  INFO: Build Script ran 0 different Shell/Python scripts.
+00:05 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:05  INFO: Found host at 192.168.1.100:80
+00:05  INFO: Found host at 192.168.1.103:80
+00:05  INFO: Found host at 192.168.1.254:80
+00:05  WARN: Found multiple raptor servers running at the same time
+00:05  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:05  INFO: Attempting to start dev-null-catcher
+00:05  INFO: dev-null-catcher started.
+00:05  INFO: 
+00:05  INFO: dev-null-catcher passed the tests.
+00:05  INFO: Attempting to start audisp-remote
+00:05  INFO: Starting configurations for the auditd remote multiplexing.
+00:06  INFO: Audisp received connection.
+00:06  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:06  INFO: audisp-remote started.
+00:06  INFO: 
+00:06 ERROR: Failed to spawn Audisp local multiplexer server.
+00:06 ERROR: Audisp-remote failed with the following error
+00:06 ERROR: java.io.IOException
+00:08 ERROR: Expected to see "uname", "whoami" and "ls"
+00:08 ERROR: []
+00:08 ERROR: ● auditd.service - Security Auditing Service
+00:08 ERROR:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:08 ERROR:    Active: active (running) since Sat 2019-09-14 13:21:24 BST; 2s ago
+00:08 ERROR:      Docs: man:auditd(8)
+00:08 ERROR:            https://github.com/linux-audit/audit-documentation
+00:08 ERROR:   Process: 20949 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:08 ERROR:   Process: 20957 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:08 ERROR:  Main PID: 20950 (auditd)
+00:08 ERROR:     Tasks: 5 (limit: 4915)
+00:08 ERROR:    Memory: 2.8M
+00:08 ERROR:    CGroup: /system.slice/auditd.service
+00:08 ERROR:            ├─20950 /usr/bin/auditd
+00:08 ERROR:            ├─20952 /sbin/audispd
+00:08 ERROR:            └─20955 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:08 ERROR: 
+00:08 ERROR: Sep 14 13:21:24 archie systemd[1]: Starting Security Auditing Service...
+00:08 ERROR: Sep 14 13:21:24 archie auditd[20950]: Started dispatcher: /sbin/audispd pid: 20952
+00:08 ERROR: Sep 14 13:21:24 archie auditd[20950]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:08 ERROR: Sep 14 13:21:24 archie audispd[20952]: af_unix plugin initialized
+00:08 ERROR: Sep 14 13:21:24 archie audispd[20952]: audispd initialized with q_depth=80 and 2 active plugins
+00:08 ERROR: Sep 14 13:21:24 archie audisp-remote[20955]: Audisp-remote started with queue_size: 0
+00:08 ERROR: Sep 14 13:21:24 archie audisp-remote[20955]: Connected to 127.0.0.1
+00:08 ERROR: Sep 14 13:21:24 archie augenrules[20957]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:08 ERROR: Sep 14 13:21:24 archie systemd[1]: Started Security Auditing Service.
+00:08 ERROR: audisp-remote started but the running tests failed.
+00:08 ERROR: audisp-remote setup failed!
+00:08  INFO: 
+00:08 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:08  INFO: Attempting to start auditd
+00:08 ERROR: auditd setup failed!
+00:08  INFO: 
+00:08  INFO: Stopping the system resource thread.
+00:08  INFO: Replacing /dev/null with the original
+00:08  INFO: Found host at 192.168.1.100:80
+00:08  INFO: Found host at 192.168.1.254:80
+00:08  WARN: Found multiple raptor servers running at the same time
+00:08  WARN: [192.168.1.100, 192.168.1.254]
+00:08 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:08 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:09  INFO: Found host at 192.168.1.100:80
+00:09  INFO: Found host at 192.168.1.103:80
+00:09  INFO: Found host at 192.168.1.254:80
+00:09  WARN: Found multiple raptor servers running at the same time
+00:09  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:09  INFO: Attempting to start dev-null-catcher
+00:09  INFO: dev-null-catcher started.
+00:09  INFO: 
+00:09  INFO: dev-null-catcher passed the tests.
+00:09  INFO: Attempting to start audisp-remote
+00:09  INFO: Starting configurations for the auditd remote multiplexing.
+00:09  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:09  INFO: audisp-remote started.
+00:09  INFO: 
+00:09  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:09  INFO: Audisp received connection.
+00:11  INFO: audisp-remote passed the tests.
+00:11  INFO: Starting bep-step thread after build execution has started.
+00:11  INFO: Starting the bep-step thread.
+00:11  INFO: Attaching to PID: 21096
+00:11  INFO: Build Script ran 0 different Shell/Python scripts.
+00:11  INFO: Stopping the system resource thread.
+00:11  INFO: Replacing /dev/null with the original
+00:12 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:12  INFO: Found host at 192.168.1.100:80
+00:12  INFO: Found host at 192.168.1.103:80
+00:12  INFO: Found host at 192.168.1.254:80
+00:12  WARN: Found multiple raptor servers running at the same time
+00:12  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:12 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:12  INFO: Found host at 192.168.1.100:80
+00:13  INFO: Found host at 192.168.1.254:80
+00:13  WARN: Found multiple raptor servers running at the same time
+00:13  WARN: [192.168.1.100, 192.168.1.254]
+00:13 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:13  INFO: Found host at 192.168.1.100:80
+00:13  INFO: Found host at 192.168.1.103:80
+00:13  INFO: Found host at 192.168.1.254:80
+00:13  WARN: Found multiple raptor servers running at the same time
+00:13  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:13  INFO: Attempting to start dev-null-catcher
+00:13  INFO: dev-null-catcher started.
+00:13  INFO: 
+00:13  INFO: dev-null-catcher passed the tests.
+00:13  INFO: Attempting to start audisp-remote
+00:13 ERROR: audisp-remote setup failed!
+00:13  INFO: 
+00:13 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:13  INFO: Attempting to start auditd
+00:16 ERROR: 21177 ?        00:00:00 auditd
+00:16  INFO: ● auditd.service - Security Auditing Service
+00:16  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:16  INFO:    Active: active (running) since Sat 2019-09-14 13:21:33 BST; 2s ago
+00:16  INFO:      Docs: man:auditd(8)
+00:16  INFO:            https://github.com/linux-audit/audit-documentation
+00:16  INFO:   Process: 21176 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:16  INFO:   Process: 21183 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:16  INFO:  Main PID: 21177 (auditd)
+00:16  INFO:     Tasks: 5 (limit: 4915)
+00:16  INFO:    Memory: 3.6M
+00:16  INFO:    CGroup: /system.slice/auditd.service
+00:16  INFO:            ├─21177 /usr/bin/auditd
+00:16  INFO:            ├─21179 /sbin/audispd
+00:16  INFO:            └─21181 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:16  INFO: 
+00:16  INFO: Sep 14 13:21:33 archie systemd[1]: Starting Security Auditing Service...
+00:16  INFO: Sep 14 13:21:33 archie auditd[21177]: Started dispatcher: /sbin/audispd pid: 21179
+00:16  INFO: Sep 14 13:21:33 archie auditd[21177]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:16  INFO: Sep 14 13:21:33 archie audispd[21179]: af_unix plugin initialized
+00:16  INFO: Sep 14 13:21:33 archie audispd[21179]: audispd initialized with q_depth=80 and 2 active plugins
+00:16  INFO: Sep 14 13:21:33 archie audisp-remote[21181]: Audisp-remote started with queue_size: 0
+00:16  INFO: Sep 14 13:21:33 archie augenrules[21183]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:16  INFO: Sep 14 13:21:33 archie systemd[1]: Started Security Auditing Service.
+00:17 ERROR: 21177 ?        00:00:00 auditd
+00:17 ERROR: Failed to kill the previously running version of auditd.
+00:21 ERROR: 21242 ?        00:00:00 auditd
+00:21  INFO: auditd started.
+00:21  INFO: 
+00:21  INFO: Testing to see if auditd has started correctly.
+00:22  INFO: auditd passed the tests.
+00:22  INFO: Starting bep-step thread after build execution has started.
+00:22  INFO: Starting the bep-step thread.
+00:22  INFO: Attaching to PID: 21262
+00:22  INFO: Build Script ran 0 different Shell/Python scripts.
+00:22  INFO: Stopping the system resource thread.
+00:22  INFO: Replacing /dev/null with the original
+00:22 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:23  INFO: Found host at 192.168.1.100:80
+00:23  INFO: Found host at 192.168.1.103:80
+00:23  INFO: Found host at 192.168.1.254:80
+00:23  WARN: Found multiple raptor servers running at the same time
+00:23  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:23  INFO: Attempting to start dev-null-catcher
+00:23  INFO: dev-null-catcher started.
+00:23  INFO: 
+00:23  INFO: dev-null-catcher passed the tests.
+00:23  INFO: Attempting to start audisp-remote
+00:23 ERROR: audisp-remote setup failed!
+00:23  INFO: 
+00:23 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:23  INFO: Attempting to start auditd
+00:26 ERROR: 21340 ?        00:00:00 auditd
+00:26  INFO: ● auditd.service - Security Auditing Service
+00:26  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:26  INFO:    Active: active (running) since Sat 2019-09-14 13:21:42 BST; 2s ago
+00:26  INFO:      Docs: man:auditd(8)
+00:26  INFO:            https://github.com/linux-audit/audit-documentation
+00:26  INFO:   Process: 21339 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:26  INFO:   Process: 21345 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:26  INFO:  Main PID: 21340 (auditd)
+00:26  INFO:     Tasks: 5 (limit: 4915)
+00:26  INFO:    Memory: 3.5M
+00:26  INFO:    CGroup: /system.slice/auditd.service
+00:26  INFO:            ├─21340 /usr/bin/auditd
+00:26  INFO:            ├─21342 /sbin/audispd
+00:26  INFO:            └─21344 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:26  INFO: 
+00:26  INFO: Sep 14 13:21:42 archie systemd[1]: Starting Security Auditing Service...
+00:26  INFO: Sep 14 13:21:42 archie auditd[21340]: Started dispatcher: /sbin/audispd pid: 21342
+00:26  INFO: Sep 14 13:21:42 archie auditd[21340]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:26  INFO: Sep 14 13:21:42 archie audispd[21342]: af_unix plugin initialized
+00:26  INFO: Sep 14 13:21:42 archie audispd[21342]: audispd initialized with q_depth=80 and 2 active plugins
+00:26  INFO: Sep 14 13:21:42 archie audisp-remote[21344]: Audisp-remote started with queue_size: 0
+00:26  INFO: Sep 14 13:21:42 archie augenrules[21345]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:26  INFO: Sep 14 13:21:42 archie systemd[1]: Started Security Auditing Service.
+00:27 ERROR: 21340 ?        00:00:00 auditd
+00:27 ERROR: Failed to kill the previously running version of auditd.
+00:30 ERROR: 21405 ?        00:00:00 auditd
+00:30  INFO: auditd started.
+00:30  INFO: 
+00:30  INFO: Testing to see if auditd has started correctly.
+00:31  INFO: auditd passed the tests.
+00:31  INFO: Starting bep-step thread after build execution has started.
+00:31  INFO: Stopping the system resource thread.
+00:31  INFO: Replacing /dev/null with the original
+00:32 ERROR: Failed to stop bep-step because it never started
+00:32 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:32  INFO: Found host at 192.168.1.100:80
+00:32  INFO: Found host at 192.168.1.254:80
+00:32  WARN: Found multiple raptor servers running at the same time
+00:32  WARN: [192.168.1.100, 192.168.1.254]
+00:32  INFO: Attempting to start dev-null-catcher
+00:32  INFO: dev-null-catcher started.
+00:32  INFO: 
+00:32  INFO: dev-null-catcher passed the tests.
+00:32  INFO: Attempting to start audisp-remote
+00:32  INFO: Starting configurations for the auditd remote multiplexing.
+00:32  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:32  INFO: audisp-remote started.
+00:32  INFO: 
+00:32  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:32  INFO: Audisp received connection.
+00:34  INFO: audisp-remote passed the tests.
+00:34  INFO: Starting bep-step thread after build execution has started.
+00:35  INFO: Stopping the system resource thread.
+00:35  INFO: Replacing /dev/null with the original
+00:35 ERROR: Failed to stop bep-step because it never started
+00:35  INFO: Replacing /dev/null with the original
+00:35  INFO: Replacing /dev/null with the original
+00:35  INFO: Replacing /dev/null with the original
+00:35  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:37  INFO: Stopping the system resource thread.
+00:37  INFO: Stopping the system resource thread.
+00:37 ERROR: Invalid process ID.
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:38  INFO: Starting the bep-step thread.
+00:38  INFO: Attaching to PID: 1
+00:41 ERROR: 21646 ?        00:00:00 auditd
+00:41  INFO: ● auditd.service - Security Auditing Service
+00:41  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:41  INFO:    Active: active (running) since Sat 2019-09-14 13:21:57 BST; 2s ago
+00:41  INFO:      Docs: man:auditd(8)
+00:41  INFO:            https://github.com/linux-audit/audit-documentation
+00:41  INFO:   Process: 21645 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:41  INFO:   Process: 21651 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:41  INFO:  Main PID: 21646 (auditd)
+00:41  INFO:     Tasks: 5 (limit: 4915)
+00:41  INFO:    Memory: 3.2M
+00:41  INFO:    CGroup: /system.slice/auditd.service
+00:41  INFO:            ├─21646 /usr/bin/auditd
+00:41  INFO:            ├─21648 /sbin/audispd
+00:41  INFO:            └─21653 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:41  INFO: 
+00:41  INFO: Sep 14 13:21:57 archie systemd[1]: Starting Security Auditing Service...
+00:41  INFO: Sep 14 13:21:57 archie auditd[21646]: Started dispatcher: /sbin/audispd pid: 21648
+00:41  INFO: Sep 14 13:21:57 archie auditd[21646]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:41  INFO: Sep 14 13:21:57 archie audispd[21648]: af_unix plugin initialized
+00:41  INFO: Sep 14 13:21:57 archie audispd[21648]: audispd initialized with q_depth=80 and 2 active plugins
+00:41  INFO: Sep 14 13:21:57 archie audisp-remote[21653]: Audisp-remote started with queue_size: 0
+00:41  INFO: Sep 14 13:21:57 archie augenrules[21651]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:41  INFO: Sep 14 13:21:57 archie systemd[1]: Started Security Auditing Service.
+00:45 ERROR: 21764 ?        00:00:00 auditd
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:01 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:01  INFO: Found host at 192.168.1.100:80
+00:01  INFO: Found host at 192.168.1.103:80
+00:01  INFO: Found host at 192.168.1.254:80
+00:01  WARN: Found multiple raptor servers running at the same time
+00:01  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:01  INFO: Attempting to start dev-null-catcher
+00:01  INFO: dev-null-catcher started.
+00:01  INFO: 
+00:01  INFO: dev-null-catcher passed the tests.
+00:01  INFO: Attempting to start audisp-remote
+00:01  INFO: Starting configurations for the auditd remote multiplexing.
+00:01  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:01  INFO: audisp-remote started.
+00:01  INFO: 
+00:01  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:03 ERROR: Expected to see "uname", "whoami" and "ls"
+00:03 ERROR: []
+00:04 ERROR: ● auditd.service - Security Auditing Service
+00:04 ERROR:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:04 ERROR:    Active: active (running) since Sat 2019-09-14 13:23:48 BST; 2s ago
+00:04 ERROR:      Docs: man:auditd(8)
+00:04 ERROR:            https://github.com/linux-audit/audit-documentation
+00:04 ERROR:   Process: 22122 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:04 ERROR:   Process: 22129 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:04 ERROR:  Main PID: 22123 (auditd)
+00:04 ERROR:     Tasks: 5 (limit: 4915)
+00:04 ERROR:    Memory: 3.1M
+00:04 ERROR:    CGroup: /system.slice/auditd.service
+00:04 ERROR:            ├─22123 /usr/bin/auditd
+00:04 ERROR:            ├─22125 /sbin/audispd
+00:04 ERROR:            └─22127 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:04 ERROR: 
+00:04 ERROR: Sep 14 13:23:48 archie systemd[1]: Starting Security Auditing Service...
+00:04 ERROR: Sep 14 13:23:48 archie auditd[22123]: Started dispatcher: /sbin/audispd pid: 22125
+00:04 ERROR: Sep 14 13:23:48 archie auditd[22123]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:04 ERROR: Sep 14 13:23:48 archie audispd[22125]: af_unix plugin initialized
+00:04 ERROR: Sep 14 13:23:48 archie audispd[22125]: audispd initialized with q_depth=80 and 2 active plugins
+00:04 ERROR: Sep 14 13:23:48 archie audisp-remote[22127]: Audisp-remote started with queue_size: 0
+00:04 ERROR: Sep 14 13:23:48 archie augenrules[22129]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:04 ERROR: Sep 14 13:23:48 archie auditctl[22132]: file /etc/audit/audit.rules doesn't exist, skipping
+00:04 ERROR: Sep 14 13:23:48 archie systemd[1]: Started Security Auditing Service.
+00:04 ERROR: audisp-remote started but the running tests failed.
+00:04 ERROR: Failed to start audisp-remote
+00:04  INFO: 
+00:04 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:04  INFO: Attempting to start auditd
+00:04 ERROR: auditd setup failed!
+00:04  INFO: 
+00:04  INFO: Stopping the system resource thread.
+00:04  INFO: Replacing /dev/null with the original
+00:04  INFO: Found host at 192.168.1.100:80
+00:04  INFO: Found host at 192.168.1.103:80
+00:04  INFO: Found host at 192.168.1.254:80
+00:04  WARN: Found multiple raptor servers running at the same time
+00:04  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:04 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:04  INFO: Found host at 192.168.1.100:80
+00:04  INFO: Found host at 192.168.1.103:80
+00:04  INFO: Found host at 192.168.1.254:80
+00:04  WARN: Found multiple raptor servers running at the same time
+00:04  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:05  INFO: Starting the bep-step thread.
+00:05  INFO: Attaching to PID: 22193
+00:05  INFO: Build Script ran 0 different Shell/Python scripts.
+00:05 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:05  INFO: Found host at 192.168.1.100:80
+00:05  INFO: Found host at 192.168.1.254:80
+00:05  WARN: Found multiple raptor servers running at the same time
+00:05  WARN: [192.168.1.100, 192.168.1.254]
+00:05  INFO: Attempting to start dev-null-catcher
+00:05  INFO: dev-null-catcher started.
+00:05  INFO: 
+00:05  INFO: dev-null-catcher passed the tests.
+00:05  INFO: Attempting to start audisp-remote
+00:05  INFO: Starting configurations for the auditd remote multiplexing.
+00:06  INFO: Audisp received connection.
+00:06  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:06  INFO: audisp-remote started.
+00:06  INFO: 
+00:06 ERROR: Failed to spawn Audisp local multiplexer server.
+00:06 ERROR: Audisp-remote failed with the following error
+00:06 ERROR: java.io.IOException
+00:08 ERROR: Expected to see "uname", "whoami" and "ls"
+00:08 ERROR: []
+00:08 ERROR: ● auditd.service - Security Auditing Service
+00:08 ERROR:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:08 ERROR:    Active: active (running) since Sat 2019-09-14 13:23:52 BST; 2s ago
+00:08 ERROR:      Docs: man:auditd(8)
+00:08 ERROR:            https://github.com/linux-audit/audit-documentation
+00:08 ERROR:   Process: 22234 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:08 ERROR:   Process: 22239 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:08 ERROR:  Main PID: 22235 (auditd)
+00:08 ERROR:     Tasks: 5 (limit: 4915)
+00:08 ERROR:    Memory: 2.8M
+00:08 ERROR:    CGroup: /system.slice/auditd.service
+00:08 ERROR:            ├─22235 /usr/bin/auditd
+00:08 ERROR:            ├─22237 /sbin/audispd
+00:08 ERROR:            └─22240 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:08 ERROR: 
+00:08 ERROR: Sep 14 13:23:52 archie systemd[1]: Starting Security Auditing Service...
+00:08 ERROR: Sep 14 13:23:52 archie auditd[22235]: Started dispatcher: /sbin/audispd pid: 22237
+00:08 ERROR: Sep 14 13:23:52 archie auditd[22235]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:08 ERROR: Sep 14 13:23:52 archie audispd[22237]: af_unix plugin initialized
+00:08 ERROR: Sep 14 13:23:52 archie audispd[22237]: audispd initialized with q_depth=80 and 2 active plugins
+00:08 ERROR: Sep 14 13:23:52 archie audisp-remote[22240]: Audisp-remote started with queue_size: 0
+00:08 ERROR: Sep 14 13:23:52 archie audisp-remote[22240]: Connected to 127.0.0.1
+00:08 ERROR: Sep 14 13:23:52 archie augenrules[22239]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:08 ERROR: Sep 14 13:23:52 archie systemd[1]: Started Security Auditing Service.
+00:08 ERROR: audisp-remote started but the running tests failed.
+00:08 ERROR: Failed to start audisp-remote
+00:08  INFO: 
+00:08 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:08  INFO: Attempting to start auditd
+00:08 ERROR: auditd setup failed!
+00:08  INFO: 
+00:08  INFO: Stopping the system resource thread.
+00:08  INFO: Replacing /dev/null with the original
+00:08  INFO: Found host at 192.168.1.100:80
+00:08  INFO: Found host at 192.168.1.254:80
+00:08  WARN: Found multiple raptor servers running at the same time
+00:08  WARN: [192.168.1.100, 192.168.1.254]
+00:08 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:08 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:08  INFO: Found host at 192.168.1.100:80
+00:09  INFO: Found host at 192.168.1.254:80
+00:09  WARN: Found multiple raptor servers running at the same time
+00:09  WARN: [192.168.1.100, 192.168.1.254]
+00:09  INFO: Attempting to start dev-null-catcher
+00:09  INFO: dev-null-catcher started.
+00:09  INFO: 
+00:09  INFO: dev-null-catcher passed the tests.
+00:09  INFO: Attempting to start audisp-remote
+00:09  INFO: Starting configurations for the auditd remote multiplexing.
+00:09  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:09  INFO: audisp-remote started.
+00:09  INFO: 
+00:09  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:09  INFO: Audisp received connection.
+00:11  INFO: audisp-remote passed the tests.
+00:11  INFO: Starting the bep-step thread.
+00:11  INFO: Attaching to PID: 22400
+00:11  INFO: Build Script ran 0 different Shell/Python scripts.
+00:11  INFO: Stopping the system resource thread.
+00:11  INFO: Replacing /dev/null with the original
+00:11 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:12  INFO: Found host at 192.168.1.100:80
+00:12  INFO: Found host at 192.168.1.103:80
+00:12  INFO: Found host at 192.168.1.254:80
+00:12  WARN: Found multiple raptor servers running at the same time
+00:12  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:12 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:12  INFO: Found host at 192.168.1.100:80
+00:12  INFO: Found host at 192.168.1.103:80
+00:12  INFO: Found host at 192.168.1.254:80
+00:12  WARN: Found multiple raptor servers running at the same time
+00:12  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:12 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:13  INFO: Found host at 192.168.1.100:80
+00:13  INFO: Found host at 192.168.1.254:80
+00:13  WARN: Found multiple raptor servers running at the same time
+00:13  WARN: [192.168.1.100, 192.168.1.254]
+00:13  INFO: Attempting to start dev-null-catcher
+00:13  INFO: dev-null-catcher started.
+00:13  INFO: 
+00:13  INFO: dev-null-catcher passed the tests.
+00:13  INFO: Attempting to start audisp-remote
+00:13 ERROR: audisp-remote setup failed!
+00:13  INFO: 
+00:13 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:13  INFO: Attempting to start auditd
+00:16 ERROR: 22487 ?        00:00:00 auditd
+00:17  INFO: ● auditd.service - Security Auditing Service
+00:17  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:17  INFO:    Active: active (running) since Sat 2019-09-14 13:24:01 BST; 2s ago
+00:17  INFO:      Docs: man:auditd(8)
+00:17  INFO:            https://github.com/linux-audit/audit-documentation
+00:17  INFO:   Process: 22486 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:17  INFO:   Process: 22492 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:17  INFO:  Main PID: 22487 (auditd)
+00:17  INFO:     Tasks: 5 (limit: 4915)
+00:17  INFO:    Memory: 3.1M
+00:17  INFO:    CGroup: /system.slice/auditd.service
+00:17  INFO:            ├─22487 /usr/bin/auditd
+00:17  INFO:            ├─22489 /sbin/audispd
+00:17  INFO:            └─22491 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:17  INFO: 
+00:17  INFO: Sep 14 13:24:01 archie systemd[1]: Starting Security Auditing Service...
+00:17  INFO: Sep 14 13:24:01 archie auditd[22487]: Started dispatcher: /sbin/audispd pid: 22489
+00:17  INFO: Sep 14 13:24:01 archie auditd[22487]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:17  INFO: Sep 14 13:24:01 archie audispd[22489]: af_unix plugin initialized
+00:17  INFO: Sep 14 13:24:01 archie audispd[22489]: audispd initialized with q_depth=80 and 2 active plugins
+00:17  INFO: Sep 14 13:24:01 archie audisp-remote[22491]: Audisp-remote started with queue_size: 0
+00:17  INFO: Sep 14 13:24:01 archie augenrules[22492]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:17  INFO: Sep 14 13:24:01 archie systemd[1]: Started Security Auditing Service.
+00:18 ERROR: 22487 ?        00:00:00 auditd
+00:18 ERROR: Failed to kill the previously running version of auditd.
+00:21 ERROR: 22571 ?        00:00:00 auditd
+00:21  INFO: auditd started.
+00:21  INFO: 
+00:21  INFO: Testing to see if auditd has started correctly.
+00:22  INFO: auditd passed the tests.
+00:22  INFO: Starting the bep-step thread.
+00:22  INFO: Attaching to PID: 22592
+00:22  INFO: Build Script ran 0 different Shell/Python scripts.
+00:22  INFO: Stopping the system resource thread.
+00:22  INFO: Replacing /dev/null with the original
+00:22 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:23  INFO: Found host at 192.168.1.100:80
+00:23  INFO: Found host at 192.168.1.254:80
+00:23  WARN: Found multiple raptor servers running at the same time
+00:23  WARN: [192.168.1.100, 192.168.1.254]
+00:23  INFO: Attempting to start dev-null-catcher
+00:23  INFO: dev-null-catcher started.
+00:23  INFO: 
+00:23  INFO: dev-null-catcher passed the tests.
+00:23  INFO: Attempting to start audisp-remote
+00:23 ERROR: audisp-remote setup failed!
+00:23  INFO: 
+00:23 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:23  INFO: Attempting to start auditd
+00:26 ERROR: 22664 ?        00:00:00 auditd
+00:26  INFO: ● auditd.service - Security Auditing Service
+00:26  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:26  INFO:    Active: active (running) since Sat 2019-09-14 13:24:11 BST; 2s ago
+00:26  INFO:      Docs: man:auditd(8)
+00:26  INFO:            https://github.com/linux-audit/audit-documentation
+00:26  INFO:   Process: 22663 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:26  INFO:   Process: 22668 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:26  INFO:  Main PID: 22664 (auditd)
+00:26  INFO:     Tasks: 5 (limit: 4915)
+00:26  INFO:    Memory: 3.1M
+00:26  INFO:    CGroup: /system.slice/auditd.service
+00:26  INFO:            ├─22664 /usr/bin/auditd
+00:26  INFO:            ├─22666 /sbin/audispd
+00:26  INFO:            └─22669 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:26  INFO: 
+00:26  INFO: Sep 14 13:24:11 archie systemd[1]: Starting Security Auditing Service...
+00:26  INFO: Sep 14 13:24:11 archie auditd[22664]: Started dispatcher: /sbin/audispd pid: 22666
+00:26  INFO: Sep 14 13:24:11 archie auditd[22664]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:26  INFO: Sep 14 13:24:11 archie audispd[22666]: af_unix plugin initialized
+00:26  INFO: Sep 14 13:24:11 archie audispd[22666]: audispd initialized with q_depth=80 and 2 active plugins
+00:26  INFO: Sep 14 13:24:11 archie audisp-remote[22669]: Audisp-remote started with queue_size: 0
+00:26  INFO: Sep 14 13:24:11 archie augenrules[22668]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:26  INFO: Sep 14 13:24:11 archie systemd[1]: Started Security Auditing Service.
+00:27 ERROR: 22664 ?        00:00:00 auditd
+00:27 ERROR: Failed to kill the previously running version of auditd.
+00:31 ERROR: 22736 ?        00:00:00 auditd
+00:31  INFO: auditd started.
+00:31  INFO: 
+00:31  INFO: Testing to see if auditd has started correctly.
+00:32  INFO: auditd passed the tests.
+00:32  INFO: Stopping the system resource thread.
+00:32  INFO: Replacing /dev/null with the original
+00:32 ERROR: Failed to stop bep-step because it never started
+00:32 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:32  INFO: Found host at 192.168.1.100:80
+00:32  INFO: Found host at 192.168.1.254:80
+00:32  WARN: Found multiple raptor servers running at the same time
+00:32  WARN: [192.168.1.100, 192.168.1.254]
+00:32  INFO: Attempting to start dev-null-catcher
+00:32  INFO: dev-null-catcher started.
+00:32  INFO: 
+00:32  INFO: dev-null-catcher passed the tests.
+00:32  INFO: Attempting to start audisp-remote
+00:32  INFO: Starting configurations for the auditd remote multiplexing.
+00:33  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:33  INFO: audisp-remote started.
+00:33  INFO: 
+00:33  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:33  INFO: Audisp received connection.
+00:35  INFO: audisp-remote passed the tests.
+00:35  INFO: Stopping the system resource thread.
+00:35  INFO: Replacing /dev/null with the original
+00:35 ERROR: Failed to stop bep-step because it never started
+00:35  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:36  INFO: Replacing /dev/null with the original
+00:37  INFO: Replacing /dev/null with the original
+00:37  INFO: Replacing /dev/null with the original
+00:37  INFO: Replacing /dev/null with the original
+00:37  INFO: Replacing /dev/null with the original
+00:37  INFO: Replacing /dev/null with the original
+00:37  INFO: Stopping the system resource thread.
+00:37  INFO: Stopping the system resource thread.
+00:37 ERROR: Invalid process ID.
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:37  INFO: Starting the bep-step thread.
+00:37  INFO: Attaching to PID: 1
+00:38  INFO: Starting the bep-step thread.
+00:38  INFO: Attaching to PID: 1
+00:38  INFO: Starting the bep-step thread.
+00:38  INFO: Attaching to PID: 1
+00:38  INFO: Starting the bep-step thread.
+00:38  INFO: Attaching to PID: 1
+00:38  INFO: Starting the bep-step thread.
+00:38  INFO: Attaching to PID: 1
+00:38  INFO: Starting the bep-step thread.
+00:38  INFO: Attaching to PID: 1
+00:41 ERROR: 22979 ?        00:00:00 auditd
+00:42  INFO: ● auditd.service - Security Auditing Service
+00:42  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:42  INFO:    Active: active (running) since Sat 2019-09-14 13:24:26 BST; 2s ago
+00:42  INFO:      Docs: man:auditd(8)
+00:42  INFO:            https://github.com/linux-audit/audit-documentation
+00:42  INFO:   Process: 22978 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:42  INFO:   Process: 22985 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:42  INFO:  Main PID: 22979 (auditd)
+00:42  INFO:     Tasks: 5 (limit: 4915)
+00:42  INFO:    Memory: 3.5M
+00:42  INFO:    CGroup: /system.slice/auditd.service
+00:42  INFO:            ├─22979 /usr/bin/auditd
+00:42  INFO:            ├─22981 /sbin/audispd
+00:42  INFO:            └─22983 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:42  INFO: 
+00:42  INFO: Sep 14 13:24:26 archie systemd[1]: Starting Security Auditing Service...
+00:42  INFO: Sep 14 13:24:26 archie auditd[22979]: Started dispatcher: /sbin/audispd pid: 22981
+00:42  INFO: Sep 14 13:24:26 archie audispd[22981]: af_unix plugin initialized
+00:42  INFO: Sep 14 13:24:26 archie audispd[22981]: audispd initialized with q_depth=80 and 2 active plugins
+00:42  INFO: Sep 14 13:24:26 archie audisp-remote[22983]: Audisp-remote started with queue_size: 0
+00:42  INFO: Sep 14 13:24:26 archie auditd[22979]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:42  INFO: Sep 14 13:24:26 archie augenrules[22985]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:42  INFO: Sep 14 13:24:26 archie systemd[1]: Started Security Auditing Service.
+00:45 ERROR: 23095 ?        00:00:00 auditd
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:00  INFO: Audisp received connection.
+00:02  INFO: audisp-remote passed the tests.
+00:02  INFO: Attempting to start dev-null-catcher
+00:02  INFO: dev-null-catcher started.
+00:02  INFO: 
+00:02  INFO: dev-null-catcher passed the tests.
+00:02  INFO: Attempting to start audisp-remote
+00:02  INFO: Starting configurations for the auditd remote multiplexing.
+00:03  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:03  INFO: audisp-remote started.
+00:03  INFO: 
+00:03  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:03  INFO: Audisp received connection.
+00:05  INFO: audisp-remote passed the tests.
+00:05  INFO: Stopping the system resource thread.
+00:05  INFO: Replacing /dev/null with the original
+00:05 ERROR: Failed to stop bep-step because it never started
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:00  INFO: Audisp received connection.
+00:02  INFO: audisp-remote passed the tests.
+00:02  INFO: Attempting to start dev-null-catcher
+00:02  INFO: dev-null-catcher started.
+00:02  INFO: 
+00:02  INFO: dev-null-catcher passed the tests.
+00:02  INFO: Attempting to start audisp-remote
+00:02  INFO: Starting configurations for the auditd remote multiplexing.
+00:03  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:03  INFO: audisp-remote started.
+00:03  INFO: 
+00:03  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:05 ERROR: Expected to see "uname", "whoami" and "ls"
+00:05 ERROR: []
+00:05 ERROR: ● auditd.service - Security Auditing Service
+00:05 ERROR:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:05 ERROR:    Active: active (running) since Sat 2019-09-14 13:28:04 BST; 2s ago
+00:05 ERROR:      Docs: man:auditd(8)
+00:05 ERROR:            https://github.com/linux-audit/audit-documentation
+00:05 ERROR:   Process: 23878 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:05 ERROR:   Process: 23884 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:05 ERROR:  Main PID: 23879 (auditd)
+00:05 ERROR:     Tasks: 5 (limit: 4915)
+00:05 ERROR:    Memory: 3.1M
+00:05 ERROR:    CGroup: /system.slice/auditd.service
+00:05 ERROR:            ├─23879 /usr/bin/auditd
+00:05 ERROR:            ├─23881 /sbin/audispd
+00:05 ERROR:            └─23883 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:05 ERROR: 
+00:05 ERROR: Sep 14 13:28:04 archie systemd[1]: Starting Security Auditing Service...
+00:05 ERROR: Sep 14 13:28:04 archie auditd[23879]: Started dispatcher: /sbin/audispd pid: 23881
+00:05 ERROR: Sep 14 13:28:04 archie auditd[23879]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:05 ERROR: Sep 14 13:28:04 archie audispd[23881]: af_unix plugin initialized
+00:05 ERROR: Sep 14 13:28:04 archie audispd[23881]: audispd initialized with q_depth=80 and 2 active plugins
+00:05 ERROR: Sep 14 13:28:04 archie audisp-remote[23883]: Audisp-remote started with queue_size: 0
+00:05 ERROR: Sep 14 13:28:04 archie augenrules[23884]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:05 ERROR: Sep 14 13:28:04 archie systemd[1]: Started Security Auditing Service.
+00:05 ERROR: audisp-remote started but the running tests failed.
+00:05 ERROR: Failed to start audisp-remote
+00:05  INFO: 
+00:05 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:05  INFO: Attempting to start auditd
+00:05 ERROR: auditd setup failed!
+00:05  INFO: 
+00:05  INFO: Stopping the system resource thread.
+00:05  INFO: Replacing /dev/null with the original
+00:05 ERROR: Failed to stop bep-step because it never started
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:00  INFO: Audisp received connection.
+00:02  INFO: audisp-remote passed the tests.
+00:03  INFO: Attempting to start dev-null-catcher
+00:03  INFO: dev-null-catcher started.
+00:03  INFO: 
+00:03  INFO: dev-null-catcher passed the tests.
+00:03  INFO: Attempting to start audisp-remote
+00:03  INFO: Starting configurations for the auditd remote multiplexing.
+00:03  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:03  INFO: audisp-remote started.
+00:03  INFO: 
+00:03  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:03  INFO: Audisp received connection.
+00:05  INFO: audisp-remote passed the tests.
+00:05  INFO: Stopping the system resource thread.
+00:05  INFO: Replacing /dev/null with the original
+00:05 ERROR: Failed to stop bep-step because it never started
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:01  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:01  INFO: audisp-remote started.
+00:01  INFO: 
+00:01  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:01  INFO: Audisp received connection.
+00:03  INFO: audisp-remote passed the tests.
+00:03  INFO: Attempting to start dev-null-catcher
+00:03  INFO: dev-null-catcher started.
+00:03  INFO: 
+00:03  INFO: dev-null-catcher passed the tests.
+00:03  INFO: Attempting to start audisp-remote
+00:03  INFO: Starting configurations for the auditd remote multiplexing.
+00:05  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:05  INFO: audisp-remote started.
+00:05  INFO: 
+00:05  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:05  INFO: Audisp received connection.
+00:07  INFO: audisp-remote passed the tests.
+00:07  INFO: Stopping the system resource thread.
+00:07  INFO: Replacing /dev/null with the original
+00:07 ERROR: Failed to stop bep-step because it never started
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:01  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:01  INFO: audisp-remote started.
+00:01  INFO: 
+00:01  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:03 ERROR: Expected to see "uname", "whoami" and "ls"
+00:03 ERROR: []
+00:03 ERROR: ● auditd.service - Security Auditing Service
+00:03 ERROR:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:03 ERROR:    Active: active (running) since Sat 2019-09-14 13:30:50 BST; 2s ago
+00:03 ERROR:      Docs: man:auditd(8)
+00:03 ERROR:            https://github.com/linux-audit/audit-documentation
+00:03 ERROR:   Process: 24787 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:03 ERROR:   Process: 24794 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:03 ERROR:  Main PID: 24788 (auditd)
+00:03 ERROR:     Tasks: 5 (limit: 4915)
+00:03 ERROR:    Memory: 3.0M
+00:03 ERROR:    CGroup: /system.slice/auditd.service
+00:03 ERROR:            ├─24788 /usr/bin/auditd
+00:03 ERROR:            ├─24790 /sbin/audispd
+00:03 ERROR:            └─24792 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:03 ERROR: 
+00:03 ERROR: Sep 14 13:30:50 archie systemd[1]: Starting Security Auditing Service...
+00:03 ERROR: Sep 14 13:30:50 archie auditd[24788]: Started dispatcher: /sbin/audispd pid: 24790
+00:03 ERROR: Sep 14 13:30:50 archie auditd[24788]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:03 ERROR: Sep 14 13:30:50 archie audispd[24790]: af_unix plugin initialized
+00:03 ERROR: Sep 14 13:30:50 archie audispd[24790]: audispd initialized with q_depth=80 and 2 active plugins
+00:03 ERROR: Sep 14 13:30:50 archie audisp-remote[24792]: Audisp-remote started with queue_size: 0
+00:03 ERROR: Sep 14 13:30:50 archie augenrules[24794]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:03 ERROR: Sep 14 13:30:50 archie systemd[1]: Started Security Auditing Service.
+00:03 ERROR: audisp-remote started but the running tests failed.
+00:03 ERROR: Failed to start audisp-remote
+00:03  INFO: 
+00:03 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:03  INFO: Attempting to start auditd
+00:03 ERROR: auditd setup failed!
+00:03  INFO: 
+00:04  INFO: Stopping the system resource thread.
+00:04  INFO: Replacing /dev/null with the original
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00 ERROR: Audisp-remote never tried connecting to raptor client
+00:00 ERROR: Audisp-remote test failed, failing back to auditd.
+00:00  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:00 ERROR: audisp-remote started but the running tests failed.
+00:00 ERROR: Failed to start audisp-remote
+00:00  INFO: 
+00:00 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:00  INFO: Attempting to start auditd
+00:00 ERROR: auditd setup failed!
+00:00  INFO: 
+00:00  INFO: Stopping the system resource thread.
 00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Audisp received connection.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:01 ERROR: Audisp-remote never tried connecting to raptor client
+00:01 ERROR: Audisp-remote test failed, failing back to auditd.
+00:01 ERROR: audisp-remote started but the running tests failed.
+00:01 ERROR: Failed to start audisp-remote
+00:01  INFO: 
+00:01 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:01  INFO: Attempting to start auditd
+00:01 ERROR: auditd setup failed!
+00:01  INFO: 
+00:01  INFO: Stopping the system resource thread.
 00:01  INFO: Replacing /dev/null with the original
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:01 ERROR: Audisp-remote never tried connecting to raptor client
+00:01 ERROR: Audisp-remote test failed, failing back to auditd.
+00:01 ERROR: audisp-remote started but the running tests failed.
+00:01 ERROR: Failed to start audisp-remote
+00:01  INFO: 
+00:01 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:01  INFO: Attempting to start auditd
+00:01 ERROR: auditd setup failed!
+00:01  INFO: 
+00:01  INFO: Stopping the system resource thread.
 00:01  INFO: Replacing /dev/null with the original
-00:01  INFO: Replacing /dev/null with the original
-00:01  INFO: Replacing /dev/null with the original
-00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Audisp received connection.
+00:00  INFO: Found host at 192.168.1.103:80
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:04 ERROR: Audisp-remote never tried connecting to raptor client
+00:04 ERROR: Audisp-remote test failed, failing back to auditd.
+00:04 ERROR: audisp-remote started but the running tests failed.
+00:04 ERROR: Failed to start audisp-remote
+00:04  INFO: 
+00:04 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:04  INFO: Attempting to start auditd
+00:04 ERROR: auditd setup failed!
+00:04  INFO: 
+00:04  INFO: Stopping the system resource thread.
+00:04  INFO: Replacing /dev/null with the original
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:01  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:01  INFO: audisp-remote started.
+00:01  INFO: 
+00:01  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:01  INFO: Audisp received connection.
+00:03  INFO: audisp-remote passed the tests.
+00:03  INFO: Attempting to start dev-null-catcher
+00:03  INFO: dev-null-catcher started.
+00:03  INFO: 
+00:03  INFO: dev-null-catcher passed the tests.
+00:03  INFO: Attempting to start audisp-remote
+00:03  INFO: Starting configurations for the auditd remote multiplexing.
+00:04  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:04  INFO: audisp-remote started.
+00:04  INFO: 
+00:04  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:05  INFO: Audisp received connection.
+00:07  INFO: audisp-remote passed the tests.
+00:08  INFO: Stopping the system resource thread.
+00:08  INFO: Replacing /dev/null with the original
+00:08 ERROR: Failed to stop bep-step because it never started
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:01  INFO: Audisp received connection.
+00:04  INFO: audisp-remote passed the tests.
+00:04  INFO: Stopping the system resource thread.
+00:04  INFO: Replacing /dev/null with the original
+00:04 ERROR: Failed to stop bep-step because it never started
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00  INFO: Attempting to start dev-null-catcher
+00:00  INFO: dev-null-catcher started.
+00:00  INFO: 
+00:00  INFO: dev-null-catcher passed the tests.
+00:00  INFO: Attempting to start audisp-remote
+00:00  INFO: Starting configurations for the auditd remote multiplexing.
+00:00  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:00  INFO: audisp-remote started.
+00:00  INFO: 
+00:00  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:01  INFO: Audisp received connection.
+00:04  INFO: audisp-remote passed the tests.
+00:04  INFO: Stopping the system resource thread.
+00:04  INFO: Replacing /dev/null with the original
+00:04 ERROR: Failed to stop bep-step because it never started
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:01 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:01  INFO: Found host at 192.168.1.100:80
+00:01  INFO: Found host at 192.168.1.103:80
+00:01  INFO: Found host at 192.168.1.254:80
+00:01  WARN: Found multiple raptor servers running at the same time
+00:01  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:01  INFO: Attempting to start dev-null-catcher
+00:01  INFO: dev-null-catcher started.
+00:01  INFO: 
+00:01  INFO: dev-null-catcher passed the tests.
+00:01  INFO: Attempting to start audisp-remote
+00:01  INFO: Starting configurations for the auditd remote multiplexing.
+00:01  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:01  INFO: audisp-remote started.
+00:01  INFO: 
+00:01  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:02  INFO: Audisp received connection.
+00:04  INFO: audisp-remote passed the tests.
+00:04  INFO: Stopping the system resource thread.
+00:04  INFO: Replacing /dev/null with the original
+00:04 ERROR: Failed to stop bep-step because it never started
+00:04  INFO: Found host at 192.168.1.100:80
+00:04  INFO: Found host at 192.168.1.103:80
+00:04  INFO: Found host at 192.168.1.254:80
+00:04  WARN: Found multiple raptor servers running at the same time
+00:04  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:05 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:05  INFO: Found host at 192.168.1.100:80
+00:05  INFO: Found host at 192.168.1.254:80
+00:05  WARN: Found multiple raptor servers running at the same time
+00:05  WARN: [192.168.1.100, 192.168.1.254]
+00:05  INFO: Starting the bep-step thread.
+00:05  INFO: Attaching to PID: 27385
+00:05  INFO: Build Script ran 0 different Shell/Python scripts.
+00:05 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:06  INFO: Found host at 192.168.1.100:80
+00:06  INFO: Found host at 192.168.1.254:80
+00:06  WARN: Found multiple raptor servers running at the same time
+00:06  WARN: [192.168.1.100, 192.168.1.254]
+00:06  INFO: Attempting to start dev-null-catcher
+00:06  INFO: dev-null-catcher started.
+00:06  INFO: 
+00:06  INFO: dev-null-catcher passed the tests.
+00:06  INFO: Attempting to start audisp-remote
+00:06  INFO: Starting configurations for the auditd remote multiplexing.
+00:06  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:06  INFO: audisp-remote started.
+00:06  INFO: 
+00:06  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:08  INFO: Audisp received connection.
+00:10  INFO: audisp-remote passed the tests.
+00:10  INFO: Starting the bep-step thread.
+00:10  INFO: Attaching to PID: 27485
+00:10  INFO: Build Script ran 0 different Shell/Python scripts.
+00:10  INFO: Stopping the system resource thread.
+00:10  INFO: Replacing /dev/null with the original
+00:10 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:11  INFO: Found host at 192.168.1.100:80
+00:11  INFO: Found host at 192.168.1.103:80
+00:11  INFO: Found host at 192.168.1.254:80
+00:11  WARN: Found multiple raptor servers running at the same time
+00:11  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:11 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:11 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:11  INFO: Found host at 192.168.1.100:80
+00:11  INFO: Found host at 192.168.1.254:80
+00:11  WARN: Found multiple raptor servers running at the same time
+00:11  WARN: [192.168.1.100, 192.168.1.254]
+00:11  INFO: Attempting to start dev-null-catcher
+00:11  INFO: dev-null-catcher started.
+00:11  INFO: 
+00:11  INFO: dev-null-catcher passed the tests.
+00:11  INFO: Attempting to start audisp-remote
+00:11  INFO: Starting configurations for the auditd remote multiplexing.
+00:12  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:12  INFO: audisp-remote started.
+00:12  INFO: 
+00:12  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:16 ERROR: Audisp-remote never tried connecting to raptor client
+00:16 ERROR: Audisp-remote test failed, failing back to auditd.
+00:16 ERROR: audisp-remote started but the running tests failed.
+00:16 ERROR: Failed to start audisp-remote
+00:16  INFO: 
+00:16 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:16  INFO: Attempting to start auditd
+00:16 ERROR: auditd setup failed!
+00:16  INFO: 
+00:16  INFO: Stopping the system resource thread.
+00:16  INFO: Replacing /dev/null with the original
+00:16  INFO: Found host at 192.168.1.100:80
+00:16  INFO: Found host at 192.168.1.103:80
+00:16  INFO: Found host at 192.168.1.254:80
+00:16  WARN: Found multiple raptor servers running at the same time
+00:16  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:16 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:16  INFO: Found host at 192.168.1.100:80
+00:17  INFO: Found host at 192.168.1.254:80
+00:17  WARN: Found multiple raptor servers running at the same time
+00:17  WARN: [192.168.1.100, 192.168.1.254]
+00:17 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:17  INFO: Found host at 192.168.1.100:80
+00:17  INFO: Found host at 192.168.1.103:80
+00:17  INFO: Found host at 192.168.1.254:80
+00:17  WARN: Found multiple raptor servers running at the same time
+00:17  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:17  INFO: Attempting to start dev-null-catcher
+00:17  INFO: dev-null-catcher started.
+00:17  INFO: 
+00:17  INFO: dev-null-catcher passed the tests.
+00:17  INFO: Attempting to start audisp-remote
+00:17 ERROR: audisp-remote setup failed!
+00:17  INFO: 
+00:17 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:17  INFO: Attempting to start auditd
+00:19  INFO: Audisp received connection.
+00:21 ERROR: 27676 ?        00:00:00 auditd
+00:21  INFO: ● auditd.service - Security Auditing Service
+00:21  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:21  INFO:    Active: active (running) since Sat 2019-09-14 13:42:31 BST; 2s ago
+00:21  INFO:      Docs: man:auditd(8)
+00:21  INFO:            https://github.com/linux-audit/audit-documentation
+00:21  INFO:   Process: 27675 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:21  INFO:   Process: 27682 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:21  INFO:  Main PID: 27676 (auditd)
+00:21  INFO:     Tasks: 5 (limit: 4915)
+00:21  INFO:    Memory: 2.9M
+00:21  INFO:    CGroup: /system.slice/auditd.service
+00:21  INFO:            ├─27676 /usr/bin/auditd
+00:21  INFO:            ├─27678 /sbin/audispd
+00:21  INFO:            └─27680 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:21  INFO: 
+00:21  INFO: Sep 14 13:42:31 archie systemd[1]: Starting Security Auditing Service...
+00:21  INFO: Sep 14 13:42:31 archie auditd[27676]: Started dispatcher: /sbin/audispd pid: 27678
+00:21  INFO: Sep 14 13:42:31 archie audispd[27678]: af_unix plugin initialized
+00:21  INFO: Sep 14 13:42:31 archie audispd[27678]: audispd initialized with q_depth=80 and 2 active plugins
+00:21  INFO: Sep 14 13:42:31 archie audisp-remote[27680]: Audisp-remote started with queue_size: 0
+00:21  INFO: Sep 14 13:42:31 archie audisp-remote[27680]: Connected to 127.0.0.1
+00:21  INFO: Sep 14 13:42:31 archie auditd[27676]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:21  INFO: Sep 14 13:42:31 archie augenrules[27682]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:21  INFO: Sep 14 13:42:31 archie systemd[1]: Started Security Auditing Service.
+00:22 ERROR: 27676 ?        00:00:00 auditd
+00:22 ERROR: Failed to kill the previously running version of auditd.
+00:27 ERROR: 27746 ?        00:00:00 auditd
+00:27  INFO: auditd started.
+00:27  INFO: 
+00:27  INFO: Testing to see if auditd has started correctly.
+00:28  INFO: auditd passed the tests.
+00:28  INFO: Starting the bep-step thread.
+00:28  INFO: Attaching to PID: 27767
+00:28  INFO: Build Script ran 0 different Shell/Python scripts.
+00:28  INFO: Stopping the system resource thread.
+00:28  INFO: Replacing /dev/null with the original
+00:29 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:29  INFO: Found host at 192.168.1.100:80
+00:29  INFO: Found host at 192.168.1.103:80
+00:29  INFO: Found host at 192.168.1.254:80
+00:29  WARN: Found multiple raptor servers running at the same time
+00:29  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:29  INFO: Attempting to start dev-null-catcher
+00:29  INFO: dev-null-catcher started.
+00:29  INFO: 
+00:29  INFO: dev-null-catcher passed the tests.
+00:29  INFO: Attempting to start audisp-remote
+00:29 ERROR: audisp-remote setup failed!
+00:29  INFO: 
+00:29 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:29  INFO: Attempting to start auditd
+00:33 ERROR: 27837 ?        00:00:00 auditd
+00:33  INFO: ● auditd.service - Security Auditing Service
+00:33  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:33  INFO:    Active: active (running) since Sat 2019-09-14 13:42:43 BST; 2s ago
+00:33  INFO:      Docs: man:auditd(8)
+00:33  INFO:            https://github.com/linux-audit/audit-documentation
+00:33  INFO:   Process: 27836 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:33  INFO:   Process: 27843 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:33  INFO:  Main PID: 27837 (auditd)
+00:33  INFO:     Tasks: 5 (limit: 4915)
+00:33  INFO:    Memory: 3.5M
+00:33  INFO:    CGroup: /system.slice/auditd.service
+00:33  INFO:            ├─27837 /usr/bin/auditd
+00:33  INFO:            ├─27839 /sbin/audispd
+00:33  INFO:            └─27841 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:33  INFO: 
+00:33  INFO: Sep 14 13:42:43 archie systemd[1]: Starting Security Auditing Service...
+00:33  INFO: Sep 14 13:42:43 archie auditd[27837]: Started dispatcher: /sbin/audispd pid: 27839
+00:33  INFO: Sep 14 13:42:43 archie audispd[27839]: af_unix plugin initialized
+00:33  INFO: Sep 14 13:42:43 archie audispd[27839]: audispd initialized with q_depth=80 and 2 active plugins
+00:33  INFO: Sep 14 13:42:43 archie auditd[27837]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:33  INFO: Sep 14 13:42:43 archie audisp-remote[27841]: Audisp-remote started with queue_size: 0
+00:33  INFO: Sep 14 13:42:43 archie augenrules[27843]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:33  INFO: Sep 14 13:42:43 archie auditctl[27846]: file /etc/audit/audit.rules doesn't exist, skipping
+00:33  INFO: Sep 14 13:42:43 archie systemd[1]: Started Security Auditing Service.
+00:34 ERROR: 27837 ?        00:00:00 auditd
+00:34 ERROR: Failed to kill the previously running version of auditd.
+00:37 ERROR: 27910 ?        00:00:00 auditd
+00:37  INFO: auditd started.
+00:37  INFO: 
+00:37  INFO: Testing to see if auditd has started correctly.
+00:38  INFO: auditd passed the tests.
+00:38  INFO: Stopping the system resource thread.
+00:38  INFO: Replacing /dev/null with the original
+00:38 ERROR: Failed to stop bep-step because it never started
+00:38 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:39  INFO: Found host at 192.168.1.100:80
+00:39  INFO: Found host at 192.168.1.254:80
+00:39  WARN: Found multiple raptor servers running at the same time
+00:39  WARN: [192.168.1.100, 192.168.1.254]
+00:39  INFO: Attempting to start dev-null-catcher
+00:39  INFO: dev-null-catcher started.
+00:39  INFO: 
+00:39  INFO: dev-null-catcher passed the tests.
+00:39  INFO: Attempting to start audisp-remote
+00:39  INFO: Starting configurations for the auditd remote multiplexing.
+00:39  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:39  INFO: audisp-remote started.
+00:39  INFO: 
+00:39  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:43 ERROR: Audisp-remote never tried connecting to raptor client
+00:43 ERROR: Audisp-remote test failed, failing back to auditd.
+00:43 ERROR: audisp-remote started but the running tests failed.
+00:43 ERROR: Failed to start audisp-remote
+00:43  INFO: 
+00:43 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:43  INFO: Attempting to start auditd
+00:44  INFO: Audisp received connection.
+00:46 ERROR: 28073 ?        00:00:00 auditd
+00:47  INFO: ● auditd.service - Security Auditing Service
+00:47  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:47  INFO:    Active: active (running) since Sat 2019-09-14 13:42:57 BST; 2s ago
+00:47  INFO:      Docs: man:auditd(8)
+00:47  INFO:            https://github.com/linux-audit/audit-documentation
+00:47  INFO:   Process: 28072 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:47  INFO:   Process: 28078 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:47  INFO:  Main PID: 28073 (auditd)
+00:47  INFO:     Tasks: 5 (limit: 4915)
+00:47  INFO:    Memory: 3.0M
+00:47  INFO:    CGroup: /system.slice/auditd.service
+00:47  INFO:            ├─28073 /usr/bin/auditd
+00:47  INFO:            ├─28075 /sbin/audispd
+00:47  INFO:            └─28077 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:47  INFO: 
+00:47  INFO: Sep 14 13:42:57 archie systemd[1]: Starting Security Auditing Service...
+00:47  INFO: Sep 14 13:42:57 archie auditd[28073]: Started dispatcher: /sbin/audispd pid: 28075
+00:47  INFO: Sep 14 13:42:57 archie auditd[28073]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:47  INFO: Sep 14 13:42:57 archie audispd[28075]: af_unix plugin initialized
+00:47  INFO: Sep 14 13:42:57 archie audispd[28075]: audispd initialized with q_depth=80 and 2 active plugins
+00:47  INFO: Sep 14 13:42:57 archie audisp-remote[28077]: Audisp-remote started with queue_size: 0
+00:47  INFO: Sep 14 13:42:57 archie audisp-remote[28077]: Connected to 127.0.0.1
+00:47  INFO: Sep 14 13:42:57 archie augenrules[28078]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:47  INFO: Sep 14 13:42:57 archie systemd[1]: Started Security Auditing Service.
+00:48 ERROR: 28073 ?        00:00:00 auditd
+00:48 ERROR: Failed to kill the previously running version of auditd.
+00:53 ERROR: 28140 ?        00:00:00 auditd
+00:53  INFO: auditd started.
+00:53  INFO: 
+00:53  INFO: Testing to see if auditd has started correctly.
+00:54  INFO: auditd passed the tests.
+00:54  INFO: Stopping the system resource thread.
+00:54  INFO: Replacing /dev/null with the original
+00:54 ERROR: Failed to stop bep-step because it never started
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:00 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:00  INFO: Found host at 192.168.1.100:80
+00:00  INFO: Found host at 192.168.1.254:80
+00:00  WARN: Found multiple raptor servers running at the same time
+00:00  WARN: [192.168.1.100, 192.168.1.254]
+00:01 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:01  INFO: Found host at 192.168.1.100:80
+00:01  INFO: Found host at 192.168.1.254:80
+00:01  WARN: Found multiple raptor servers running at the same time
+00:01  WARN: [192.168.1.100, 192.168.1.254]
+00:01  INFO: Attempting to start dev-null-catcher
+00:01  INFO: dev-null-catcher started.
+00:01  INFO: 
+00:01  INFO: dev-null-catcher passed the tests.
+00:01  INFO: Attempting to start audisp-remote
+00:01  INFO: Starting configurations for the auditd remote multiplexing.
+00:02  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:02  INFO: audisp-remote started.
+00:02  INFO: 
+00:02  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:02  INFO: Audisp received connection.
+00:04  INFO: audisp-remote passed the tests.
+00:04  INFO: Stopping the system resource thread.
+00:04  INFO: Replacing /dev/null with the original
+00:05 ERROR: Failed to stop bep-step because it never started
+00:05  INFO: Found host at 192.168.1.100:80
+00:05  INFO: Found host at 192.168.1.103:80
+00:05  INFO: Found host at 192.168.1.254:80
+00:05  WARN: Found multiple raptor servers running at the same time
+00:05  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:05 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:05  INFO: Found host at 192.168.1.100:80
+00:05  INFO: Found host at 192.168.1.254:80
+00:05  WARN: Found multiple raptor servers running at the same time
+00:05  WARN: [192.168.1.100, 192.168.1.254]
+00:06  INFO: Starting the bep-step thread.
+00:06  INFO: Attaching to PID: 28465
+00:06  INFO: Build Script ran 0 different Shell/Python scripts.
+00:06 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:06  INFO: Found host at 192.168.1.100:80
+00:06  INFO: Found host at 192.168.1.254:80
+00:06  WARN: Found multiple raptor servers running at the same time
+00:06  WARN: [192.168.1.100, 192.168.1.254]
+00:06  INFO: Attempting to start dev-null-catcher
+00:06  INFO: dev-null-catcher started.
+00:06  INFO: 
+00:06  INFO: dev-null-catcher passed the tests.
+00:06  INFO: Attempting to start audisp-remote
+00:06  INFO: Starting configurations for the auditd remote multiplexing.
+00:07  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:07  INFO: audisp-remote started.
+00:07  INFO: 
+00:07  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:08  INFO: Audisp received connection.
+00:10  INFO: audisp-remote passed the tests.
+00:11  INFO: Starting the bep-step thread.
+00:11  INFO: Attaching to PID: 28566
+00:11  INFO: Build Script ran 0 different Shell/Python scripts.
+00:11  INFO: Stopping the system resource thread.
+00:11  INFO: Replacing /dev/null with the original
+00:11 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:11  INFO: Found host at 192.168.1.100:80
+00:11  INFO: Found host at 192.168.1.254:80
+00:11  WARN: Found multiple raptor servers running at the same time
+00:11  WARN: [192.168.1.100, 192.168.1.254]
+00:11 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:11 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:12  INFO: Found host at 192.168.1.100:80
+00:12  INFO: Found host at 192.168.1.254:80
+00:12  WARN: Found multiple raptor servers running at the same time
+00:12  WARN: [192.168.1.100, 192.168.1.254]
+00:12  INFO: Attempting to start dev-null-catcher
+00:12  INFO: dev-null-catcher started.
+00:12  INFO: 
+00:12  INFO: dev-null-catcher passed the tests.
+00:12  INFO: Attempting to start audisp-remote
+00:12  INFO: Starting configurations for the auditd remote multiplexing.
+00:12  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:12  INFO: audisp-remote started.
+00:12  INFO: 
+00:12  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:14  INFO: Audisp received connection.
+00:17  INFO: audisp-remote passed the tests.
+00:17  INFO: Starting the bep-step thread.
+00:17  INFO: Attaching to PID: 28689
+00:17  INFO: Build Script ran 0 different Shell/Python scripts.
+00:17  INFO: Stopping the system resource thread.
+00:17  INFO: Replacing /dev/null with the original
+00:17 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:17  INFO: Found host at 192.168.1.100:80
+00:18  INFO: Found host at 192.168.1.254:80
+00:18  WARN: Found multiple raptor servers running at the same time
+00:18  WARN: [192.168.1.100, 192.168.1.254]
+00:18 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:18  INFO: Found host at 192.168.1.100:80
+00:18  INFO: Found host at 192.168.1.103:80
+00:18  INFO: Found host at 192.168.1.254:80
+00:18  WARN: Found multiple raptor servers running at the same time
+00:18  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:18 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:18  INFO: Found host at 192.168.1.100:80
+00:19  INFO: Found host at 192.168.1.254:80
+00:19  WARN: Found multiple raptor servers running at the same time
+00:19  WARN: [192.168.1.100, 192.168.1.254]
+00:19  INFO: Attempting to start dev-null-catcher
+00:19  INFO: dev-null-catcher started.
+00:19  INFO: 
+00:19  INFO: dev-null-catcher passed the tests.
+00:19  INFO: Attempting to start audisp-remote
+00:19 ERROR: audisp-remote setup failed!
+00:19  INFO: 
+00:19 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:19  INFO: Attempting to start auditd
+00:22 ERROR: 28781 ?        00:00:00 auditd
+00:22  INFO: ● auditd.service - Security Auditing Service
+00:22  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:22  INFO:    Active: active (running) since Sat 2019-09-14 13:44:14 BST; 2s ago
+00:22  INFO:      Docs: man:auditd(8)
+00:22  INFO:            https://github.com/linux-audit/audit-documentation
+00:22  INFO:   Process: 28780 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:22  INFO:   Process: 28786 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:22  INFO:  Main PID: 28781 (auditd)
+00:22  INFO:     Tasks: 5 (limit: 4915)
+00:22  INFO:    Memory: 3.6M
+00:22  INFO:    CGroup: /system.slice/auditd.service
+00:22  INFO:            ├─28781 /usr/bin/auditd
+00:22  INFO:            ├─28783 /sbin/audispd
+00:22  INFO:            └─28785 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:22  INFO: 
+00:22  INFO: Sep 14 13:44:14 archie systemd[1]: Starting Security Auditing Service...
+00:22  INFO: Sep 14 13:44:14 archie auditd[28781]: Started dispatcher: /sbin/audispd pid: 28783
+00:22  INFO: Sep 14 13:44:14 archie auditd[28781]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:22  INFO: Sep 14 13:44:14 archie audispd[28783]: af_unix plugin initialized
+00:22  INFO: Sep 14 13:44:14 archie audispd[28783]: audispd initialized with q_depth=80 and 2 active plugins
+00:22  INFO: Sep 14 13:44:14 archie audisp-remote[28785]: Audisp-remote started with queue_size: 0
+00:22  INFO: Sep 14 13:44:14 archie augenrules[28786]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:22  INFO: Sep 14 13:44:14 archie systemd[1]: Started Security Auditing Service.
+00:23 ERROR: 28781 ?        00:00:00 auditd
+00:23 ERROR: Failed to kill the previously running version of auditd.
+00:26 ERROR: 28847 ?        00:00:00 auditd
+00:26  INFO: auditd started.
+00:26  INFO: 
+00:26  INFO: Testing to see if auditd has started correctly.
+00:27  INFO: auditd passed the tests.
+00:27  INFO: Starting the bep-step thread.
+00:27  INFO: Attaching to PID: 28867
+00:27  INFO: Build Script ran 0 different Shell/Python scripts.
+00:28  INFO: Stopping the system resource thread.
+00:28  INFO: Replacing /dev/null with the original
+00:28 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:28  INFO: Found host at 192.168.1.100:80
+00:28  INFO: Found host at 192.168.1.254:80
+00:28  WARN: Found multiple raptor servers running at the same time
+00:28  WARN: [192.168.1.100, 192.168.1.254]
+00:28  INFO: Attempting to start dev-null-catcher
+00:28  INFO: dev-null-catcher started.
+00:28  INFO: 
+00:28  INFO: dev-null-catcher passed the tests.
+00:28  INFO: Attempting to start audisp-remote
+00:28 ERROR: audisp-remote setup failed!
+00:28  INFO: 
+00:28 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:28  INFO: Attempting to start auditd
+00:31 ERROR: 28938 ?        00:00:00 auditd
+00:32  INFO: ● auditd.service - Security Auditing Service
+00:32  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:32  INFO:    Active: active (running) since Sat 2019-09-14 13:44:24 BST; 2s ago
+00:32  INFO:      Docs: man:auditd(8)
+00:32  INFO:            https://github.com/linux-audit/audit-documentation
+00:32  INFO:   Process: 28937 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:32  INFO:   Process: 28942 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:32  INFO:  Main PID: 28938 (auditd)
+00:32  INFO:     Tasks: 5 (limit: 4915)
+00:32  INFO:    Memory: 3.2M
+00:32  INFO:    CGroup: /system.slice/auditd.service
+00:32  INFO:            ├─28938 /usr/bin/auditd
+00:32  INFO:            ├─28940 /sbin/audispd
+00:32  INFO:            └─28943 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:32  INFO: 
+00:32  INFO: Sep 14 13:44:24 archie systemd[1]: Starting Security Auditing Service...
+00:32  INFO: Sep 14 13:44:24 archie auditd[28938]: Started dispatcher: /sbin/audispd pid: 28940
+00:32  INFO: Sep 14 13:44:24 archie auditd[28938]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:32  INFO: Sep 14 13:44:24 archie audispd[28940]: af_unix plugin initialized
+00:32  INFO: Sep 14 13:44:24 archie audispd[28940]: audispd initialized with q_depth=80 and 2 active plugins
+00:32  INFO: Sep 14 13:44:24 archie audisp-remote[28943]: Audisp-remote started with queue_size: 0
+00:32  INFO: Sep 14 13:44:24 archie augenrules[28942]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:32  INFO: Sep 14 13:44:24 archie systemd[1]: Started Security Auditing Service.
+00:33 ERROR: 28938 ?        00:00:00 auditd
+00:33 ERROR: Failed to kill the previously running version of auditd.
+00:36 ERROR: 29003 ?        00:00:00 auditd
+00:36  INFO: auditd started.
+00:36  INFO: 
+00:36  INFO: Testing to see if auditd has started correctly.
+00:37  INFO: auditd passed the tests.
+00:37  INFO: Stopping the system resource thread.
+00:37  INFO: Replacing /dev/null with the original
+00:37 ERROR: Failed to stop bep-step because it never started
+00:37 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:38  INFO: Found host at 192.168.1.100:80
+00:38  INFO: Found host at 192.168.1.254:80
+00:38  WARN: Found multiple raptor servers running at the same time
+00:38  WARN: [192.168.1.100, 192.168.1.254]
+00:38  INFO: Attempting to start dev-null-catcher
+00:38  INFO: dev-null-catcher started.
+00:38  INFO: 
+00:38  INFO: dev-null-catcher passed the tests.
+00:38  INFO: Attempting to start audisp-remote
+00:38  INFO: Starting configurations for the auditd remote multiplexing.
+00:38  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:38  INFO: audisp-remote started.
+00:38  INFO: 
+00:38  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:39  INFO: Audisp received connection.
+00:41  INFO: audisp-remote passed the tests.
+00:41  INFO: Stopping the system resource thread.
+00:41  INFO: Replacing /dev/null with the original
+00:41 ERROR: Failed to stop bep-step because it never started
+00:00 ERROR: Invalid process ID.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
 00:01  INFO: Stopping the system resource thread.
 00:01  INFO: Stopping the system resource thread.
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:05 ERROR: 30093 ?        00:00:00 auditd
+00:05  INFO: ● auditd.service - Security Auditing Service
+00:05  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:05  INFO:    Active: active (running) since Sat 2019-09-14 13:46:38 BST; 2s ago
+00:05  INFO:      Docs: man:auditd(8)
+00:05  INFO:            https://github.com/linux-audit/audit-documentation
+00:05  INFO:   Process: 30092 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:05  INFO:   Process: 30099 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:05  INFO:  Main PID: 30093 (auditd)
+00:05  INFO:     Tasks: 5 (limit: 4915)
+00:05  INFO:    Memory: 3.0M
+00:05  INFO:    CGroup: /system.slice/auditd.service
+00:05  INFO:            ├─30093 /usr/bin/auditd
+00:05  INFO:            ├─30095 /sbin/audispd
+00:05  INFO:            └─30097 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:05  INFO: 
+00:05  INFO: Sep 14 13:46:38 archie audispd[30095]: af_unix plugin initialized
+00:05  INFO: Sep 14 13:46:38 archie audispd[30095]: audispd initialized with q_depth=80 and 2 active plugins
+00:05  INFO: Sep 14 13:46:38 archie audisp-remote[30097]: Audisp-remote started with queue_size: 0
+00:05  INFO: Sep 14 13:46:38 archie audisp-remote[30097]: Connected to 127.0.0.1
+00:05  INFO: Sep 14 13:46:38 archie auditd[30093]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:05  INFO: Sep 14 13:46:38 archie audisp-remote[30097]: read from 127.0.0.1 failed
+00:05  INFO: Sep 14 13:46:38 archie augenrules[30099]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:05  INFO: Sep 14 13:46:38 archie systemd[1]: Started Security Auditing Service.
+00:05  INFO: Sep 14 13:46:39 archie audisp-remote[30097]: Error connecting to 127.0.0.1: Connection refused
+00:05  INFO: Sep 14 13:46:40 archie audisp-remote[30097]: Error connecting to 127.0.0.1: Connection refused
+00:09 ERROR: 30213 ?        00:00:00 auditd
+00:10  INFO: Found host at 192.168.1.100:80
+00:10  INFO: Found host at 192.168.1.254:80
+00:10  WARN: Found multiple raptor servers running at the same time
+00:10  WARN: [192.168.1.100, 192.168.1.254]
+00:10 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:11  INFO: Found host at 192.168.1.100:80
+00:11  INFO: Found host at 192.168.1.103:80
+00:11  INFO: Found host at 192.168.1.254:80
+00:11  WARN: Found multiple raptor servers running at the same time
+00:11  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:11 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:11  INFO: Found host at 192.168.1.100:80
+00:11  INFO: Found host at 192.168.1.254:80
+00:11  WARN: Found multiple raptor servers running at the same time
+00:11  WARN: [192.168.1.100, 192.168.1.254]
+00:11  INFO: Attempting to start dev-null-catcher
+00:11  INFO: dev-null-catcher started.
+00:11  INFO: 
+00:11  INFO: dev-null-catcher passed the tests.
+00:11  INFO: Attempting to start audisp-remote
+00:11  INFO: Starting configurations for the auditd remote multiplexing.
+00:12  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:12  INFO: audisp-remote started.
+00:12  INFO: 
+00:12  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:16 ERROR: Audisp-remote never tried connecting to raptor client
+00:16 ERROR: Audisp-remote test failed, failing back to auditd.
+00:16 ERROR: audisp-remote started but the running tests failed.
+00:16 ERROR: Failed to start audisp-remote
+00:16  INFO: 
+00:16 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:16  INFO: Attempting to start auditd
+00:16 ERROR: auditd setup failed!
+00:16  INFO: 
+00:16  INFO: Stopping the system resource thread.
+00:16  INFO: Replacing /dev/null with the original
+00:16  INFO: Found host at 192.168.1.100:80
+00:16  INFO: Found host at 192.168.1.103:80
+00:16  INFO: Found host at 192.168.1.254:80
+00:16  WARN: Found multiple raptor servers running at the same time
+00:16  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:16 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:16  INFO: Found host at 192.168.1.100:80
+00:16  INFO: Found host at 192.168.1.103:80
+00:16  INFO: Found host at 192.168.1.254:80
+00:16  WARN: Found multiple raptor servers running at the same time
+00:16  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:17  INFO: Starting the bep-step thread.
+00:17  INFO: Attaching to PID: 30420
+00:17  INFO: Build Script ran 0 different Shell/Python scripts.
+00:17 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:17  INFO: Found host at 192.168.1.100:80
+00:17  INFO: Found host at 192.168.1.254:80
+00:17  WARN: Found multiple raptor servers running at the same time
+00:17  WARN: [192.168.1.100, 192.168.1.254]
+00:17  INFO: Attempting to start dev-null-catcher
+00:17  INFO: dev-null-catcher started.
+00:17  INFO: 
+00:17  INFO: dev-null-catcher passed the tests.
+00:17  INFO: Attempting to start audisp-remote
+00:17  INFO: Starting configurations for the auditd remote multiplexing.
+00:18  INFO: Audisp received connection.
+00:18  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:18  INFO: audisp-remote started.
+00:18  INFO: 
+00:18 ERROR: Failed to spawn Audisp local multiplexer server.
+00:18 ERROR: Audisp-remote failed with the following error
+00:18 ERROR: java.io.IOException
+00:22 ERROR: Audisp-remote never tried connecting to raptor client
+00:22 ERROR: Audisp-remote test failed, failing back to auditd.
+00:22 ERROR: audisp-remote started but the running tests failed.
+00:22 ERROR: Failed to start audisp-remote
+00:22  INFO: 
+00:22 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:22  INFO: Attempting to start auditd
+00:22 ERROR: auditd setup failed!
+00:22  INFO: 
+00:22  INFO: Stopping the system resource thread.
+00:22  INFO: Replacing /dev/null with the original
+00:22  INFO: Found host at 192.168.1.100:80
+00:22  INFO: Found host at 192.168.1.103:80
+00:22  INFO: Found host at 192.168.1.254:80
+00:22  WARN: Found multiple raptor servers running at the same time
+00:22  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:22 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:22 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:22  INFO: Found host at 192.168.1.100:80
+00:22  INFO: Found host at 192.168.1.254:80
+00:22  WARN: Found multiple raptor servers running at the same time
+00:22  WARN: [192.168.1.100, 192.168.1.254]
+00:22  INFO: Attempting to start dev-null-catcher
+00:22  INFO: dev-null-catcher started.
+00:22  INFO: 
+00:22  INFO: dev-null-catcher passed the tests.
+00:22  INFO: Attempting to start audisp-remote
+00:22  INFO: Starting configurations for the auditd remote multiplexing.
+00:23  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:23  INFO: audisp-remote started.
+00:23  INFO: 
+00:23  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:27 ERROR: Audisp-remote never tried connecting to raptor client
+00:27 ERROR: Audisp-remote test failed, failing back to auditd.
+00:27 ERROR: audisp-remote started but the running tests failed.
+00:27 ERROR: Failed to start audisp-remote
+00:27  INFO: 
+00:27 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:27  INFO: Attempting to start auditd
+00:28  INFO: Audisp received connection.
+00:30 ERROR: 30671 ?        00:00:00 auditd
+00:30  INFO: ● auditd.service - Security Auditing Service
+00:30  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:30  INFO:    Active: active (running) since Sat 2019-09-14 13:47:03 BST; 2s ago
+00:30  INFO:      Docs: man:auditd(8)
+00:30  INFO:            https://github.com/linux-audit/audit-documentation
+00:30  INFO:   Process: 30670 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:30  INFO:   Process: 30677 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:30  INFO:  Main PID: 30671 (auditd)
+00:30  INFO:     Tasks: 5 (limit: 4915)
+00:30  INFO:    Memory: 2.7M
+00:30  INFO:    CGroup: /system.slice/auditd.service
+00:30  INFO:            ├─30671 /usr/bin/auditd
+00:30  INFO:            ├─30673 /sbin/audispd
+00:30  INFO:            └─30675 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:30  INFO: 
+00:30  INFO: Sep 14 13:47:03 archie systemd[1]: Starting Security Auditing Service...
+00:30  INFO: Sep 14 13:47:03 archie auditd[30671]: Started dispatcher: /sbin/audispd pid: 30673
+00:30  INFO: Sep 14 13:47:03 archie audispd[30673]: af_unix plugin initialized
+00:30  INFO: Sep 14 13:47:03 archie audispd[30673]: audispd initialized with q_depth=80 and 2 active plugins
+00:30  INFO: Sep 14 13:47:03 archie audisp-remote[30675]: Audisp-remote started with queue_size: 0
+00:30  INFO: Sep 14 13:47:03 archie audisp-remote[30675]: Connected to 127.0.0.1
+00:30  INFO: Sep 14 13:47:03 archie auditd[30671]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:30  INFO: Sep 14 13:47:03 archie augenrules[30677]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:30  INFO: Sep 14 13:47:03 archie auditctl[30680]: file /etc/audit/audit.rules doesn't exist, skipping
+00:30  INFO: Sep 14 13:47:03 archie systemd[1]: Started Security Auditing Service.
+00:31 ERROR: 30671 ?        00:00:00 auditd
+00:31 ERROR: Failed to kill the previously running version of auditd.
+00:35 ERROR: 30750 ?        00:00:00 auditd
+00:35  INFO: auditd started.
+00:35  INFO: 
+00:35  INFO: Testing to see if auditd has started correctly.
+00:36  INFO: auditd passed the tests.
+00:36  INFO: Starting the bep-step thread.
+00:36  INFO: Attaching to PID: 30772
+00:36  INFO: Build Script ran 0 different Shell/Python scripts.
+00:37  INFO: Stopping the system resource thread.
+00:37  INFO: Replacing /dev/null with the original
+00:37 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:37  INFO: Found host at 192.168.1.100:80
+00:37  INFO: Found host at 192.168.1.254:80
+00:37  WARN: Found multiple raptor servers running at the same time
+00:37  WARN: [192.168.1.100, 192.168.1.254]
+00:37 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:38  INFO: Found host at 192.168.1.100:80
+00:38  INFO: Found host at 192.168.1.254:80
+00:38  WARN: Found multiple raptor servers running at the same time
+00:38  WARN: [192.168.1.100, 192.168.1.254]
+00:38 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:38  INFO: Found host at 192.168.1.100:80
+00:38  INFO: Found host at 192.168.1.254:80
+00:38  WARN: Found multiple raptor servers running at the same time
+00:38  WARN: [192.168.1.100, 192.168.1.254]
+00:38  INFO: Attempting to start dev-null-catcher
+00:38  INFO: dev-null-catcher started.
+00:38  INFO: 
+00:38  INFO: dev-null-catcher passed the tests.
+00:38  INFO: Attempting to start audisp-remote
+00:38 ERROR: audisp-remote setup failed!
+00:38  INFO: 
+00:38 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:38  INFO: Attempting to start auditd
+00:42 ERROR: 30885 ?        00:00:00 auditd
+00:42  INFO: ● auditd.service - Security Auditing Service
+00:42  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:42  INFO:    Active: active (running) since Sat 2019-09-14 13:47:15 BST; 2s ago
+00:42  INFO:      Docs: man:auditd(8)
+00:42  INFO:            https://github.com/linux-audit/audit-documentation
+00:42  INFO:   Process: 30884 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:42  INFO:   Process: 30891 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:42  INFO:  Main PID: 30885 (auditd)
+00:42  INFO:     Tasks: 5 (limit: 4915)
+00:42  INFO:    Memory: 3.3M
+00:42  INFO:    CGroup: /system.slice/auditd.service
+00:42  INFO:            ├─30885 /usr/bin/auditd
+00:42  INFO:            ├─30887 /sbin/audispd
+00:42  INFO:            └─30889 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:42  INFO: 
+00:42  INFO: Sep 14 13:47:15 archie systemd[1]: Starting Security Auditing Service...
+00:42  INFO: Sep 14 13:47:15 archie auditd[30885]: Started dispatcher: /sbin/audispd pid: 30887
+00:42  INFO: Sep 14 13:47:15 archie audispd[30887]: af_unix plugin initialized
+00:42  INFO: Sep 14 13:47:15 archie audispd[30887]: audispd initialized with q_depth=80 and 2 active plugins
+00:42  INFO: Sep 14 13:47:15 archie audisp-remote[30889]: Audisp-remote started with queue_size: 0
+00:42  INFO: Sep 14 13:47:15 archie auditd[30885]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:42  INFO: Sep 14 13:47:15 archie augenrules[30891]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:42  INFO: Sep 14 13:47:15 archie systemd[1]: Started Security Auditing Service.
+00:43 ERROR: 30885 ?        00:00:00 auditd
+00:43 ERROR: Failed to kill the previously running version of auditd.
+00:46 ERROR: 30956 ?        00:00:00 auditd
+00:46  INFO: auditd started.
+00:46  INFO: 
+00:46  INFO: Testing to see if auditd has started correctly.
+00:47  INFO: auditd passed the tests.
+00:47  INFO: Starting the bep-step thread.
+00:47  INFO: Attaching to PID: 30994
+00:47  INFO: Build Script ran 0 different Shell/Python scripts.
+00:47  INFO: Stopping the system resource thread.
+00:47  INFO: Replacing /dev/null with the original
+00:48 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:48  INFO: Found host at 192.168.1.100:80
+00:48  INFO: Found host at 192.168.1.103:80
+00:48  INFO: Found host at 192.168.1.254:80
+00:48  WARN: Found multiple raptor servers running at the same time
+00:48  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:48  INFO: Attempting to start dev-null-catcher
+00:48  INFO: dev-null-catcher started.
+00:48  INFO: 
+00:48  INFO: dev-null-catcher passed the tests.
+00:48  INFO: Attempting to start audisp-remote
+00:48 ERROR: audisp-remote setup failed!
+00:48  INFO: 
+00:48 ERROR: Audit dispatcher failed to multiplex, falling back to slower method.
+00:48  INFO: Attempting to start auditd
+00:51 ERROR: 31066 ?        00:00:00 auditd
+00:51  INFO: ● auditd.service - Security Auditing Service
+00:51  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:51  INFO:    Active: active (running) since Sat 2019-09-14 13:47:24 BST; 2s ago
+00:51  INFO:      Docs: man:auditd(8)
+00:51  INFO:            https://github.com/linux-audit/audit-documentation
+00:51  INFO:   Process: 31065 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:51  INFO:   Process: 31070 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:51  INFO:  Main PID: 31066 (auditd)
+00:51  INFO:     Tasks: 5 (limit: 4915)
+00:51  INFO:    Memory: 3.9M
+00:51  INFO:    CGroup: /system.slice/auditd.service
+00:51  INFO:            ├─31066 /usr/bin/auditd
+00:51  INFO:            ├─31068 /sbin/audispd
+00:51  INFO:            └─31071 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:51  INFO: 
+00:51  INFO: Sep 14 13:47:24 archie systemd[1]: Starting Security Auditing Service...
+00:51  INFO: Sep 14 13:47:24 archie auditd[31066]: Started dispatcher: /sbin/audispd pid: 31068
+00:51  INFO: Sep 14 13:47:24 archie auditd[31066]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:51  INFO: Sep 14 13:47:24 archie audispd[31068]: af_unix plugin initialized
+00:51  INFO: Sep 14 13:47:24 archie audispd[31068]: audispd initialized with q_depth=80 and 2 active plugins
+00:51  INFO: Sep 14 13:47:24 archie audisp-remote[31071]: Audisp-remote started with queue_size: 0
+00:51  INFO: Sep 14 13:47:24 archie augenrules[31070]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:51  INFO: Sep 14 13:47:24 archie systemd[1]: Started Security Auditing Service.
+00:52 ERROR: 31066 ?        00:00:00 auditd
+00:52 ERROR: Failed to kill the previously running version of auditd.
+00:56 ERROR: 31135 ?        00:00:00 auditd
+00:56  INFO: auditd started.
+00:56  INFO: 
+00:56  INFO: Testing to see if auditd has started correctly.
+00:57  INFO: auditd passed the tests.
+00:57  INFO: Stopping the system resource thread.
+00:57  INFO: Replacing /dev/null with the original
+00:57 ERROR: Failed to stop bep-step because it never started
+00:57 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:57  INFO: Found host at 192.168.1.100:80
+00:57  INFO: Found host at 192.168.1.254:80
+00:57  WARN: Found multiple raptor servers running at the same time
+00:57  WARN: [192.168.1.100, 192.168.1.254]
+00:57  INFO: Attempting to start dev-null-catcher
+00:57  INFO: dev-null-catcher started.
+00:57  INFO: 
+00:57  INFO: dev-null-catcher passed the tests.
+00:57  INFO: Attempting to start audisp-remote
+00:57  INFO: Starting configurations for the auditd remote multiplexing.
+00:58  INFO: Audisp multiplexer running at 127.0.0.1:4987
+00:58  INFO: audisp-remote started.
+00:58  INFO: 
+00:58  INFO: Audisp waiting for a connection on 127.0.0.1:4789
+00:58  INFO: Audisp received connection.
+01:00  INFO: audisp-remote passed the tests.
+01:00  INFO: Stopping the system resource thread.
+01:00  INFO: Replacing /dev/null with the original
+01:00 ERROR: Failed to stop bep-step because it never started
+00:00 ERROR: Invalid process ID.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:01  INFO: Stopping the system resource thread.
+00:01  INFO: Stopping the system resource thread.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01  INFO: Replacing /dev/null with the original
+00:01 ERROR: Trying to move file from /dev/null.bk to /dev/null but cannot because src does not exist.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:01  INFO: Replacing /dev/null with the original
+00:01 ERROR: Trying to move file from /dev/null.bk to /dev/null but cannot because src does not exist.
+00:01 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:01 ERROR: Could not backup original /dev/null
+00:01 ERROR: Failed to create /dev/null file.
+00:05 ERROR: 32045 ?        00:00:00 auditd
+00:05  INFO: Found host at 192.168.1.100:80
+00:05  INFO: Found host at 192.168.1.254:80
+00:05  WARN: Found multiple raptor servers running at the same time
+00:05  WARN: [192.168.1.100, 192.168.1.254]
+00:06 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:06  INFO: Found host at 192.168.1.100:80
+00:06  INFO: Found host at 192.168.1.254:80
+00:06  WARN: Found multiple raptor servers running at the same time
+00:06  WARN: [192.168.1.100, 192.168.1.254]
+00:06 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:06  INFO: Found host at 192.168.1.100:80
+00:07  INFO: Found host at 192.168.1.254:80
+00:07  WARN: Found multiple raptor servers running at the same time
+00:07  WARN: [192.168.1.100, 192.168.1.254]
+00:07  INFO: Attempting to start dev-null-catcher
+00:07 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:07 ERROR: Could not backup original /dev/null
+00:07 ERROR: Failed to create /dev/null file.
+00:07 ERROR: Failed to start dev-null-catcher
+00:07  INFO: 
+00:07  INFO: Stopping the system resource thread.
+00:07  INFO: Replacing /dev/null with the original
+00:07 ERROR: Trying to move file from /dev/null.bk to /dev/null but cannot because src does not exist.
+00:07  INFO: Found host at 192.168.1.100:80
+00:07  INFO: Found host at 192.168.1.103:80
+00:07  INFO: Found host at 192.168.1.254:80
+00:07  WARN: Found multiple raptor servers running at the same time
+00:07  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:07 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:07  INFO: Found host at 192.168.1.100:80
+00:07  INFO: Found host at 192.168.1.254:80
+00:07  WARN: Found multiple raptor servers running at the same time
+00:07  WARN: [192.168.1.100, 192.168.1.254]
+00:08  INFO: Starting the bep-step thread.
+00:08  INFO: Attaching to PID: 32176
+00:08  INFO: Build Script ran 0 different Shell/Python scripts.
+00:08 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:08  INFO: Found host at 192.168.1.100:80
+00:08  INFO: Found host at 192.168.1.103:80
+00:08  INFO: Found host at 192.168.1.254:80
+00:08  WARN: Found multiple raptor servers running at the same time
+00:08  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:08  INFO: Attempting to start dev-null-catcher
+00:08 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:08 ERROR: Could not backup original /dev/null
+00:08 ERROR: Failed to create /dev/null file.
+00:08 ERROR: Failed to start dev-null-catcher
+00:08  INFO: 
+00:08  INFO: Stopping the system resource thread.
+00:08  INFO: Replacing /dev/null with the original
+00:08 ERROR: Trying to move file from /dev/null.bk to /dev/null but cannot because src does not exist.
+00:08  INFO: Found host at 192.168.1.100:80
+00:08  INFO: Found host at 192.168.1.103:80
+00:09  INFO: Found host at 192.168.1.254:80
+00:09  WARN: Found multiple raptor servers running at the same time
+00:09  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:09 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:09 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:09  INFO: Found host at 192.168.1.100:80
+00:09  INFO: Found host at 192.168.1.254:80
+00:09  WARN: Found multiple raptor servers running at the same time
+00:09  WARN: [192.168.1.100, 192.168.1.254]
+00:09  INFO: Attempting to start dev-null-catcher
+00:09 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:09 ERROR: Could not backup original /dev/null
+00:09 ERROR: Failed to create /dev/null file.
+00:09 ERROR: Failed to start dev-null-catcher
+00:09  INFO: 
+00:09  INFO: Stopping the system resource thread.
+00:09  INFO: Replacing /dev/null with the original
+00:09 ERROR: Trying to move file from /dev/null.bk to /dev/null but cannot because src does not exist.
+00:09  INFO: Found host at 192.168.1.100:80
+00:09  INFO: Found host at 192.168.1.254:80
+00:09  WARN: Found multiple raptor servers running at the same time
+00:09  WARN: [192.168.1.100, 192.168.1.254]
+00:10 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:10  INFO: Found host at 192.168.1.100:80
+00:10  INFO: Found host at 192.168.1.103:80
+00:10  INFO: Found host at 192.168.1.254:80
+00:10  WARN: Found multiple raptor servers running at the same time
+00:10  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:10 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:10  INFO: Found host at 192.168.1.100:80
+00:10  INFO: Found host at 192.168.1.254:80
+00:10  WARN: Found multiple raptor servers running at the same time
+00:10  WARN: [192.168.1.100, 192.168.1.254]
+00:10  INFO: Attempting to start dev-null-catcher
+00:10 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:10 ERROR: Could not backup original /dev/null
+00:10 ERROR: Failed to create /dev/null file.
+00:10 ERROR: Failed to start dev-null-catcher
+00:10  INFO: 
+00:11  INFO: Stopping the system resource thread.
+00:11  INFO: Replacing /dev/null with the original
+00:11 ERROR: Trying to move file from /dev/null.bk to /dev/null but cannot because src does not exist.
+00:11  INFO: Found host at 192.168.1.100:80
+00:11  INFO: Found host at 192.168.1.103:80
+00:11  INFO: Found host at 192.168.1.254:80
+00:11  WARN: Found multiple raptor servers running at the same time
+00:11  WARN: [192.168.1.100, 192.168.1.103, 192.168.1.254]
+00:11  INFO: Attempting to start dev-null-catcher
+00:11 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:11 ERROR: Could not backup original /dev/null
+00:11 ERROR: Failed to create /dev/null file.
+00:11 ERROR: Failed to start dev-null-catcher
+00:11  INFO: 
+00:11  INFO: Stopping the system resource thread.
+00:11  INFO: Replacing /dev/null with the original
+00:11 ERROR: Trying to move file from /dev/null.bk to /dev/null but cannot because src does not exist.
+00:11  INFO: Found host at 192.168.1.100:80
+00:11  INFO: Found host at 192.168.1.254:80
+00:11  WARN: Found multiple raptor servers running at the same time
+00:11  WARN: [192.168.1.100, 192.168.1.254]
+00:11  INFO: Attempting to start dev-null-catcher
+00:11 ERROR: Failed trying to move file from /dev/null to /dev/null.bk for an unknown reason.
+00:11 ERROR: Could not backup original /dev/null
+00:11 ERROR: Failed to create /dev/null file.
+00:11 ERROR: Failed to start dev-null-catcher
+00:11  INFO: 
+00:11  INFO: Stopping the system resource thread.
+00:11  INFO: Replacing /dev/null with the original
+00:11 ERROR: Trying to move file from /dev/null.bk to /dev/null but cannot because src does not exist.
+00:00 ERROR: Invalid process ID.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:01  INFO: Stopping the system resource thread.
+00:00 ERROR: Invalid process ID.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00 ERROR: Invalid process ID.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:01  INFO: Stopping the system resource thread.
+<<<<<<< HEAD
 00:01 ERROR: Invalid process ID.
 00:01  INFO: Starting the bep-step thread.
 00:01  INFO: Attaching to PID: 1
@@ -843,3 +3302,84 @@ See "systemctl status auditd.service" and "journalctl -xe" for details.
 00:00  INFO: auditd started.
 00:00  INFO: 
 00:00  INFO: Starting bep-step thread after build execution has started.
+=======
+00:01  INFO: Stopping the system resource thread.
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:01  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:02  INFO: Replacing /dev/null with the original
+00:05 ERROR:  4777 ?        00:00:00 auditd
+00:06  INFO: ● auditd.service - Security Auditing Service
+00:06  INFO:    Loaded: loaded (/usr/lib/systemd/system/auditd.service; disabled; vendor preset: disabled)
+00:06  INFO:    Active: active (running) since Sat 2019-09-14 14:05:53 BST; 2s ago
+00:06  INFO:      Docs: man:auditd(8)
+00:06  INFO:            https://github.com/linux-audit/audit-documentation
+00:06  INFO:   Process: 4776 ExecStart=/usr/bin/auditd (code=exited, status=0/SUCCESS)
+00:06  INFO:   Process: 4783 ExecStartPost=/usr/bin/augenrules --load (code=exited, status=1/FAILURE)
+00:06  INFO:  Main PID: 4777 (auditd)
+00:06  INFO:     Tasks: 5 (limit: 4915)
+00:06  INFO:    Memory: 3.4M
+00:06  INFO:    CGroup: /system.slice/auditd.service
+00:06  INFO:            ├─4777 /usr/bin/auditd
+00:06  INFO:            ├─4779 /sbin/audispd
+00:06  INFO:            └─4781 /sbin/audisp-remote /etc/audisp/audisp-remote.conf
+00:06  INFO: 
+00:06  INFO: Sep 14 14:05:53 archie systemd[1]: Starting Security Auditing Service...
+00:06  INFO: Sep 14 14:05:53 archie auditd[4777]: Started dispatcher: /sbin/audispd pid: 4779
+00:06  INFO: Sep 14 14:05:53 archie audispd[4779]: af_unix plugin initialized
+00:06  INFO: Sep 14 14:05:53 archie audispd[4779]: audispd initialized with q_depth=80 and 2 active plugins
+00:06  INFO: Sep 14 14:05:53 archie auditd[4777]: Init complete, auditd 2.8.4 listening for events (startup state enable)
+00:06  INFO: Sep 14 14:05:53 archie audisp-remote[4781]: Audisp-remote started with queue_size: 0
+00:06  INFO: Sep 14 14:05:53 archie augenrules[4783]: /usr/bin/augenrules: No rules directory - /etc/audit/rules.d
+00:06  INFO: Sep 14 14:05:53 archie systemd[1]: Started Security Auditing Service.
+00:09 ERROR:  4893 ?        00:00:00 auditd
+00:10  INFO: Found host at 192.168.1.100:80
+00:10  INFO: Found host at 192.168.1.254:80
+00:10  WARN: Found multiple raptor servers running at the same time
+00:10  WARN: [192.168.1.100, 192.168.1.254]
+00:10 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:10  INFO: Found host at 192.168.1.100:80
+00:11  INFO: Found host at 192.168.1.254:80
+00:11  WARN: Found multiple raptor servers running at the same time
+00:11  WARN: [192.168.1.100, 192.168.1.254]
+00:11 ERROR: Logic error, stopMonitors was called even though startMonitors was never called.
+00:11  INFO: Found host at 192.168.1.100:80
+00:11  INFO: Found host at 192.168.1.254:80
+00:11  WARN: Found multiple raptor servers running at the same time
+00:11  WARN: [192.168.1.100, 192.168.1.254]
+00:11  INFO: Attempting to start dev-null-catcher
+00:11  INFO: dev-null-catcher started.
+00:11  INFO: 
+00:11  INFO: dev-null-catcher passed the tests.
+00:11  INFO: Attempting to start audisp-remote
+00:11  INFO: Starting configurations for the auditd remote multiplexing.
+00:00 ERROR: Invalid process ID.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00 ERROR: Invalid process ID.
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+00:00  INFO: Starting the bep-step thread.
+00:00  INFO: Attaching to PID: 1
+>>>>>>> detachedHead
