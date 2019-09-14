@@ -72,6 +72,10 @@ public class NullCatcher implements MonitorInterface {
         return true;
     }
 
+    public boolean test(){
+        return true;
+    }
+
     private boolean isDevNullSpecialChar(String path){
         final String[] cmd = {"file", path};
         for (String line: executeCommandGetOutput(cmd)) {

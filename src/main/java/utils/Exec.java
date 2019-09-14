@@ -22,6 +22,7 @@ public class Exec implements Runnable {
     public static ArrayList<String> executeCommandGetOutput(String[] command){
         ProcessBuilder processBuilder = new ProcessBuilder();
         processBuilder.command(command);
+        Log.debug("Executing " + Arrays.toString(command));
         ArrayList<String> output = new ArrayList<>();
         try {
             Process process = processBuilder.start();

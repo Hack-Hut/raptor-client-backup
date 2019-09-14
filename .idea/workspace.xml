@@ -2,51 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d92b01b-4fad-4f6f-9b04-5c26da878143" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/monitors/MonitorFailureException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.attach_pid15459" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.attach_pid16219" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.attach_pid16475" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/root.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/root.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/FileAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/FileAttributes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/Plugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/Plugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/audisp/audisp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/auditors/audisp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/auditors/Auditd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/auditorParserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/auditorParserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/config/BinaryHashList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/config/BinaryHashList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/config/BuildMonitorPluginList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/config/BuildMonitorPluginList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/config/BuildMonitorProxyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/config/BuildMonitorProxyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/config/ConfigFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/config/ConfigFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/config/ConfigFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/config/ConfigFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/auditme/procmon/Procmon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/auditors/Procmon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/BinaryHashList.dict" beforeDir="false" afterPath="$PROJECT_DIR$/logs/BinaryHashList.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/bep-step.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/bep-step.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/raptor-client.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/raptor-client.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/raptor-log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/monitors/Audisp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/Audisp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/monitors/Auditd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/Auditd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/BepStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/BepStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/MonitorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/MonitorInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/monitors/NullCatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/NullCatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/monitors/ResourceMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/ResourceMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/FindHost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/FindHost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/monitors/audisp/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitors/audisp/Worker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/BuildMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/BuildMonitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/Completeness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/Completeness.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/Initial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/Initial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/Semmle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/Semmle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/auditme/FileAttributes/gcc" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/buildToolsConfigGenerator/FileAttributes/gcc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/auditme/auditd/audit.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/buildToolsConfigGenerator/auditd/audit.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/FileAttributes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/Plugin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/audisp/audisp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/auditd/Auditd.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/auditorParserInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/config/BinaryHashList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/config/BuildMonitorPluginList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/config/BuildMonitorProxyList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/auditme/procmon/Procmon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/raptorClient/master/Setup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/raptorClient/master/Setup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Exec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Exec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/audisp/auditd.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/audisp/auditd.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/auditd/auditd.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/auditd/auditd.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/monitors/AuditdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/monitors/AuditdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/audisp/auditd.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/audisp/auditd.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auditd/auditd.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auditd/auditd.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/monitors/Audisp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/Audisp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/monitors/Auditd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/Auditd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/BepStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/BepStep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/MonitorInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/MonitorInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/NullCatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/NullCatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/ResourceMonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/ResourceMonitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitors/audisp/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/audisp/Worker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessMonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/bepStep/ProcessMonitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/bepStep/linux/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/bepStep/linux/Process.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/CpuUsage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/CpuUsage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/MemoryUsageLinux.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/MemoryUsageLinux.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/MemoryUsageWindows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/MemoryUsageWindows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceMonitorWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitors/resourceMonitor/ResourceMonitorWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/findServer/FindHost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/findServer/FindHost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/findServer/ScanNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/findServer/ScanNetwork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/BuildMonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/BuildMonitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/Completeness.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/Completeness.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/Initial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/Initial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/MasterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/MasterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/Semmle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/Semmle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/raptorClient/master/Setup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/raptorClient/master/Setup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Exec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Exec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,107 +63,144 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Initial.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="317">
+                    <caret line="78" column="85" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="85" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                      <element signature="e#3538#3539#0" expanded="true" />
+                      <element signature="e#3578#3579#0" expanded="true" />
+                      <element signature="e#3953#3954#0" expanded="true" />
+                      <element signature="e#3993#3994#0" expanded="true" />
+                      <element signature="e#4057#4058#0" expanded="true" />
+                      <element signature="e#4096#4097#0" expanded="true" />
+                      <element signature="e#4148#4149#0" expanded="true" />
+                      <element signature="e#4180#4181#0" expanded="true" />
+                      <element signature="e#4231#4232#0" expanded="true" />
+                      <element signature="e#4262#4263#0" expanded="true" />
+                      <element signature="e#4302#4303#0" expanded="true" />
+                      <element signature="e#4344#4345#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/Auditd.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/Audisp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+            <state relative-caret-position="303">
+              <caret line="61" column="24" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="24" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#5154#5155#0" expanded="true" />
+                <element signature="e#5200#5201#0" expanded="true" />
+                <element signature="e#5237#5238#0" expanded="true" />
+                <element signature="e#5274#5275#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/AuditInterface.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/audisp/Worker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/BepStep.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+            <state relative-caret-position="213">
+              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2104#2105#0" expanded="true" />
+                <element signature="e#2147#2148#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/MonitorInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/NullCatcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/ResourceMonitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/findServer/FindHost.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-258">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Initial.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stage/master/InitialTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+            <state relative-caret-position="393">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#1933#1934#0" expanded="true" />
+                <element signature="e#1975#1976#0" expanded="true" />
+                <element signature="e#2103#2104#0" expanded="true" />
+                <element signature="e#2153#2154#0" expanded="true" />
+                <element signature="e#3571#3572#0" expanded="true" />
+                <element signature="e#3688#3689#0" expanded="true" />
+                <element signature="e#3806#3807#0" expanded="true" />
+              </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/monitors/Auditd.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="140" column="45" lean-forward="true" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5919#5920#0" expanded="true" />
+                <element signature="e#5973#5974#0" expanded="true" />
+                <element signature="e#6645#6646#0" expanded="true" />
+                <element signature="e#6741#6742#0" expanded="true" />
+                <element signature="e#7075#7076#0" expanded="true" />
+                <element signature="e#7133#7134#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/BinaryHashList.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/BinaryHashList.dict">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/null-catcher.log">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/raptor-client.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1725">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/resource-info.csv">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/bep-step.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-116" />
           </provider>
         </entry>
       </file>
@@ -186,6 +226,14 @@
       <find>buildExecutableInformation</find>
       <find>check</find>
       <find>startAuditor</find>
+      <find>set</find>
+      <find>startAuditd</find>
+      <find>STATUS_AUDITD</find>
+      <find>clearOldLog</find>
+      <find>isAuditdRunning</find>
+      <find>Starting configurations for the auditd remote multiplexing.</find>
+      <find>setup</find>
+      <find>startMonitors</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,28 +242,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/monitors/AuditInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/auditd/auditd.conf" />
-        <option value="$PROJECT_DIR$/src/main/resources/audisp/auditd.conf" />
-        <option value="$PROJECT_DIR$/src/test/java/auditme/auditd/AuditdTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/SystemOps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/misc.java" />
-        <option value="$PROJECT_DIR$/src/main/java/auditme/config/ConfigGenInterface.java" />
-        <option value="$PROJECT_DIR$/src/test/java/auditme/FileAttributesTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Hash.java" />
         <option value="$PROJECT_DIR$/resources/write_to_dev_null.sh" />
         <option value="$PROJECT_DIR$/src/test/java/monitors/ResourceMonitorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/monitors/BepStepTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/monitors/NullCatcherTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/monitors/AuditdTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/monitors/BepStep.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Networking.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Exec.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Log.java" />
         <option value="$PROJECT_DIR$/src/main/java/entryPoint/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/ControllerFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/Setup.java" />
         <option value="$PROJECT_DIR$/src/main/java/auditme/Plugin.java" />
         <option value="$PROJECT_DIR$/src/main/java/auditme/audisp/audisp.java" />
         <option value="$PROJECT_DIR$/src/main/java/auditme/auditd/Auditd.java" />
@@ -228,23 +263,36 @@
         <option value="$PROJECT_DIR$/src/main/java/auditme/auditorParserInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/auditme/FileAttributes.java" />
         <option value="$PROJECT_DIR$/src/main/java/entryPoint/CommandLineParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/monitors/audisp/Worker.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/bepStep/linux/Process.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/ResourceMonitorWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/CpuUsage.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/resourceMonitor/MemoryUsage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/monitors/Audisp.java" />
         <option value="$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/auditors/Procmon.java" />
         <option value="$PROJECT_DIR$/src/main/java/monitors/bepStep/ProcessMonitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/monitors/Auditd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/monitors/NullCatcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/monitors/ResourceMonitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/findServer/FindHost.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/findServer/ScanNetwork.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/monitors/MonitorFailureException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/MonitorFailureException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/Setup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/Semmle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/Completeness.java" />
+        <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/BuildMonitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/MonitorInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/NullCatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/BepStep.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/ResourceMonitor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/audisp/auditd.conf" />
+        <option value="$PROJECT_DIR$/src/test/java/monitors/AuditdTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/auditd/auditd.conf" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Exec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/Auditd.java" />
         <option value="$PROJECT_DIR$/src/main/java/raptorClient/master/Initial.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/Audisp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/monitors/audisp/Worker.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stage/master/InitialTest.java" />
       </list>
     </option>
   </component>
@@ -256,10 +304,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1920" />
-    <option name="y" value="-26" />
-    <option name="width" value="1920" />
-    <option name="height" value="1106" />
+    <option name="x" value="1922" />
+    <option name="y" value="-24" />
+    <option name="width" value="1221" />
+    <option name="height" value="1102" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -267,7 +315,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,11 +330,6 @@
             <path>
               <item name="Raptor-Client" type="b2602c69:ProjectViewProjectNode" />
               <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Raptor-Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -309,7 +351,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="buildToolsConfigGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="monitors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Raptor-Client" type="b2602c69:ProjectViewProjectNode" />
@@ -317,16 +359,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="buildToolsConfigGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="auditors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Raptor-Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RaptorClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="communicator" type="462c0819:PsiDirectoryNode" />
+              <item name="monitors" type="462c0819:PsiDirectoryNode" />
+              <item name="audisp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Raptor-Client" type="b2602c69:ProjectViewProjectNode" />
@@ -371,12 +405,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="monitors" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,6 +422,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="monitors" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="monitors" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -405,27 +443,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Networking">
+  <component name="RunManager" selected="JUnit.InitialTest (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="entryPoint.Main" />
       <module name="Raptor-Client" />
-      <option name="PROGRAM_PARAMETERS" value="--master --stage=initial --id=0 --cmd=&quot;src/test/resources/testCompilationProject/8cc/make_test.sh&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="--master --stage=initial --id=0 --cmd=&quot;make -C $PROJECT_DIR$/../bitcoin -j 12&quot; " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="entryPoint.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Networking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.Networking" />
-      <module name="Raptor-Client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -441,32 +466,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuditdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InitialTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Raptor-Client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="monitors.*" />
+          <option name="PATTERN" value="stage.master.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="monitors" />
-      <option name="MAIN_CLASS_NAME" value="monitors.AuditdTest" />
+      <option name="PACKAGE_NAME" value="stage.master" />
+      <option name="MAIN_CLASS_NAME" value="stage.master.InitialTest" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:stage.master.InitialTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InitialTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Raptor-Client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stage.master.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stage.master" />
+      <option name="MAIN_CLASS_NAME" value="stage.master.InitialTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuditdTest.makeSureSetupClearPreviousLogs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InitialTest.startMonitorsAuditdFails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Raptor-Client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="monitors.*" />
+          <option name="PATTERN" value="stage.master.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="monitors" />
-      <option name="MAIN_CLASS_NAME" value="monitors.AuditdTest" />
-      <option name="METHOD_NAME" value="makeSureSetupClearPreviousLogs" />
+      <option name="PACKAGE_NAME" value="stage.master" />
+      <option name="MAIN_CLASS_NAME" value="stage.master.InitialTest" />
+      <option name="METHOD_NAME" value="startMonitorsAuditdFails" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -474,18 +517,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.InitialTest" />
       <item itemvalue="JUnit.All in Raptor-Client" />
-      <item itemvalue="JUnit.AuditdTest.makeSureSetupClearPreviousLogs" />
-      <item itemvalue="JUnit.AuditdTest" />
-      <item itemvalue="Application.Networking" />
+      <item itemvalue="JUnit.InitialTest.startMonitorsAuditdFails" />
+      <item itemvalue="JUnit.InitialTest (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Networking" />
+        <item itemvalue="JUnit.InitialTest (1)" />
+        <item itemvalue="JUnit.InitialTest" />
+        <item itemvalue="JUnit.InitialTest.startMonitorsAuditdFails" />
         <item itemvalue="JUnit.All in Raptor-Client" />
-        <item itemvalue="JUnit.AuditdTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.AuditdTest.makeSureSetupClearPreviousLogs" />
       </list>
     </recent_temporary>
   </component>
@@ -503,39 +546,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AuditdTest_makeSureSetupClearPreviousLogs - 2019.09.11 at 18h 58m 50s.xml">
-      <configuration name="AuditdTest.makeSureSetupClearPreviousLogs" configurationId="JUnit" />
+    <history-entry file="InitialTest_startMonitorsAuditdFails - 2019.09.14 at 13h 27m 05s.xml">
+      <configuration name="InitialTest.startMonitorsAuditdFails" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AuditdTest_makeSureSetupClearPreviousLogs - 2019.09.11 at 19h 03m 01s.xml">
-      <configuration name="AuditdTest.makeSureSetupClearPreviousLogs" configurationId="JUnit" />
+    <history-entry file="InitialTest_startMonitorsAuditdFails - 2019.09.14 at 13h 28m 07s.xml">
+      <configuration name="InitialTest.startMonitorsAuditdFails" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AuditdTest_makeSureSetupClearPreviousLogs - 2019.09.11 at 19h 03m 46s.xml">
-      <configuration name="AuditdTest.makeSureSetupClearPreviousLogs" configurationId="JUnit" />
+    <history-entry file="InitialTest_startMonitorsAuditdFails - 2019.09.14 at 13h 29m 53s.xml">
+      <configuration name="InitialTest.startMonitorsAuditdFails" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AuditdTest_makeSureSetupClearPreviousLogs - 2019.09.11 at 19h 07m 03s.xml">
-      <configuration name="AuditdTest.makeSureSetupClearPreviousLogs" configurationId="JUnit" />
+    <history-entry file="InitialTest_startMonitorsAuditdFails - 2019.09.14 at 13h 30m 45s.xml">
+      <configuration name="InitialTest.startMonitorsAuditdFails" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AuditdTest_makeSureSetupClearPreviousLogs - 2019.09.11 at 19h 09m 06s.xml">
-      <configuration name="AuditdTest.makeSureSetupClearPreviousLogs" configurationId="JUnit" />
+    <history-entry file="InitialTest_startMonitorsAuditdFails - 2019.09.14 at 13h 30m 53s.xml">
+      <configuration name="InitialTest.startMonitorsAuditdFails" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AuditdTest - 2019.09.11 at 19h 12m 25s.xml">
-      <configuration name="AuditdTest" configurationId="JUnit" />
+    <history-entry file="InitialTest_startMonitorsAuditdFails - 2019.09.14 at 13h 34m 56s.xml">
+      <configuration name="InitialTest.startMonitorsAuditdFails" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AuditdTest - 2019.09.11 at 19h 14m 40s.xml">
-      <configuration name="AuditdTest" configurationId="JUnit" />
+    <history-entry file="InitialTest_startMonitorsAuditdFails - 2019.09.14 at 13h 36m 29s.xml">
+      <configuration name="InitialTest.startMonitorsAuditdFails" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Raptor-Client - 2019.09.11 at 19h 15m 16s.xml">
-      <configuration name="All in Raptor-Client" configurationId="JUnit" />
+    <history-entry file="InitialTest_startMonitorsAuditdFails - 2019.09.14 at 13h 36m 40s.xml">
+      <configuration name="InitialTest.startMonitorsAuditdFails" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Raptor-Client - 2019.09.12 at 17h 52m 14s.xml">
-      <configuration name="All in Raptor-Client" configurationId="JUnit" />
+    <history-entry file="InitialTest_startMonitorsAuditdFails - 2019.09.14 at 13h 36m 59s.xml">
+      <configuration name="InitialTest.startMonitorsAuditdFails" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Raptor-Client - 2019.09.12 at 17h 54m 36s.xml">
-      <configuration name="All in Raptor-Client" configurationId="JUnit" />
+    <history-entry file="InitialTest_startMonitorsAuditdFails - 2019.09.14 at 13h 37m 54s.xml">
+      <configuration name="InitialTest.startMonitorsAuditdFails" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-26" width="1920" height="1106" extended-state="0" />
+    <frame x="1922" y="-24" width="1221" height="1102" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -543,15 +586,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2113951" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.36810857" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32962587" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.328934" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32962587" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32962587" />
-      <window_info anchor="bottom" auto_hide="true" x="962" y="2" width="956" height="1076" id="Run" order="6" type="WINDOWED" visible="true" weight="0.17391305" />
+      <window_info active="true" anchor="bottom" auto_hide="true" x="962" y="2" width="956" height="1076" id="Run" order="6" type="WINDOWED" visible="true" weight="0.17391305" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.13549039" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -567,202 +610,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/logs/resource-info.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/raptor-client.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/write_to_dev_null.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/raptor-log.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="109" column="62" selection-start-line="109" selection-start-column="62" selection-end-line="109" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/null-catcher.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/monitors/BepStepTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/monitors/NullCatcherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/monitors/AuditdTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/monitors/ResourceMonitorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Networking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="57" column="19" lean-forward="true" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="8" />
-          <folding>
-            <element signature="e#2283#2284#0" expanded="true" />
-            <element signature="e#2316#2317#0" expanded="true" />
-            <element signature="e#2496#2497#0" expanded="true" />
-            <element signature="e#2563#2564#0" expanded="true" />
-            <element signature="e#2628#2629#0" expanded="true" />
-            <element signature="e#2693#2694#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2975#2976#0" expanded="true" />
-            <element signature="e#3157#3158#0" expanded="true" />
-            <element signature="e#3430#3431#0" expanded="true" />
-            <element signature="e#3700#3701#0" expanded="true" />
-            <element signature="e#3967#3968#0" expanded="true" />
-            <element signature="e#4234#4235#0" expanded="true" />
-            <element signature="e#4501#4502#0" expanded="true" />
-            <element signature="e#4771#4772#0" expanded="true" />
-            <element signature="e#5044#5045#0" expanded="true" />
-            <element signature="e#5317#5318#0" expanded="true" />
-            <element signature="e#5590#5591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/auditme/config/ConfigGenInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/BuildMonitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/ControllerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Setup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entryPoint/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/config/BinaryHashList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/config/BuildMonitorPluginList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/buildToolsConfigGenerator/config/BuildMonitorProxyList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -820,20 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/audisp/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1002">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
         </state>
       </provider>
     </entry>
@@ -913,61 +746,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/Audisp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="81" selection-start-line="25" selection-start-column="81" selection-end-line="25" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/Auditd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/monitors/AuditInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/BepStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/MonitorInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/NullCatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/ResourceMonitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -985,17 +767,283 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/logs/raptor-log.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/MonitorFailureException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding>
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="96" column="27" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Setup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/monitors/NullCatcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/ControllerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Completeness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/MasterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+        <state relative-caret-position="360">
+          <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/BuildMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Semmle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/MonitorInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/NullCatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="74" selection-start-line="74" selection-end-line="76" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2515#2516#0" expanded="true" />
+            <element signature="e#2542#2543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/BepStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/ResourceMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/auditd/au-remote.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/au-remote.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/auditd/auditd.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Exec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/audisp/auditd.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/monitors/AuditdTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/bep-step.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/BinaryHashList.dict">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/resource-info.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/null-catcher.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/BinaryHashList.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/raptor-client.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/audisp/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="e#2104#2105#0" expanded="true" />
+            <element signature="e#2147#2148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/Auditd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="140" column="45" lean-forward="true" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5919#5920#0" expanded="true" />
+            <element signature="e#5973#5974#0" expanded="true" />
+            <element signature="e#6645#6646#0" expanded="true" />
+            <element signature="e#6741#6742#0" expanded="true" />
+            <element signature="e#7075#7076#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/monitors/Audisp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="61" column="24" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="24" />
+          <folding>
+            <element signature="e#5154#5155#0" expanded="true" />
+            <element signature="e#5200#5201#0" expanded="true" />
+            <element signature="e#5237#5238#0" expanded="true" />
+            <element signature="e#5274#5275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stage/master/InitialTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#1975#1976#0" expanded="true" />
+            <element signature="e#2103#2104#0" expanded="true" />
+            <element signature="e#2153#2154#0" expanded="true" />
+            <element signature="e#3571#3572#0" expanded="true" />
+            <element signature="e#3688#3689#0" expanded="true" />
+            <element signature="e#3806#3807#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/raptorClient/master/Initial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+        <state relative-caret-position="317">
+          <caret line="78" column="85" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3538#3539#0" expanded="true" />
+            <element signature="e#3578#3579#0" expanded="true" />
+            <element signature="e#3953#3954#0" expanded="true" />
+            <element signature="e#3993#3994#0" expanded="true" />
+            <element signature="e#4057#4058#0" expanded="true" />
+            <element signature="e#4096#4097#0" expanded="true" />
+            <element signature="e#4148#4149#0" expanded="true" />
+            <element signature="e#4180#4181#0" expanded="true" />
+            <element signature="e#4231#4232#0" expanded="true" />
+            <element signature="e#4262#4263#0" expanded="true" />
+            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#4344#4345#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

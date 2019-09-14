@@ -4,9 +4,11 @@ public class Semmle extends raptorClient.master.MasterController{
     public Semmle(int buildId, String stage, String[] buildCommand){
         super(buildId, stage, buildCommand);
     }
-    public void startMonitors(){
+    public boolean startMonitors(){
+        return true;
     }
-    public void stopMonitors(){
+    public boolean stopMonitors(){
+        return true;
     }
     public boolean pingSlave(){
         return true;
@@ -21,7 +23,8 @@ public class Semmle extends raptorClient.master.MasterController{
     }
     public void connectToSlaves() {
     }
-    public void executeBuild() {
+    public boolean executeBuild() {
+        return true;
     }
 
 }

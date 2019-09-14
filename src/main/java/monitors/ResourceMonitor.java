@@ -28,6 +28,10 @@ public class ResourceMonitor implements MonitorInterface {
         return true;
     }
 
+    public boolean test(){
+        return true;
+    }
+
     public boolean stop(){
         Log.info("Stopping the system resource thread.");
         worker.stop();

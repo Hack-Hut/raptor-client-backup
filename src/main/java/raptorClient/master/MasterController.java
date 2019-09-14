@@ -1,5 +1,6 @@
 package raptorClient.master;
 
+import monitors.MonitorFailureException;
 import monitors.ResourceMonitor;
 import raptorClient.findServer.ScanNetwork;
 import utils.Exec;
@@ -53,9 +54,9 @@ public abstract class MasterController {
         env = getEnvironmentVariables();
     }
 
-    public abstract void startMonitors();
-    public abstract void executeBuild();
-    public abstract void stopMonitors();
+    public abstract boolean startMonitors() throws MonitorFailureException;
+    public abstract boolean executeBuild();
+    public abstract boolean stopMonitors();
     public abstract void processResults();
     public abstract void uploadResults();
 

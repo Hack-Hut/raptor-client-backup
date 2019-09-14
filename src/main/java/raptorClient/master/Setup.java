@@ -1,5 +1,6 @@
 package raptorClient.master;
 
+import monitors.MonitorFailureException;
 import raptorClient.SetupJob;
 import utils.Log;
 
@@ -38,7 +39,11 @@ public class Setup implements SetupJob {
         Log.debug("");
         Log.info("STARTING MONITORS");
         Log.info("--------------------------------------------------");
-        controller.startMonitors();
+        try {
+            controller.startMonitors();
+        } catch (MonitorFailureException e) {
+            return;
+        }
 
         System.out.println();
         Log.debug("");

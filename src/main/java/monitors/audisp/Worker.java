@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,6 +19,7 @@ public class Worker implements Runnable{
 
     private Set<String> executables = new HashSet<>();
     private boolean isRunning = true;
+    private boolean connectionEstablished = false;
 
     public void stop(){
         isRunning = false;
@@ -33,7 +35,10 @@ public class Worker implements Runnable{
      */
     private void start() throws IOException{
         try (ServerSocket ss = new ServerSocket(4789)){
+            Log.info("Audisp waiting for a connection on 127.0.0.1:4789");
             Socket client = ss.accept();
+            connectionEstablished = true;
+            Log.info("Audisp received connection.");
             worker(client);
         }catch (IOException e){
             Log.error("Failed to spawn Audisp local multiplexer server.");
@@ -55,6 +60,58 @@ public class Worker implements Runnable{
             Log.error(e.toString());
         }
         client.close();
+    }
+
+    public boolean connectionEstablished(){
+        return connectionEstablished;
+    }
+
+    public boolean test(){
+        executeTestCommands();
+
+        // Allow auditd startup to finish
+        sleepThread();
+
+        boolean uname = false;
+        boolean whoami = false;
+        boolean ls = false;
+        for(String executable : executables){
+            if (executable.contains("uname")) uname = true;
+            if (executable.contains("whoami")) whoami = true;
+            if (executable.contains("ls")) ls = true;
+        }
+        boolean res = (uname && whoami && ls);
+        if(!res){
+            Log.error("Expected to see \"uname\", \"whoami\" and \"ls\"");
+            Log.error(executables.toString());
+        }
+        return res;
+    }
+
+    private void sleepThread(){
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            Log.error("Audisp worker thread was interrupted.");
+        }
+    }
+
+    private void executeTestCommands(){
+        Runtime r = Runtime.getRuntime();
+        try {
+            Process p = r.exec("uname");
+            Process p2 = r.exec("whoami");
+            Process p3 = r.exec("ls");
+            p.waitFor();
+            p2.waitFor();
+            p3.waitFor();
+
+        } catch (InterruptedException | IOException e) {
+            Log.error("Failed to execute audisp test commands");
+            Log.error(e.toString());
+            Log.error(Arrays.toString(e.getStackTrace()));
+        }
     }
 
     private void parseString(String auditLine){
